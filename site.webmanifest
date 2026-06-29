@@ -1,0 +1,21 @@
+{
+  "name": "Behror Solar",
+  "short_name": "Behror Solar",
+  "description": "Tata Rooftop Solar Channel Partner serving Behror, Neemrana and the Alwar region.",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0B1320",
+  "background_color": "#FCFBF7",
+  "display": "standalone",
+  "start_url": "/"
+}

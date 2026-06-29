@@ -764,13 +764,16 @@ text-align:center;
 }
 
 .contact-wrapper{
-display:flex;
-justify-content:center;
+display:grid;
+grid-template-columns:0.85fr 1.15fr;
+gap:28px;
+align-items:start;
+max-width:980px;
+margin:0 auto;
 }
 
-.contact-card{
-max-width:620px;
-width:100%;
+.contact-card,
+.contact-form-card{
 background:var(--sand);
 padding:42px;
 border-radius:10px;
@@ -834,6 +837,61 @@ border-color:var(--ink);
 .contact-buttons .btn-whatsapp:hover{
 background:var(--ink);
 color:var(--sand);
+}
+
+/* =====================
+CONTACT FORM
+===================== */
+
+.contact-form-card h3{
+font-size:1.7rem;
+margin-bottom:6px;
+}
+
+.form-row{
+margin-bottom:18px;
+}
+
+.form-row label{
+display:block;
+font-family:'Space Mono',monospace;
+font-size:0.7rem;
+letter-spacing:0.06em;
+text-transform:uppercase;
+color:var(--steel);
+margin-bottom:8px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea{
+width:100%;
+padding:12px 14px;
+border:1px solid var(--line);
+border-radius:4px;
+background:var(--sand-deep);
+color:var(--ink);
+font-family:'Public Sans',sans-serif;
+font-size:0.95rem;
+}
+
+.form-row textarea{
+resize:vertical;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus{
+outline:none;
+border-color:var(--gold-deep);
+}
+
+.form-submit{
+width:100%;
+text-align:center;
+border:none;
+cursor:pointer;
+margin-top:6px;
 }
 
 /* =====================
@@ -1191,6 +1249,10 @@ border-top:none;
 
 .contact-buttons{
 flex-direction:column;
+}
+
+.contact-wrapper{
+grid-template-columns:1fr;
 }
 
 .logo-area img{
