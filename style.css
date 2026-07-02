@@ -104,12 +104,27 @@ gap:30px;
 .logo-area{
 display:flex;
 align-items:center;
+gap:10px;
 }
 
-.header-combined-logo{
+.header-bs-logo{
 height:48px;
 width:auto;
 display:block;
+}
+
+.header-combined-logo{
+height:32px;
+width:auto;
+display:block;
+opacity:0.92;
+}
+
+.header-divider{
+width:1px;
+height:32px;
+background:var(--line);
+flex-shrink:0;
 }
 
 nav{
@@ -300,6 +315,18 @@ background:var(--ink-soft);
 border:1px solid var(--line-light);
 border-radius:10px;
 padding:24px;
+}
+
+.panel-partner{
+padding-bottom:16px;
+margin-bottom:16px;
+border-bottom:1px solid var(--line-light);
+}
+
+.panel-partner img{
+height:32px;
+width:auto;
+display:block;
 }
 
 .panel-label{
@@ -996,8 +1023,6 @@ z-index:999;
 HEADER — COMBINED LOGO
 ===================== */
 
-/* header-combined-logo defined in .logo-area block above */
-
 /* =====================
 PARTNER STRIP
 ===================== */
@@ -1305,8 +1330,16 @@ grid-template-columns:repeat(2,1fr);
 gap:18px;
 }
 
-.header-combined-logo{
+.header-bs-logo{
 height:36px;
+}
+
+.header-combined-logo{
+display:none;
+}
+
+.header-divider{
+display:none;
 }
 
 nav{
