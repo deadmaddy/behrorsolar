@@ -321,6 +321,8 @@ padding:24px;
 padding-bottom:16px;
 margin-bottom:16px;
 border-bottom:1px solid var(--line-light);
+display:flex;
+justify-content:center;
 }
 
 .panel-partner img{
@@ -779,7 +781,7 @@ text-align:center;
 display:grid;
 grid-template-columns:0.85fr 1.15fr;
 gap:28px;
-align-items:start;
+align-items:stretch;
 max-width:980px;
 margin:0 auto;
 }
@@ -789,6 +791,8 @@ margin:0 auto;
 background:var(--sand);
 padding:42px;
 border-radius:10px;
+display:flex;
+flex-direction:column;
 }
 
 .contact-card h3{
