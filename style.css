@@ -682,8 +682,8 @@ GALLERY
 
 .gallery-grid{
 display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:30px;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
 }
 
 .gallery-card{
@@ -908,6 +908,22 @@ text-align:center;
 border:none;
 cursor:pointer;
 margin-top:6px;
+}
+
+.contact-map{
+margin-top:28px;
+border-radius:10px;
+overflow:hidden;
+border:1px solid var(--line-light);
+max-width:980px;
+margin-left:auto;
+margin-right:auto;
+line-height:0;
+}
+
+.contact-map iframe{
+display:block;
+width:100%;
 }
 
 /* =====================
@@ -1311,7 +1327,7 @@ border-left:none;
 }
 
 .gallery-grid{
-grid-template-columns:1fr;
+grid-template-columns:repeat(2,1fr);
 }
 
 .process-grid{
@@ -1380,6 +1396,10 @@ flex-direction:column;
 }
 
 .contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.gallery-grid{
 grid-template-columns:1fr;
 }
 
