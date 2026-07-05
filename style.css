@@ -1176,6 +1176,145 @@ padding-top:14px;
 }
 
 /* =====================
+PM SURYA GHAR SAVINGS
+===================== */
+
+.savings-section{
+padding:100px 0;
+background:var(--sand);
+}
+
+.savings-intro{
+max-width:800px;
+margin-bottom:48px;
+}
+
+.savings-intro p{
+color:#374151;
+margin-bottom:16px;
+line-height:1.75;
+}
+
+.savings-intro strong{
+color:var(--ink);
+}
+
+.savings-table-wrap{
+overflow-x:auto;
+border-radius:8px;
+border:1px solid var(--line);
+margin-bottom:40px;
+-webkit-overflow-scrolling:touch;
+}
+
+.savings-table{
+width:100%;
+border-collapse:collapse;
+font-size:0.88rem;
+min-width:780px;
+}
+
+.savings-table thead{
+background:var(--ink);
+color:var(--sand);
+}
+
+.savings-table thead th{
+padding:14px 16px;
+text-align:left;
+font-family:'Space Grotesk',sans-serif;
+font-weight:600;
+font-size:0.82rem;
+letter-spacing:0.01em;
+border-right:1px solid rgba(255,255,255,0.08);
+line-height:1.35;
+}
+
+.savings-table thead th:last-child{
+border-right:none;
+}
+
+.savings-table tbody tr{
+border-bottom:1px solid var(--line);
+transition:background .15s;
+}
+
+.savings-table tbody tr:last-child{
+border-bottom:none;
+}
+
+.savings-table tbody tr:nth-child(even){
+background:var(--sand-deep);
+}
+
+.savings-table tbody tr:hover{
+background:#EEF5E8;
+}
+
+.savings-table tbody td{
+padding:16px;
+color:#374151;
+border-right:1px solid var(--line);
+vertical-align:middle;
+}
+
+.savings-table tbody td:last-child{
+border-right:none;
+text-align:center;
+}
+
+.saving-zero{
+display:inline-block;
+background:#166534;
+color:#fff;
+font-family:'Space Mono',monospace;
+font-size:0.82rem;
+font-weight:700;
+padding:4px 12px;
+border-radius:30px;
+letter-spacing:0.03em;
+}
+
+.savings-tnc{
+background:var(--sand-deep);
+border:1px solid var(--line);
+border-radius:8px;
+padding:28px 32px;
+}
+
+.savings-tnc h3{
+font-size:0.92rem;
+font-family:'Space Mono',monospace;
+letter-spacing:0.06em;
+text-transform:uppercase;
+color:var(--steel);
+margin-bottom:16px;
+}
+
+.savings-tnc ul{
+list-style:none;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.savings-tnc li{
+font-size:0.85rem;
+color:#4B5563;
+padding-left:20px;
+position:relative;
+line-height:1.65;
+}
+
+.savings-tnc li::before{
+content:'*';
+position:absolute;
+left:0;
+color:var(--gold-deep);
+font-weight:700;
+}
+
+/* =====================
 FAQ
 ===================== */
 
@@ -1372,6 +1511,10 @@ display:none;
 
 .hero{
 padding:80px 0 60px;
+}
+
+.savings-tnc{
+padding:20px;
 }
 
 .hero h1{
