@@ -1184,6 +1184,10 @@ padding:100px 0;
 background:var(--sand);
 }
 
+.savings-section .section-title{
+max-width:100%;
+}
+
 .savings-intro{
 max-width:800px;
 margin-bottom:48px;
