@@ -80,6 +80,12 @@
 </ul>
 </nav>
 
+<button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+<span class="nav-toggle-bar"></span>
+<span class="nav-toggle-bar"></span>
+<span class="nav-toggle-bar"></span>
+</button>
+
 <a href="tel:+919414453454" class="btn btn-ghost nav-cta">Call Now</a>
 
 </div>
@@ -161,22 +167,22 @@ and the wider Alwar region.
 <div class="partner-strip-stats">
 
 <div class="ps-stat">
-<h4>3.4 GW<span>+</span></h4>
+<div class="ps-stat-num">3.4 GW<span>+</span></div>
 <p>Rooftop solar installed nationally</p>
 </div>
 
 <div class="ps-stat">
-<h4>35<span>+</span></h4>
+<div class="ps-stat-num">35<span>+</span></div>
 <p>Years of end-to-end EPC expertise</p>
 </div>
 
 <div class="ps-stat">
-<h4>2L<span>+</span></h4>
+<div class="ps-stat-num">2L<span>+</span></div>
 <p>Customers served across India</p>
 </div>
 
 <div class="ps-stat">
-<h4>20<span>+</span></h4>
+<div class="ps-stat-num">20<span>+</span></div>
 <p>Finance partners for easy EMIs</p>
 </div>
 
@@ -191,22 +197,22 @@ and the wider Alwar region.
 
 <div class="stat-cell">
 <span class="stat-eyebrow">CUSTOMERS</span>
-<h3>100<span>+</span></h3>
+<div class="stat-num">100<span>+</span></div>
 </div>
 
 <div class="stat-cell">
 <span class="stat-eyebrow">PROJECTS</span>
-<h3>250<span>+</span></h3>
+<div class="stat-num">250<span>+</span></div>
 </div>
 
 <div class="stat-cell">
 <span class="stat-eyebrow">EXPERIENCE</span>
-<h3>5<span>yrs</span></h3>
+<div class="stat-num">5<span>yrs</span></div>
 </div>
 
 <div class="stat-cell">
 <span class="stat-eyebrow">AFTER-SALES</span>
-<h3>100<span>%</span></h3>
+<div class="stat-num">100<span>%</span></div>
 </div>
 
 </div>
@@ -217,8 +223,8 @@ and the wider Alwar region.
 <div class="container about-grid">
 
 <div class="about-image">
-<img src="images/logo.png" alt="Behror Solar — Solar Consultant and Operations Lead" loading="lazy" decoding="async" width="320" height="320">
-<div class="about-image-tag">Solar Consultant<br>& Operations Lead</div>
+<img src="images/logo.png" alt="Behror Solar — Engineered Rooftop Solar Solutions, Behror, Rajasthan" loading="lazy" decoding="async" width="320" height="320">
+<div class="about-image-tag">Behror, Rajasthan<br>Est. 2019</div>
 </div>
 
 <div class="about-content">
@@ -890,10 +896,18 @@ Verify Tata Partner ↗
 "priceRange":"₹₹",
 "address":{
 "@type":"PostalAddress",
+"streetAddress":"Near Hanuman Mandir",
 "addressLocality":"Behror",
 "addressRegion":"Rajasthan",
+"postalCode":"301701",
 "addressCountry":"IN"
 },
+"geo":{
+"@type":"GeoCoordinates",
+"latitude":27.8867939,
+"longitude":76.2827805
+},
+"hasMap":"https://maps.google.com/?q=27.8867939,76.2827805",
 "areaServed":[
 {"@type":"City","name":"Behror"},
 {"@type":"City","name":"Neemrana"},
@@ -907,20 +921,39 @@ Verify Tata Partner ↗
 "name":"Mahendra Yadav"
 },
 "description":"Tata partner rooftop solar including residential, commercial and industrial solar installations in Behror, Neemrana and the wider Alwar region.",
-"geo":{
-"@type":"GeoCoordinates",
-"latitude":27.8867939,
-"longitude":76.2827805
+"aggregateRating":{
+"@type":"AggregateRating",
+"ratingValue":"5",
+"reviewCount":"3",
+"bestRating":"5",
+"worstRating":"1"
 },
-"hasMap":"https://maps.google.com/?q=27.8867939,76.2827805",
-"address":{
-"@type":"PostalAddress",
-"streetAddress":"Near Hanuman Mandir",
-"addressLocality":"Behror",
-"addressRegion":"Rajasthan",
-"postalCode":"301701",
-"addressCountry":"IN"
+"review":[
+{
+"@type":"Review",
+"author":{"@type":"Person","name":"Bhupendra"},
+"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},
+"name":"377 units in under 22 days — bill heading to zero",
+"reviewBody":"Our net metering was approved on 9 May, and between 10 May and 31 May we generated 377 units — not even a full month, despite several cloudy days. I am confident our average ₹4,000 monthly electricity bill will stay close to zero for a long time.",
+"itemReviewed":{"@type":"Service","name":"Residential Rooftop Solar Installation","areaServed":"Nainsukh, Behror, Rajasthan 301701"}
 },
+{
+"@type":"Review",
+"author":{"@type":"Person","name":"Ujjawal"},
+"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},
+"name":"Zero electricity bills for two consecutive months in peak summer",
+"reviewBody":"We installed a 3 kW system for my parents and a 5 kW system for our floor. Even during peak summer, we have received zero electricity bills for two consecutive months. Last year, we paid more than ₹12,000 during the same period.",
+"itemReviewed":{"@type":"Service","name":"Residential Rooftop Solar Installation","areaServed":"Near Shahjahanpur PG College, Rajasthan 301006"}
+},
+{
+"@type":"Review",
+"author":{"@type":"Person","name":"Sarika"},
+"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},
+"name":"70% reduction in electricity bill for three-storey family home",
+"reviewBody":"Our three-storey home is shared by our extended family, so electricity consumption is quite high. After installing Tata Solaroof through Behror Solar, our electricity bill has reduced by around 70%.",
+"itemReviewed":{"@type":"Service","name":"Residential Rooftop Solar Installation","areaServed":"Neemrana, Rajasthan 301005"}
+}
+],
 "sameAs":[
 "https://wa.me/919414453454",
 "https://share.google/03ya5mdD3fvChe59E"
@@ -980,60 +1013,6 @@ Verify Tata Partner ↗
 <script type="application/ld+json">
 {
 "@context":"https://schema.org",
-"@type":"LocalBusiness",
-"@id":"https://behrorsolar.in/#reviews",
-"name":"Behror Solar",
-"aggregateRating":{
-"@type":"AggregateRating",
-"ratingValue":"5",
-"reviewCount":"3",
-"bestRating":"5",
-"worstRating":"1"
-},
-"review":[
-{
-"@type":"Review",
-"author":{"@type":"Person","name":"Bhupendra"},
-"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},
-"name":"377 units in under 22 days — bill heading to zero",
-"reviewBody":"Our net metering was approved on 9 May, and between 10 May and 31 May we generated 377 units — not even a full month, despite several cloudy days. I am confident our average ₹4,000 monthly electricity bill will stay close to zero for a long time.",
-"itemReviewed":{
-"@type":"Service",
-"name":"Residential Rooftop Solar Installation",
-"areaServed":"Nainsukh, Behror, Rajasthan 301701"
-}
-},
-{
-"@type":"Review",
-"author":{"@type":"Person","name":"Ujjawal"},
-"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},
-"name":"Zero electricity bills for two consecutive months in peak summer",
-"reviewBody":"We installed a 3 kW system for my parents and a 5 kW system for our floor. Even during peak summer, we have received zero electricity bills for two consecutive months. Last year, we paid more than ₹12,000 during the same period.",
-"itemReviewed":{
-"@type":"Service",
-"name":"Residential Rooftop Solar Installation",
-"areaServed":"Near Shahjahanpur PG College, Rajasthan 301006"
-}
-},
-{
-"@type":"Review",
-"author":{"@type":"Person","name":"Sarika"},
-"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},
-"name":"70% reduction in electricity bill for three-storey family home",
-"reviewBody":"Our three-storey home is shared by our extended family, so electricity consumption is quite high. After installing Tata Solaroof through Behror Solar, our electricity bill has reduced by around 70%.",
-"itemReviewed":{
-"@type":"Service",
-"name":"Residential Rooftop Solar Installation",
-"areaServed":"Neemrana, Rajasthan 301005"
-}
-}
-]
-}
-</script>
-
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
 "@type":"ImageGallery",
 "name":"PM Surya Ghar Solar Installations — Behror Solar",
 "description":"Verified PM Surya Ghar rooftop solar installations across Alwar district, Rajasthan by Behror Solar.",
@@ -1073,6 +1052,30 @@ Verify Tata Partner ↗
 }
 ]
 }
+</script>
+
+<script>
+(function(){
+var btn = document.querySelector('.nav-toggle');
+var nav = document.querySelector('nav');
+if(!btn || !nav) return;
+btn.addEventListener('click', function(){
+var open = nav.classList.toggle('nav-open');
+btn.classList.toggle('open', open);
+btn.setAttribute('aria-expanded', open);
+btn.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+document.body.style.overflow = open ? 'hidden' : '';
+});
+nav.querySelectorAll('a').forEach(function(link){
+link.addEventListener('click', function(){
+nav.classList.remove('nav-open');
+btn.classList.remove('open');
+btn.setAttribute('aria-expanded', 'false');
+btn.setAttribute('aria-label', 'Open navigation menu');
+document.body.style.overflow = '';
+});
+});
+})();
 </script>
 
 </body>

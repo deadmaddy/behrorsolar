@@ -408,13 +408,14 @@ display:block;
 margin-bottom:10px;
 }
 
-.stat-cell h3{
+.stat-cell .stat-num{
+font-family:'Space Grotesk',sans-serif;
 font-size:2.4rem;
 color:var(--ink);
 font-weight:700;
 }
 
-.stat-cell h3 span{
+.stat-cell .stat-num span{
 font-size:1.2rem;
 color:var(--gold-deep);
 font-weight:700;
@@ -1086,14 +1087,14 @@ grid-template-columns:repeat(4,1fr);
 gap:20px;
 }
 
-.ps-stat h4{
+.ps-stat .ps-stat-num{
 font-family:'Space Grotesk',sans-serif;
 font-size:1.6rem;
 color:var(--ink);
 font-weight:700;
 }
 
-.ps-stat h4 span{
+.ps-stat .ps-stat-num span{
 color:var(--gold-deep);
 }
 
@@ -1181,7 +1182,7 @@ PM SURYA GHAR SAVINGS
 
 .savings-section{
 padding:100px 0;
-background:var(--sand);
+background:var(--sand-deep);
 }
 
 .savings-section .section-title{
@@ -1510,6 +1511,75 @@ display:none;
 
 nav{
 display:none;
+position:fixed;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:rgba(11,19,32,0.97);
+z-index:999;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+gap:0;
+}
+
+nav.nav-open{
+display:flex;
+}
+
+nav.nav-open ul{
+flex-direction:column;
+align-items:center;
+gap:0;
+}
+
+nav.nav-open a{
+color:var(--sand);
+font-size:1.3rem;
+padding:16px 0;
+display:block;
+}
+
+nav.nav-open a::after{
+display:none;
+}
+
+.nav-toggle{
+display:flex;
+flex-direction:column;
+gap:5px;
+background:none;
+border:none;
+cursor:pointer;
+padding:8px;
+z-index:1001;
+position:relative;
+}
+
+.nav-toggle-bar{
+display:block;
+width:24px;
+height:2px;
+background:var(--ink);
+border-radius:2px;
+transition:transform .25s ease, opacity .25s ease;
+}
+
+.nav-toggle.open .nav-toggle-bar:nth-child(1){
+transform:translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.open .nav-toggle-bar:nth-child(2){
+opacity:0;
+}
+
+.nav-toggle.open .nav-toggle-bar:nth-child(3){
+transform:translateY(-7px) rotate(-45deg);
+}
+
+.nav-toggle.open .nav-toggle-bar{
+background:var(--sand);
 }
 
 }
