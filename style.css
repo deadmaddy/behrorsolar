@@ -392,6 +392,10 @@ display:grid;
 grid-template-columns:repeat(4,1fr);
 }
 
+.stats-row-2{
+border-top:1px solid var(--line);
+}
+
 .stat-cell{
 padding:38px 20px;
 text-align:center;
@@ -1470,6 +1474,10 @@ grid-template-columns:repeat(2,1fr);
 }
 
 .stat-cell:nth-child(odd){
+border-left:none;
+}
+
+.stats-row-2 .stat-cell:nth-child(odd){
 border-left:none;
 }
 
