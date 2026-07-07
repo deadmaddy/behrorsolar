@@ -387,6 +387,32 @@ background:var(--sand-deep);
 border-bottom:1px solid var(--line);
 }
 
+.stats-attribution{
+display:flex;
+align-items:baseline;
+gap:20px;
+padding:22px 0 0;
+border-bottom:1px solid var(--line);
+margin-bottom:0;
+flex-wrap:wrap;
+}
+
+.stats-attribution span:first-child{
+font-family:'Space Grotesk',sans-serif;
+font-size:1rem;
+font-weight:700;
+color:var(--ink);
+letter-spacing:-0.01em;
+}
+
+.stats-attribution-sub{
+font-family:'Space Mono',monospace;
+font-size:0.72rem;
+letter-spacing:0.06em;
+text-transform:uppercase;
+color:var(--gold-deep);
+}
+
 .stats-row{
 display:grid;
 grid-template-columns:repeat(4,1fr);
