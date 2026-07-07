@@ -51,12 +51,15 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Public+Sans:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Public+Sans:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap"></noscript>
 
 </head>
 
 
 <body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <header class="header">
 <div class="container nav-container">
@@ -91,7 +94,7 @@
 </div>
 </header>
 
-<main>
+<main id="main-content">
 
 <section id="home" class="hero">
 
@@ -160,8 +163,12 @@ and the wider Alwar region.
 <div class="container partner-strip-inner">
 
 <div class="partner-strip-logo">
-<img src="images/tata-power-solaroof-logo.png" alt="Tata Power Solaroof" loading="lazy" decoding="async" width="120" height="40">
-<span>Execution partner for Tata Power Solaroof — India's No. 1 solar rooftop company</span>
+<img src="images/tata-power-solaroof-logo.png" alt="Tata Power Solaroof" loading="lazy" decoding="async" width="144" height="48">
+<div class="ps-badge">
+<span class="ps-badge-label">Execution Partner</span>
+<span class="ps-badge-name">Tata Power Solaroof</span>
+<span class="ps-badge-tag">India's No. 1 Solar Rooftop Company</span>
+</div>
 </div>
 
 <div class="partner-strip-stats">
@@ -194,7 +201,11 @@ and the wider Alwar region.
 <section class="stats">
 <div class="container">
 <div class="stats-attribution">
-<span>Global Green Energy, Alwar — Verified Local Impact</span>
+<div class="stats-attribution-badge">
+<span class="stats-attribution-main">Global Green Energy, Alwar</span>
+<span class="stats-attribution-divider"></span>
+<span class="stats-attribution-tag">Verified Local Impact</span>
+</div>
 <span class="stats-attribution-sub">Authorized Tata Power Solaroof Channel Partner · Northeast Rajasthan</span>
 </div>
 <div class="stats-row">
@@ -532,6 +543,7 @@ Behror, Neemrana, Neemrana Rural, Bhiwadi, Kotputli, Shahjahanpur, Alwar Region.
 </div>
 
 <div class="savings-intro">
+<div class="savings-intro-body">
 <p>
 The PM Surya Ghar Muft Bijli Yojana makes rooftop solar financially viable for most households in
 Behror, Neemrana and across northeast Rajasthan. The central government subsidy of up to
@@ -546,6 +558,7 @@ both sides, capturing reflected light from your roof surface. Applying white lig
 to your roof can meaningfully increase generation and is worth considering to get maximum benefit
 from bifacial technology.
 </p>
+</div>
 </div>
 
 <div class="savings-table-wrap">
