@@ -1,14 +1,8 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "behrorsolar",
-  "compatibility_date": "2026-07-07",
-  "observability": {
-    "enabled": true
-  },
+  "compatibility_date": "2026-07-08",
   "assets": {
     "directory": "."
-  },
-  "compatibility_flags": [
-    "nodejs_compat"
-  ]
+  }
 }
