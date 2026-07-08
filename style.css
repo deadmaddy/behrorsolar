@@ -407,7 +407,8 @@ STATS
 ===================== */
 
 .stats{
-background:var(--sand-deep);
+background:var(--sand);
+border-top:3px solid var(--gold);
 border-bottom:1px solid var(--line);
 }
 
@@ -1075,10 +1076,13 @@ letter-spacing:0.04em;
 color:var(--steel);
 }
 
-.footer h2{
+.footer-brand{
 color:var(--sand);
 margin-bottom:8px;
 font-size:1.2rem;
+font-family:'Space Grotesk',sans-serif;
+font-weight:700;
+letter-spacing:0.02em;
 }
 
 .footer a{
@@ -1094,12 +1098,6 @@ display:block;
 
 .footer-logos-row{
 margin-bottom:18px;
-}
-
-.small-text{
-font-size:0.82rem;
-opacity:0.75;
-margin-top:8px;
 }
 
 /* =====================
@@ -1213,27 +1211,6 @@ margin-top:2px;
 /* =====================
 INDUSTRIES
 ===================== */
-
-.industries-section{
-padding:100px 0;
-}
-
-.industries-grid{
-display:flex;
-flex-wrap:wrap;
-gap:12px;
-}
-
-.industries-grid span{
-font-family:'Space Mono',monospace;
-font-size:0.78rem;
-letter-spacing:0.02em;
-padding:10px 16px;
-border:1px solid var(--line);
-border-radius:30px;
-color:var(--ink);
-background:var(--sand);
-}
 
 /* =====================
 RESULTS
