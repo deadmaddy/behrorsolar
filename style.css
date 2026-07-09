@@ -6,8 +6,8 @@
      --sand       #FCFBF7  (warm off-white — main background)
      --sand-deep  #F1ECE1  (sand section background)
      --gold       #D9A441  (brass / solar accent — primary)
-     --gold-deep  #B9802A  (gold hover / pressed)
-     --steel      #6B7685  (structural grey — HDG nod)
+     --gold-deep  #8B5E1A  (gold hover / pressed - AA contrast)
+     --steel      #4F5A6B  (structural grey — HDG nod)
      --line       rgba(11,19,32,0.10)
    Type:
      Display  — Space Grotesk (technical, geometric)
@@ -108,6 +108,7 @@ top:0;
 z-index:1000;
 background:rgba(252,251,247,0.92);
 backdrop-filter:blur(8px);
+-webkit-backdrop-filter:blur(8px);
 border-bottom:1px solid var(--line);
 }
 
@@ -183,6 +184,33 @@ right:0;
 .nav-cta{
 flex-shrink:0;
 }
+
+
+/* Focus visibility - accessibility without breaking design */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible{
+outline:2px solid var(--gold);
+outline-offset:2px;
+}
+
+/* Base nav-toggle - hidden on desktop, prevents CLS and desktop flash */
+.nav-toggle{
+display:none;
+flex-direction:column;
+gap:5px;
+background:none;
+border:none;
+cursor:pointer;
+padding:8px;
+z-index:1001;
+position:relative;
+}
+
+/* .nav-toggle-bar base moved outside media query for performance */
 
 /* =====================
 BUTTONS
@@ -1678,14 +1706,6 @@ display:none;
 
 .nav-toggle{
 display:flex;
-flex-direction:column;
-gap:5px;
-background:none;
-border:none;
-cursor:pointer;
-padding:8px;
-z-index:1001;
-position:relative;
 }
 
 .nav-toggle-bar{

@@ -48,7 +48,449 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 
-<link rel="stylesheet" href="style.css">
+<style id="critical-css">:root{
+--ink:#0B1320;
+--ink-soft:#141F33;
+--sand:#FCFBF7;
+--sand-deep:#F1ECE1;
+--gold:#D9A441;
+--gold-deep:#8B5E1A;
+--steel:#4F5A6B;
+--line:rgba(11,19,32,0.10);
+--line-light:rgba(255,255,255,0.14);
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html{
+scroll-behavior:smooth;
+}
+.skip-link{
+position:absolute;
+left:-9999px;
+top:0;
+z-index:10000;
+background:var(--gold);
+color:var(--ink);
+padding:12px 20px;
+font-weight:700;
+text-decoration:none;
+font-size:0.95rem;
+}
+.skip-link:focus{
+left:0;
+outline:none;
+box-shadow:0 0 0 3px var(--gold-deep);
+}
+body{
+font-family:'Public Sans',sans-serif;
+line-height:1.7;
+color:var(--ink);
+background:var(--sand);
+}
+h1,h2,h3{
+font-family:'Space Grotesk',sans-serif;
+letter-spacing:-0.01em;
+}
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+.section-eyebrow,
+.stat-eyebrow,
+.panel-label,
+.hero-tag{
+font-family:'Space Mono',monospace;
+text-transform:uppercase;
+letter-spacing:0.12em;
+font-size:0.75rem;
+}
+.section-eyebrow{
+display:inline-block;
+color:var(--gold-deep);
+margin-bottom:14px;
+font-weight:700;
+}
+.section-title.light .section-eyebrow{
+color:var(--gold);
+}
+.header{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(252,251,247,0.92);
+backdrop-filter:blur(8px);
+-webkit-backdrop-filter:blur(8px);
+border-bottom:1px solid var(--line);
+}
+.nav-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:16px 0;
+gap:30px;
+}
+.logo-area{
+display:flex;
+align-items:center;
+gap:10px;
+}
+.header-bs-logo{
+height:48px;
+width:auto;
+display:block;
+}
+.header-combined-logo{
+height:32px;
+width:auto;
+display:block;
+opacity:0.92;
+}
+.header-divider{
+width:1px;
+height:32px;
+background:var(--line);
+flex-shrink:0;
+}
+nav{
+flex:1;
+}
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+gap:34px;
+}
+nav a{
+text-decoration:none;
+font-weight:600;
+font-size:0.95rem;
+color:var(--ink);
+position:relative;
+padding-bottom:4px;
+}
+nav a::after{
+content:"";
+position:absolute;
+left:0;
+right:100%;
+bottom:0;
+height:2px;
+background:var(--gold);
+transition:right .25s ease;
+}
+nav a:hover::after{
+right:0;
+}
+.nav-cta{
+flex-shrink:0;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible{
+outline:2px solid var(--gold);
+outline-offset:2px;
+}
+.nav-toggle{
+display:none;
+flex-direction:column;
+gap:5px;
+background:none;
+border:none;
+cursor:pointer;
+padding:8px;
+z-index:1001;
+position:relative;
+}
+.btn{
+display:inline-block;
+padding:14px 26px;
+border-radius:4px;
+text-decoration:none;
+font-weight:700;
+font-size:0.95rem;
+letter-spacing:0.01em;
+transition:.25s ease;
+border:1px solid transparent;
+}
+.btn-primary{
+background:var(--gold);
+color:var(--ink);
+}
+.btn-primary:hover{
+background:var(--gold-deep);
+color:var(--sand);
+transform:translateY(-2px);
+}
+.btn-whatsapp{
+background:transparent;
+color:var(--sand);
+border:1px solid var(--line-light);
+}
+.btn-whatsapp:hover{
+border-color:var(--gold);
+color:var(--gold);
+transform:translateY(-2px);
+}
+.btn-ghost{
+border:1px solid var(--line);
+color:var(--ink);
+padding:10px 20px;
+font-size:0.88rem;
+}
+.btn-ghost:hover{
+border-color:var(--gold-deep);
+color:var(--gold-deep);
+}
+.hero{
+position:relative;
+background:var(--ink);
+color:var(--sand);
+padding:110px 0 90px;
+overflow:hidden;
+}
+.hero-grid-overlay{
+position:absolute;
+inset:0;
+background-image:
+linear-gradient(var(--line-light) 1px, transparent 1px),
+linear-gradient(90deg, var(--line-light) 1px, transparent 1px);
+background-size:64px 64px;
+opacity:0.35;
+mask-image:linear-gradient(to bottom, transparent, rgba(0,0,0,0.9) 40%, transparent);
+}
+.hero-content{
+position:relative;
+z-index:2;
+display:grid;
+grid-template-columns:1.15fr 0.85fr;
+gap:60px;
+align-items:center;
+}
+.hero-tag{
+display:inline-flex;
+align-items:center;
+gap:10px;
+padding:9px 16px;
+border:1px solid var(--line-light);
+border-radius:30px;
+margin-bottom:30px;
+color:var(--gold);
+}
+.hero-tag .dot{
+width:7px;
+height:7px;
+border-radius:50%;
+background:var(--gold);
+display:inline-block;
+}
+.hero h1{
+font-size:3.3rem;
+font-weight:700;
+line-height:1.12;
+margin-bottom:24px;
+}
+.hero-sub{
+font-size:1.08rem;
+max-width:560px;
+margin-bottom:34px;
+color:#D7DCE5;
+}
+.hero-buttons{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+margin-bottom:40px;
+}
+.hero-features{
+display:flex;
+flex-wrap:wrap;
+gap:10px 28px;
+border-top:1px solid var(--line-light);
+padding-top:22px;
+}
+.hero-features span{
+font-family:'Space Mono',monospace;
+font-size:0.78rem;
+letter-spacing:0.04em;
+color:#9AA4B5;
+}
+.hero-features span::before{
+content:"— ";
+color:var(--gold);
+}
+.hero-panel{
+background:var(--ink-soft);
+border:1px solid var(--line-light);
+border-radius:10px;
+padding:24px;
+}
+.panel-partner{
+padding-bottom:16px;
+margin-bottom:16px;
+border-bottom:1px solid var(--line-light);
+display:flex;
+justify-content:center;
+}
+.panel-partner img{
+height:32px;
+width:auto;
+display:block;
+}
+.panel-label{
+display:flex;
+justify-content:space-between;
+color:var(--steel);
+margin-bottom:18px;
+}
+.panel-unit{
+color:var(--gold);
+}
+.sun-curve{
+width:100%;
+height:auto;
+display:block;
+}
+.grid-lines line{
+stroke:var(--line-light);
+stroke-width:1;
+}
+.curve-fill{
+fill:rgba(217,164,65,0.14);
+}
+.curve-line{
+fill:none;
+stroke:var(--gold);
+stroke-width:2.5;
+}
+.curve-point{
+fill:var(--gold);
+stroke:var(--ink-soft);
+stroke-width:3;
+}
+.panel-footer{
+display:flex;
+justify-content:space-between;
+margin-top:10px;
+font-family:'Space Mono',monospace;
+font-size:0.72rem;
+color:var(--steel);
+}
+.panel-label,
+.panel-footer{
+color:#9AA4B5;
+}
+.stats{
+background:var(--sand);
+border-top:3px solid var(--gold);
+border-bottom:1px solid var(--line);
+}
+.stats-attribution{
+padding:32px 0 20px;
+border-bottom:1px solid var(--line);
+margin-bottom:0;
+text-align:center;
+}
+.stats-attribution-badge{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:16px;
+flex-wrap:nowrap;
+margin-bottom:12px;
+}
+.stats-attribution-main{
+font-family:'Space Grotesk',sans-serif;
+font-size:1.35rem;
+font-weight:700;
+color:var(--ink);
+letter-spacing:-0.01em;
+}
+.stats-attribution-divider{
+width:4px;
+height:4px;
+border-radius:50%;
+background:var(--gold);
+display:inline-block;
+flex-shrink:0;
+}
+.stats-attribution-tag{
+display:inline-block;
+font-family:'Space Mono',monospace;
+font-size:0.68rem;
+letter-spacing:0.1em;
+text-transform:uppercase;
+color:var(--sand);
+background:var(--ink);
+padding:5px 12px;
+border-radius:20px;
+font-weight:600;
+}
+.stats-attribution-sub{
+display:block;
+font-family:'Space Mono',monospace;
+font-size:0.78rem;
+letter-spacing:0.1em;
+text-transform:uppercase;
+color:var(--gold-deep);
+font-weight:600;
+}
+.stats-row{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+}
+.stats-row-2{
+border-top:1px solid var(--line);
+}
+.stat-cell{
+padding:38px 20px;
+text-align:center;
+border-left:1px solid var(--line);
+}
+.stat-cell:first-child{
+border-left:none;
+}
+.stat-eyebrow{
+color:var(--steel);
+display:block;
+margin-bottom:10px;
+}
+.stat-cell .stat-num{
+font-family:'Space Grotesk',sans-serif;
+font-size:2.4rem;
+color:var(--ink);
+font-weight:700;
+}
+.stat-cell .stat-num span{
+font-size:1.2rem;
+color:var(--gold-deep);
+font-weight:700;
+}
+.about-section,
+.services-section,
+.why-section,
+.components-section,
+.gallery-section,
+.coverage-section{
+padding:100px 0;
+}
+.section-title{
+margin-bottom:56px;
+max-width:560px;
+}
+.section-title h2{
+font-size:2.2rem;
+font-weight:700;
+color:var(--ink);
+}</style>
+<link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="style.css"></noscript>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,7 +513,7 @@
 <img src="images/gge-tata-header-logo.png" alt="Global Green Energy — Official Channel Partner, Tata Power Solaroof" class="header-combined-logo" width="160" height="32">
 </div>
 
-<nav aria-label="Main navigation">
+<nav id="main-nav" aria-label="Main navigation">
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#services">Services</a></li>
@@ -84,7 +526,7 @@
 </ul>
 </nav>
 
-<button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+<button type="button" class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
 <span class="nav-toggle-bar"></span>
 <span class="nav-toggle-bar"></span>
 <span class="nav-toggle-bar"></span>
@@ -532,7 +974,7 @@ Behror, Neemrana, Neemrana Rural, Bhiwadi, Kotputli, Shahjahanpur, Alwar Region.
 </div>
 </section>
 
-<section class="industries-section" style="display:none" aria-hidden="true"></section>
+<!-- industries-section removed for performance - empty hidden section -->
 
 <section id="pm-surya-ghar" class="savings-section">
 <div class="container">
@@ -682,7 +1124,7 @@ from bifacial technology.
 <span class="faq-icon" aria-hidden="true"></span>
 </summary>
 <div class="faq-answer">
-<p>PM Surya Ghar Muft Bijli Yojana is a central government scheme that provides a direct subsidy on rooftop solar installations for residential households. In Rajasthan, eligible applicants are residential electricity consumers with a valid JVVNL, AVVNL, or JdVVNL connection. The system must be installed by a registered vendor and connected to the grid via net metering. Commercial and industrial connections are not eligible under this specific scheme.</p>
+<p>PM Surya Ghar Muft Bijli Yojana is a central government scheme that provides a direct subsidy on rooftop solar installations for residential households. In Rajasthan, eligible applicants are residential electricity consumers with a valid JVVNL connection. The system must be installed by a registered vendor and connected to the grid via net metering. Commercial and industrial connections are not eligible under this specific scheme.</p>
 </div>
 </details>
 
@@ -702,7 +1144,7 @@ from bifacial technology.
 <span class="faq-icon" aria-hidden="true"></span>
 </summary>
 <div class="faq-answer">
-<p>Yes — the scheme applies to both urban and rural residential consumers anywhere in Rajasthan, provided the household has an existing metered electricity connection from the state discom. Rural households in areas such as Behror Rural and Neemrana Rural served by AVVNL are eligible. If your property is on an agricultural or commercial connection rather than a domestic tariff, a separate assessment is needed before applying.</p>
+<p>Yes — the scheme applies to both urban and rural residential consumers anywhere in Rajasthan, provided the household has an existing metered electricity connection from the state discom. Rural households in areas such as Behror Rural and Neemrana Rural served by JVVNL are eligible. If your property is on an agricultural or commercial connection rather than a domestic tariff, a separate assessment is needed before applying.</p>
 </div>
 </details>
 
@@ -712,7 +1154,7 @@ from bifacial technology.
 <span class="faq-icon" aria-hidden="true"></span>
 </summary>
 <div class="faq-answer">
-<p>Net metering allows your rooftop solar system to export surplus electricity back to the grid. The discom installs a bidirectional meter that records both import and export. At billing time, exported units are deducted from units consumed — effectively spinning your meter backwards. In Rajasthan, the net metering application is submitted to the local discom after installation. Behror Solar handles the full application, technical inspection coordination, and follow-up with AVVNL on your behalf until the meter is active.</p>
+<p>Net metering allows your rooftop solar system to export surplus electricity back to the grid. The discom installs a bidirectional meter that records both import and export. At billing time, exported units are deducted from units consumed — effectively spinning your meter backwards. In Rajasthan, the net metering application is submitted to the local discom after installation. Behror Solar handles the full application, technical inspection coordination, and follow-up with JVVNL on your behalf until the meter is active.</p>
 </div>
 </details>
 
@@ -807,16 +1249,16 @@ from bifacial technology.
 <input type="hidden" name="_template" value="table">
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_next" value="https://behrorsolar.in/thank-you.html">
-<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden">
 
 <div class="form-row">
 <label for="cf-name">Full Name</label>
-<input type="text" id="cf-name" name="Name" required>
+<input type="text" id="cf-name" name="Name" required autocomplete="name">
 </div>
 
 <div class="form-row">
 <label for="cf-phone">Phone Number</label>
-<input type="tel" id="cf-phone" name="Phone" required>
+<input type="tel" id="cf-phone" name="Phone" required autocomplete="tel" inputmode="numeric" pattern="[0-9+\s\-]{10,15}">
 </div>
 
 <div class="form-row">
@@ -1014,8 +1456,7 @@ Verify Tata Partner ↗
 }
 ],
 "sameAs":[
-"https://wa.me/919414453454",
-"https://share.google/03ya5mdD3fvChe59E"
+"https://wa.me/919414453454"
 ]
 }
 </script>
@@ -1030,7 +1471,7 @@ Verify Tata Partner ↗
 "name":"What is the PM Surya Ghar subsidy and who qualifies in Rajasthan?",
 "acceptedAnswer":{
 "@type":"Answer",
-"text":"PM Surya Ghar Muft Bijli Yojana is a central government scheme providing a direct subsidy on rooftop solar installations for residential households. In Rajasthan, eligible applicants are residential electricity consumers with a valid JVVNL, AVVNL, or JdVVNL connection. The system must be installed by a registered vendor and connected to the grid via net metering. Commercial and industrial connections are not eligible under this specific scheme."
+"text":"PM Surya Ghar Muft Bijli Yojana is a central government scheme providing a direct subsidy on rooftop solar installations for residential households. In Rajasthan, eligible applicants are residential electricity consumers with a valid JVVNL connection. The system must be installed by a registered vendor and connected to the grid via net metering. Commercial and industrial connections are not eligible under this specific scheme."
 }
 },
 {
@@ -1046,7 +1487,7 @@ Verify Tata Partner ↗
 "name":"Does PM Surya Ghar apply to rural households in Behror Rural and Neemrana Rural?",
 "acceptedAnswer":{
 "@type":"Answer",
-"text":"Yes — the scheme applies to both urban and rural residential consumers anywhere in Rajasthan, provided the household has an existing metered electricity connection from the state discom. Rural households in Behror Rural and Neemrana Rural served by AVVNL are eligible. If your property is on an agricultural or commercial connection rather than a domestic tariff, a separate assessment is needed before applying."
+"text":"Yes — the scheme applies to both urban and rural residential consumers anywhere in Rajasthan, provided the household has an existing metered electricity connection from the state discom. Rural households in Behror Rural and Neemrana Rural served by JVVNL are eligible. If your property is on an agricultural or commercial connection rather than a domestic tariff, a separate assessment is needed before applying."
 }
 },
 {
@@ -1054,7 +1495,7 @@ Verify Tata Partner ↗
 "name":"What is net metering and how does the approval process work in Rajasthan?",
 "acceptedAnswer":{
 "@type":"Answer",
-"text":"Net metering allows your rooftop solar system to export surplus electricity back to the grid via a bidirectional meter. In Rajasthan, the net metering application is submitted to the local discom after installation. Exported units are deducted from units consumed at billing time. Behror Solar handles the full application, technical inspection coordination, and follow-up with AVVNL on your behalf until the meter is active."
+"text":"Net metering allows your rooftop solar system to export surplus electricity back to the grid via a bidirectional meter. In Rajasthan, the net metering application is submitted to the local discom after installation. Exported units are deducted from units consumed at billing time. Behror Solar handles the full application, technical inspection coordination, and follow-up with JVVNL on your behalf until the meter is active."
 }
 },
 {
