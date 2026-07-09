@@ -1090,6 +1090,47 @@ color:var(--gold);
 text-decoration:none;
 }
 
+.footer-social{
+display:flex;
+gap:16px;
+margin-top:18px;
+padding-top:18px;
+border-top:1px solid var(--line-light);
+}
+
+.footer-social a{
+display:inline-flex;
+align-items:center;
+gap:8px;
+color:#9AA4B5;
+text-decoration:none;
+font-size:0.85rem;
+transition:color .2s ease;
+}
+
+.footer-social a:hover{
+color:var(--gold);
+}
+
+.footer-legal{
+display:flex;
+flex-wrap:wrap;
+gap:8px 16px;
+margin-top:14px;
+}
+
+.footer-legal a{
+font-size:0.78rem;
+color:var(--steel);
+text-decoration:none;
+font-family:'Space Mono',monospace;
+letter-spacing:0.03em;
+}
+
+.footer-legal a:hover{
+color:var(--gold);
+}
+
 .footer-gge-logo{
 height:64px;
 width:auto;
