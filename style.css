@@ -859,6 +859,15 @@ font-weight:600;
 font-size:0.95rem;
 }
 
+.coverage-link{
+text-decoration:none;
+transition:opacity .2s ease;
+}
+
+.coverage-link:hover{
+opacity:0.85;
+}
+
 .coverage-primary{
 background:var(--gold);
 color:var(--ink);
