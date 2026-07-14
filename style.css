@@ -859,15 +859,6 @@ font-weight:600;
 font-size:0.95rem;
 }
 
-.coverage-link{
-text-decoration:none;
-transition:opacity .2s ease;
-}
-
-.coverage-link:hover{
-opacity:0.85;
-}
-
 .coverage-primary{
 background:var(--gold);
 color:var(--ink);
@@ -1165,6 +1156,35 @@ letter-spacing:0.03em;
 }
 
 .footer-legal a:hover{
+color:var(--gold);
+}
+
+.footer-pages{
+margin-top:20px;
+padding-top:16px;
+border-top:1px solid var(--line-light);
+display:flex;
+flex-direction:column;
+gap:8px;
+}
+
+.footer-pages-label{
+font-family:'Space Mono',monospace;
+font-size:0.68rem;
+letter-spacing:0.08em;
+text-transform:uppercase;
+color:var(--steel);
+margin-bottom:4px;
+}
+
+.footer-pages a{
+font-size:0.82rem;
+color:#9AA4B5;
+text-decoration:none;
+transition:color .2s;
+}
+
+.footer-pages a:hover{
 color:var(--gold);
 }
 
