@@ -1242,12 +1242,13 @@ from bifacial technology.
 <h3>Send a Message</h3>
 <p class="contact-role">We'll respond by phone, WhatsApp or email</p>
 
-<form action="https://formsubmit.co/myadav@behrorsolar.in" method="POST">
+<form action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="bf939dc6-8712-4731-8924-e3915a9f9ce4">
+<input type="hidden" name="subject" value="New Site Survey Request — Behror Solar Website">
+<input type="hidden" name="redirect" value="https://behrorsolar.in/thank-you.html">
+<input type="hidden" name="from_name" value="Behror Solar Website">
+<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
-<input type="hidden" name="_subject" value="New Site Survey Request — Behror Solar Website">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_next" value="https://behrorsolar.in/thank-you.html">
-<input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden">
 
 <div class="form-row">
 <label for="cf-name">Full Name</label>
@@ -1261,7 +1262,7 @@ from bifacial technology.
 
 <div class="form-row">
 <label for="cf-location">Location</label>
-<select id="cf-location" name="Location" required>
+<select id="cf-location" name="Location">
 <option value="" disabled selected>Select your area</option>
 <option>Behror — Urban</option>
 <option>Behror — Rural</option>
@@ -1277,7 +1278,7 @@ from bifacial technology.
 
 <div class="form-row">
 <label for="cf-type">Property Type</label>
-<select id="cf-type" name="Property Type" required>
+<select id="cf-type" name="Property Type">
 <option value="" disabled selected>Select property type</option>
 <option>Residential</option>
 <option>Commercial</option>
