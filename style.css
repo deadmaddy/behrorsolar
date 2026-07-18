@@ -1859,3 +1859,178 @@ padding:0 20px 20px;
 }
 
 }
+
+/* =====================
+SOLAR PANELS PAGE
+===================== */
+
+.panels-hero{
+background:var(--ink);
+color:var(--sand);
+padding:100px 0 80px;
+position:relative;
+overflow:hidden;
+}
+.panels-hero .hero-grid-overlay{
+position:absolute;
+inset:0;
+background-image:linear-gradient(var(--line-light) 1px,transparent 1px),linear-gradient(90deg,var(--line-light) 1px,transparent 1px);
+background-size:64px 64px;
+opacity:0.35;
+mask-image:linear-gradient(to bottom,transparent,rgba(0,0,0,0.9) 40%,transparent);
+}
+.panels-hero-inner{position:relative;z-index:2;max-width:760px}
+.panels-eyebrow{
+display:inline-flex;align-items:center;gap:10px;
+padding:9px 16px;border:1px solid var(--line-light);
+border-radius:30px;margin-bottom:28px;color:var(--gold);
+font-family:'Space Mono',monospace;font-size:0.72rem;
+letter-spacing:0.1em;text-transform:uppercase;
+}
+.panels-hero h1{font-size:2.6rem;line-height:1.15;margin-bottom:20px}
+.panels-hero p{font-size:1.05rem;color:#D7DCE5;max-width:620px;margin-bottom:32px}
+.panels-meta{
+display:flex;gap:24px;flex-wrap:wrap;
+font-family:'Space Mono',monospace;font-size:0.72rem;
+letter-spacing:0.05em;color:#9AA4B5;
+padding-top:24px;border-top:1px solid var(--line-light);
+}
+.dcr-explainer{padding:80px 0;background:var(--sand)}
+.dcr-explainer-grid{
+display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px;
+}
+.dcr-card{padding:32px;border-radius:8px;border:1px solid var(--line)}
+.dcr-card.dcr-yes{background:#F0FDF4;border-color:#86EFAC}
+.dcr-card.dcr-no{background:var(--sand-deep);border-color:var(--line)}
+.dcr-card-label{
+font-family:'Space Mono',monospace;font-size:0.72rem;
+letter-spacing:0.08em;text-transform:uppercase;
+font-weight:700;margin-bottom:14px;display:block;
+}
+.dcr-yes .dcr-card-label{color:#166534}
+.dcr-no .dcr-card-label{color:var(--steel)}
+.dcr-card h3{font-size:1.15rem;margin-bottom:12px;color:var(--ink)}
+.dcr-card p{font-size:0.93rem;color:#374151;line-height:1.7;margin-bottom:10px}
+.dcr-card ul{list-style:none;display:flex;flex-direction:column;gap:6px;margin-top:4px}
+.dcr-card li{font-size:0.9rem;color:#374151;padding-left:18px;position:relative}
+.dcr-card li::before{content:'✓';position:absolute;left:0;color:#166534;font-weight:700}
+.dcr-no li::before{content:'✗';color:#DC2626}
+.tech-table-wrap{overflow-x:auto;border-radius:8px;border:1px solid var(--line);-webkit-overflow-scrolling:touch}
+.tech-table{width:100%;border-collapse:collapse;font-size:0.9rem;min-width:560px}
+.tech-table thead{background:var(--ink)}
+.tech-table thead th{padding:16px 20px;text-align:left;color:var(--sand);font-family:'Space Grotesk',sans-serif;font-size:0.85rem;font-weight:600;border-right:1px solid rgba(255,255,255,0.08)}
+.tech-table thead th:last-child{border-right:none}
+.tech-table tbody tr{border-bottom:1px solid var(--line)}
+.tech-table tbody tr:last-child{border-bottom:none}
+.tech-table tbody tr:nth-child(even){background:var(--sand-deep)}
+.tech-table tbody td{padding:14px 20px;color:#374151;border-right:1px solid var(--line);vertical-align:middle}
+.tech-table tbody td:last-child{border-right:none}
+.tech-badge{display:inline-block;font-family:'Space Mono',monospace;font-size:0.7rem;padding:3px 8px;border-radius:20px;font-weight:700}
+.badge-best{background:#F0FDF4;color:#166534;border:1px solid #86EFAC}
+.badge-good{background:rgba(217,164,65,0.12);color:#92400E;border:1px solid rgba(217,164,65,0.3)}
+.badge-std{background:var(--sand-deep);color:var(--steel);border:1px solid var(--line)}
+.eff-row-highlight{background:#FFF7ED !important}
+.eff-badge-top{
+display:inline-block;background:#166534;color:#fff;
+font-family:'Space Mono',monospace;font-size:0.68rem;
+padding:3px 8px;border-radius:20px;font-weight:700;
+margin-left:6px;vertical-align:middle;
+}
+.cert-section{padding:100px 0;background:var(--sand-deep)}
+.cert-grid{display:grid;grid-template-columns:1fr;gap:32px;max-width:900px}
+.cert-card{background:var(--sand);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.cert-card img{width:100%;display:block}
+.cert-card-label{
+padding:14px 20px;
+font-family:'Space Mono',monospace;font-size:0.72rem;
+letter-spacing:0.06em;text-transform:uppercase;color:var(--steel);
+border-top:1px solid var(--line);
+}
+.install-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
+.install-card{
+background:var(--sand);border:1px solid var(--line);
+border-radius:10px;padding:36px;position:relative;overflow:hidden;
+}
+.install-card::before{
+content:'';position:absolute;top:0;left:0;right:0;
+height:4px;background:var(--gold);
+}
+.install-size{
+font-family:'Space Mono',monospace;font-size:0.72rem;
+letter-spacing:0.1em;text-transform:uppercase;
+color:var(--gold-deep);margin-bottom:12px;display:block;
+}
+.install-card h3{font-size:1.5rem;margin-bottom:6px}
+.install-actual{
+font-family:'Space Mono',monospace;font-size:0.78rem;
+color:#166534;margin-bottom:20px;display:block;
+}
+.install-price{
+font-family:'Space Grotesk',sans-serif;font-size:2rem;
+font-weight:700;color:var(--ink);margin-bottom:6px;
+}
+.install-price-note{font-size:0.82rem;color:var(--steel);margin-bottom:24px}
+.install-includes{list-style:none;display:flex;flex-direction:column;gap:8px}
+.install-includes li{font-size:0.9rem;color:#374151;padding-left:20px;position:relative}
+.install-includes li::before{content:'✓';position:absolute;left:0;color:#166534;font-weight:700}
+.install-subsidy{
+margin-top:20px;padding:12px 16px;
+background:#F0FDF4;border-radius:6px;
+color:#166534;
+font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.04em;
+}
+.install-warranty{
+margin-top:20px;padding:16px;
+background:var(--sand-deep);border-radius:6px;
+border:1px solid var(--line);
+}
+.install-warranty-label{
+font-family:'Space Mono',monospace;font-size:0.68rem;
+letter-spacing:0.08em;text-transform:uppercase;
+color:var(--gold-deep);margin-bottom:10px;font-weight:700;
+}
+.install-warranty ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+.install-warranty li{
+font-size:0.82rem;color:#374151;
+padding-left:18px;position:relative;line-height:1.5;
+}
+.install-warranty li::before{
+content:'●';position:absolute;left:0;
+color:var(--gold-deep);font-size:0.6rem;top:4px;
+}
+.supply-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:40px}
+.supply-card{
+background:var(--sand);border:1px solid var(--line);
+border-radius:8px;padding:28px;
+}
+.supply-brand{
+font-family:'Space Mono',monospace;font-size:0.72rem;
+letter-spacing:0.08em;text-transform:uppercase;
+color:var(--gold-deep);margin-bottom:10px;display:block;
+}
+.supply-card h3{font-size:1.1rem;margin-bottom:8px;color:var(--ink)}
+.supply-specs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.supply-spec{
+font-family:'Space Mono',monospace;font-size:0.72rem;
+padding:4px 10px;border:1px solid var(--line);
+border-radius:4px;color:var(--steel);
+}
+.supply-price{
+font-family:'Space Grotesk',sans-serif;font-size:1.4rem;
+font-weight:700;color:var(--ink);margin-bottom:4px;
+}
+.supply-price-note{font-size:0.82rem;color:var(--steel)}
+.nondcr-note{
+background:var(--sand-deep);border:1px solid var(--line);
+border-radius:8px;padding:20px 24px;margin-bottom:40px;
+font-size:0.92rem;color:#374151;
+}
+.nondcr-note strong{color:var(--ink)}
+@media(max-width:992px){
+.dcr-explainer-grid{grid-template-columns:1fr}
+.install-grid{grid-template-columns:1fr}
+.panels-hero h1{font-size:2rem}
+}
+@media(max-width:768px){
+.panels-hero h1{font-size:1.7rem}
+}

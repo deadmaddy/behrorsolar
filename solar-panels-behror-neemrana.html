@@ -47,177 +47,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-<style>
-/* ── PAGE-SPECIFIC ──────────────────────────────────── */
-.panels-hero{
-background:var(--ink);
-color:var(--sand);
-padding:100px 0 80px;
-position:relative;
-overflow:hidden;
-}
-.panels-hero .hero-grid-overlay{
-position:absolute;
-inset:0;
-background-image:linear-gradient(var(--line-light) 1px,transparent 1px),linear-gradient(90deg,var(--line-light) 1px,transparent 1px);
-background-size:64px 64px;
-opacity:0.35;
-mask-image:linear-gradient(to bottom,transparent,rgba(0,0,0,0.9) 40%,transparent);
-}
-.panels-hero-inner{position:relative;z-index:2;max-width:760px}
-.panels-eyebrow{
-display:inline-flex;align-items:center;gap:10px;
-padding:9px 16px;border:1px solid var(--line-light);
-border-radius:30px;margin-bottom:28px;color:var(--gold);
-font-family:'Space Mono',monospace;font-size:0.72rem;
-letter-spacing:0.1em;text-transform:uppercase;
-}
-.panels-hero h1{font-size:2.6rem;line-height:1.15;margin-bottom:20px}
-.panels-hero p{font-size:1.05rem;color:#D7DCE5;max-width:620px;margin-bottom:32px}
-.panels-meta{
-display:flex;gap:24px;flex-wrap:wrap;
-font-family:'Space Mono',monospace;font-size:0.72rem;
-letter-spacing:0.05em;color:#9AA4B5;
-padding-top:24px;border-top:1px solid var(--line-light);
-}
-
-/* ── DCR EXPLAINER ──────────────────────────────────── */
-.dcr-explainer{padding:80px 0;background:var(--sand)}
-.dcr-explainer-grid{
-display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px;
-}
-.dcr-card{padding:32px;border-radius:8px;border:1px solid var(--line)}
-.dcr-card.dcr-yes{background:#F0FDF4;border-color:#86EFAC}
-.dcr-card.dcr-no{background:var(--sand-deep);border-color:var(--line)}
-.dcr-card-label{
-font-family:'Space Mono',monospace;font-size:0.72rem;
-letter-spacing:0.08em;text-transform:uppercase;
-font-weight:700;margin-bottom:14px;display:block;
-}
-.dcr-yes .dcr-card-label{color:#166534}
-.dcr-no .dcr-card-label{color:var(--steel)}
-.dcr-card h3{font-size:1.15rem;margin-bottom:12px;color:var(--ink)}
-.dcr-card p{font-size:0.93rem;color:#374151;line-height:1.7;margin-bottom:10px}
-.dcr-card ul{list-style:none;display:flex;flex-direction:column;gap:6px;margin-top:4px}
-.dcr-card li{font-size:0.9rem;color:#374151;padding-left:18px;position:relative}
-.dcr-card li::before{content:'✓';position:absolute;left:0;color:#166534;font-weight:700}
-.dcr-no li::before{content:'✗';color:#DC2626}
-
-/* ── TECH COMPARISON ────────────────────────────────── */
-.tech-table-wrap{overflow-x:auto;border-radius:8px;border:1px solid var(--line);-webkit-overflow-scrolling:touch}
-.tech-table{width:100%;border-collapse:collapse;font-size:0.9rem;min-width:560px}
-.tech-table thead{background:var(--ink)}
-.tech-table thead th{padding:16px 20px;text-align:left;color:var(--sand);font-family:'Space Grotesk',sans-serif;font-size:0.85rem;font-weight:600;border-right:1px solid rgba(255,255,255,0.08)}
-.tech-table thead th:last-child{border-right:none}
-.tech-table tbody tr{border-bottom:1px solid var(--line)}
-.tech-table tbody tr:last-child{border-bottom:none}
-.tech-table tbody tr:nth-child(even){background:var(--sand-deep)}
-.tech-table tbody td{padding:14px 20px;color:#374151;border-right:1px solid var(--line);vertical-align:middle}
-.tech-table tbody td:last-child{border-right:none}
-.tech-badge{display:inline-block;font-family:'Space Mono',monospace;font-size:0.7rem;padding:3px 8px;border-radius:20px;font-weight:700}
-.badge-best{background:#F0FDF4;color:#166534;border:1px solid #86EFAC}
-.badge-good{background:rgba(217,164,65,0.12);color:#92400E;border:1px solid rgba(217,164,65,0.3)}
-.badge-std{background:var(--sand-deep);color:var(--steel);border:1px solid var(--line)}
-
-/* ── EFFICIENCY TABLE ───────────────────────────────── */
-.eff-row-highlight{background:#FFF7ED !important}
-.eff-badge-top{
-display:inline-block;background:#166534;color:#fff;
-font-family:'Space Mono',monospace;font-size:0.68rem;
-padding:3px 8px;border-radius:20px;font-weight:700;
-margin-left:6px;vertical-align:middle;
-}
-
-/* ── CERT IMAGES ────────────────────────────────────── */
-.cert-section{padding:100px 0;background:var(--sand-deep)}
-.cert-grid{display:grid;grid-template-columns:1fr;gap:32px;max-width:900px}
-.cert-card{background:var(--sand);border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.cert-card img{width:100%;display:block}
-.cert-card-label{
-padding:14px 20px;
-font-family:'Space Mono',monospace;font-size:0.72rem;
-letter-spacing:0.06em;text-transform:uppercase;color:var(--steel);
-border-top:1px solid var(--line);
-}
-
-/* ── INSTALLATION CARDS ─────────────────────────────── */
-.install-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
-.install-card{
-background:var(--sand);border:1px solid var(--line);
-border-radius:10px;padding:36px;position:relative;overflow:hidden;
-}
-.install-card::before{
-content:'';position:absolute;top:0;left:0;right:0;
-height:4px;background:var(--gold);
-}
-.install-size{
-font-family:'Space Mono',monospace;font-size:0.72rem;
-letter-spacing:0.1em;text-transform:uppercase;
-color:var(--gold-deep);margin-bottom:12px;display:block;
-}
-.install-card h3{font-size:1.5rem;margin-bottom:6px}
-.install-actual{
-font-family:'Space Mono',monospace;font-size:0.78rem;
-color:#166534;margin-bottom:20px;display:block;
-}
-.install-price{
-font-family:'Space Grotesk',sans-serif;font-size:2rem;
-font-weight:700;color:var(--ink);margin-bottom:6px;
-}
-.install-price-note{font-size:0.82rem;color:var(--steel);margin-bottom:24px}
-.install-includes{list-style:none;display:flex;flex-direction:column;gap:8px}
-.install-includes li{font-size:0.9rem;color:#374151;padding-left:20px;position:relative}
-.install-includes li::before{content:'✓';position:absolute;left:0;color:#166534;font-weight:700}
-.install-subsidy{
-margin-top:20px;padding:12px 16px;
-background:#F0FDF4;border-radius:6px;
-font-size:0.85rem;color:#166534;
-font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.04em;
-}
-
-/* ── PANEL SUPPLY CARDS ─────────────────────────────── */
-.supply-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:40px}
-.supply-card{
-background:var(--sand);border:1px solid var(--line);
-border-radius:8px;padding:28px;
-}
-.supply-brand{
-font-family:'Space Mono',monospace;font-size:0.72rem;
-letter-spacing:0.08em;text-transform:uppercase;
-color:var(--gold-deep);margin-bottom:10px;display:block;
-}
-.supply-card h3{font-size:1.1rem;margin-bottom:8px;color:var(--ink)}
-.supply-specs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
-.supply-spec{
-font-family:'Space Mono',monospace;font-size:0.72rem;
-padding:4px 10px;border:1px solid var(--line);
-border-radius:4px;color:var(--steel);
-}
-.supply-price{
-font-family:'Space Grotesk',sans-serif;font-size:1.4rem;
-font-weight:700;color:var(--ink);margin-bottom:4px;
-}
-.supply-price-note{font-size:0.82rem;color:var(--steel)}
-
-/* ── NON-DCR CARDS ──────────────────────────────────── */
-.nondcr-note{
-background:var(--sand-deep);border:1px solid var(--line);
-border-radius:8px;padding:20px 24px;margin-bottom:40px;
-font-size:0.92rem;color:#374151;
-}
-.nondcr-note strong{color:var(--ink)}
-
-/* ── RESPONSIVE ─────────────────────────────────────── */
-@media(max-width:992px){
-.dcr-explainer-grid{grid-template-columns:1fr}
-.install-grid{grid-template-columns:1fr}
-.panels-hero h1{font-size:2rem}
-}
-@media(max-width:768px){
-.panels-hero h1{font-size:1.7rem}
-}
-</style>
-
 </head>
 
 <body>
@@ -310,7 +139,7 @@ SOLAR PANELS · DCR &amp; NON-DCR · BEHROR &amp; NEEMRANA
 <div class="dcr-card dcr-yes">
 <span class="dcr-card-label">DCR — Domestic Content Requirement</span>
 <h3>Made in India — Subsidy Eligible</h3>
-<p>DCR panels are manufactured in India and certified under the PM Surya Ghar Muft Bijli Yojana. Every panel comes with a government-issued DCR certificate confirming where it was made — from wafer to cell to finished module.</p>
+<p>DCR panels are manufactured in India and certified under the PM Surya Ghar Muft Bijli Yojana. Every panel comes with a government-issued DCR certificate confirming where it was made — from wafer to cell to finished module. For homeowners in <a href="/">Behror</a> and <a href="/solar-installation-neemrana">Neemrana</a>, DCR certification is the single most important factor in accessing the full ₹95,000 subsidy.</p>
 <ul>
 <li>Eligible for ₹78,000 central government subsidy</li>
 <li>Eligible for ₹17,000 Rajasthan state subsidy</li>
@@ -388,7 +217,7 @@ SOLAR PANELS · DCR &amp; NON-DCR · BEHROR &amp; NEEMRANA
 </table>
 </div>
 
-<p style="margin-top:20px;font-size:0.88rem;color:var(--steel)">For rooftops in Behror and Neemrana where temperatures regularly exceed 40°C in summer, TOPCon's better heat coefficient translates to measurably higher generation during peak summer months — precisely when your air conditioner load is highest and generation matters most.</p>
+<p style="margin-top:20px;font-size:0.88rem;color:var(--steel)">For rooftops in <a href="/" style="color:var(--gold-deep)">Behror</a> and <a href="/solar-installation-neemrana" style="color:var(--gold-deep)">Neemrana</a> where temperatures regularly exceed 40°C in summer, TOPCon's better heat coefficient translates to measurably higher generation during peak summer months — precisely when your air conditioner load is highest and generation matters most.</p>
 
 </div>
 </section>
@@ -492,14 +321,14 @@ loading="lazy" decoding="async" width="900" height="469">
 <div class="section-title">
 <span class="section-eyebrow">COMPLETE DCR SYSTEMS — ALL-INCLUSIVE PRICING</span>
 <h2>What you actually get for your money</h2>
-<p>Every system includes panels, structure, inverter, wiring and all earthing. Nothing billed separately. PM Surya Ghar subsidy applicable on both systems.</p>
+<p>End-to-end Tata Power Solar installations. Every component — panels, inverter, battery and O&amp;M — is backed by Tata Power Solar's own product warranties. Nothing billed separately. PM Surya Ghar subsidy applicable on both systems.</p>
 </div>
 
 <div class="install-grid">
 
 <div class="install-card">
 <span class="install-size">3 KW SYSTEM</span>
-<h3>3 kW On-Grid Solar</h3>
+<h3>Tata Power Solar 3 kW On-Grid</h3>
 <span class="install-actual">580W × 6 panels = 3.48 kW actual capacity</span>
 <div class="install-price">₹2,10,000</div>
 <div class="install-price-note">All-inclusive · PM Surya Ghar subsidy applicable</div>
@@ -512,12 +341,21 @@ loading="lazy" decoding="async" width="900" height="469">
 <li>Net metering application to JVVNL</li>
 <li>PM Surya Ghar documentation support</li>
 </ul>
+<div class="install-warranty">
+<p class="install-warranty-label">Tata Power Solar Warranties</p>
+<ul>
+<li>PV Modules — 30 Years Linear Power Output &amp; Efficiency Warranty</li>
+<li>Solar Inverter — 8 Years Product Warranty</li>
+<li>LiFePO₄ Battery — 8 Years Product Warranty</li>
+<li>O&amp;M — 5 Years Comprehensive Operations &amp; Maintenance</li>
+</ul>
+</div>
 <div class="install-subsidy">₹78,000 central + ₹17,000 Rajasthan subsidy applicable — net cost from ₹1,15,000</div>
 </div>
 
 <div class="install-card">
 <span class="install-size">5 KW SYSTEM</span>
-<h3>5 kW On-Grid Solar</h3>
+<h3>Tata Power Solar 5 kW On-Grid</h3>
 <span class="install-actual">580W × 9 panels = 5.22 kW actual capacity</span>
 <div class="install-price">₹3,10,000</div>
 <div class="install-price-note">All-inclusive · PM Surya Ghar subsidy applicable</div>
@@ -530,6 +368,15 @@ loading="lazy" decoding="async" width="900" height="469">
 <li>Net metering application to JVVNL</li>
 <li>PM Surya Ghar documentation support</li>
 </ul>
+<div class="install-warranty">
+<p class="install-warranty-label">Tata Power Solar Warranties</p>
+<ul>
+<li>PV Modules — 30 Years Linear Power Output &amp; Efficiency Warranty</li>
+<li>Solar Inverter — 8 Years Product Warranty</li>
+<li>LiFePO₄ Battery — 8 Years Product Warranty</li>
+<li>O&amp;M — 5 Years Comprehensive Operations &amp; Maintenance</li>
+</ul>
+</div>
 <div class="install-subsidy">₹78,000 central + ₹17,000 Rajasthan subsidy applicable — net cost from ₹2,15,000</div>
 </div>
 
