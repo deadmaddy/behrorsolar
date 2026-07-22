@@ -515,7 +515,7 @@ color:var(--ink);
 <img src="images/gge-tata-header-logo.png" alt="Global Green Energy — Official Channel Partner, Tata Power Solaroof" class="header-combined-logo" width="160" height="32">
 </div>
 
-<nav aria-label="Main navigation">
+<nav id="main-nav" aria-label="Main navigation">
 <ul>
 <li><a href="/">Home</a></li>
 <li><a href="/#services">Services</a></li>
@@ -809,6 +809,43 @@ Neemrana Town, Neemrana Rural, Neemrana Industrial Area (NIA), and surrounding v
 </div>
 </section>
 
+<section id="testimonials" class="results-section">
+<div class="container">
+
+<div class="section-title light">
+<span class="section-eyebrow">FROM OUR NEEMRANA CUSTOMERS</span>
+<h2>What people in Neemrana say about their systems</h2>
+<p>Reviews left on our Google Business Profile by customers whose systems we installed and commissioned.</p>
+</div>
+
+<div class="results-grid">
+
+<div class="result-card">
+<span class="result-tag">Rahul — Vijaysinghpura, Neemrana</span>
+<p>Got a 5 kW Tata Power Solar hybrid system installed at my farmhouse in Vijaysinghpura - Neemrana a few weeks ago. So far, it's working well. The installation was completed on time, and the team did their job. Took them 4 weeks but it was communicated right from the start.</p>
+<p>The biggest advantage has been the backup during power cuts, which is quite useful at the farmhouse. The monitoring system is also handy for checking how much electricity the system is generating/exporting and what kind of back up we have as long power cuts are expected during mansoon. Overall, I'm happy with the system and the performance so far.</p>
+<span class="result-metric">5 kW <a href="/hybrid-solar-behror-neemrana">Tata Power Solar hybrid system</a> · Farmhouse installation</span>
+</div>
+
+<div class="result-card">
+<span class="result-tag">Sakshi — Bichpuri, Neemrana (301709)</span>
+<p lang="hi">हम काफी समय से अपने घर - ग्राम बिचपुरी, नीमराना – 301709 - पर सोलर लगवाने का विचार कर रहे थे, लेकिन यह समझ नहीं पा रहे थे कि हमारे लिए कौन-सी कंपनी और कितने किलोवाट का सोलर सिस्टम सही रहेगा। जब हमने बहरोड़ सोलर से संपर्क किया, तो उन्होंने हमारी बिजली की आवश्यकता को विस्तार से समझकर सही क्षमता का सिस्टम सुझाया।</p>
+<p lang="hi">हमारे घर पर Tata Power Solar का 3 KW On-Grid सिस्टम लगाया गया। इंस्टॉलेशन के दौरान पूरी गुणवत्ता का ध्यान रखा गया और हर कार्य प्रोफेशनल तरीके से किया गया। पूरे इंस्टॉलेशन के समय श्री महेंद्र जी ने स्वयं कार्य की निगरानी की, हमारा पूरा सहयोग किया और भविष्य में सिस्टम की देखभाल से जुड़ी महत्वपूर्ण जानकारी भी दी।</p>
+<p lang="hi">हम बहरोड़ सोलर की सेवा, गुणवत्ता और व्यवहार से पूरी तरह संतुष्ट हैं। भविष्य में हमारे खेत पर सोलर सिस्टम लगवाने का कार्य भी हम इन्हीं से करवाना चाहेंगे।</p>
+<div class="result-translation">
+<span class="result-translation-label">English translation</span>
+<p>We had been considering installing solar at our home in Village Bichpuri, Neemrana, 301709 for quite some time, but were unsure which company and how many kilowatts would be right for us. When we contacted Behror Solar, they understood our electricity requirement in detail and recommended a system of the right capacity.</p>
+<p>A 3 kW On-Grid system from Tata Power Solar was installed at our home. Quality was maintained throughout the installation and every task was carried out professionally. Mahendra ji personally supervised the entire installation, supported us throughout, and shared important information about looking after the system in future.</p>
+<p>We are completely satisfied with Behror Solar's service, quality and conduct. In future we would like to have them install a solar system on our farm as well.</p>
+</div>
+<span class="result-metric">3 kW <a href="/solar-panels-behror-neemrana">Tata Power Solar on-grid system</a> · Residential rooftop</span>
+</div>
+
+</div>
+
+</div>
+</section>
+
 <section id="neemrana-faq" class="faq-section">
 <div class="container">
 
@@ -913,13 +950,13 @@ Neemrana Town, Neemrana Rural, Neemrana Industrial Area (NIA), and surrounding v
 <h3>Send a Message</h3>
 <p class="contact-role">We'll respond by phone, WhatsApp or email</p>
 
-<form action="https://formsubmit.co/myadav@behrorsolar.in" method="POST">
+<form action="https://api.web3forms.com/submit" method="POST">
 
-<input type="hidden" name="_subject" value="New Site Survey Request — Neemrana Page">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://behrorsolar.in/thank-you.html">
-<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<input type="hidden" name="access_key" value="bf939dc6-8712-4731-8924-e3915a9f9ce4">
+<input type="hidden" name="subject" value="New Site Survey Request — Neemrana Page">
+<input type="hidden" name="redirect" value="https://behrorsolar.in/thank-you.html">
+<input type="hidden" name="from_name" value="Behror Solar Website">
+<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
 <div class="form-row">
 <label for="cf-name">Full Name</label>
@@ -933,7 +970,7 @@ Neemrana Town, Neemrana Rural, Neemrana Industrial Area (NIA), and surrounding v
 
 <div class="form-row">
 <label for="cf-location">Location in Neemrana</label>
-<select id="cf-location" name="Location" required>
+<select id="cf-location" name="Location">
 <option value="" disabled selected>Select your area</option>
 <option>Neemrana Town</option>
 <option>Neemrana Rural</option>
@@ -944,7 +981,7 @@ Neemrana Town, Neemrana Rural, Neemrana Industrial Area (NIA), and surrounding v
 
 <div class="form-row">
 <label for="cf-type">Property Type</label>
-<select id="cf-type" name="Property Type" required>
+<select id="cf-type" name="Property Type">
 <option value="" disabled selected>Select property type</option>
 <option>Residential</option>
 <option>Commercial</option>
