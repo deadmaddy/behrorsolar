@@ -74,7 +74,7 @@
 <span class="header-divider"></span>
 <img src="images/gge-tata-header-logo.png" alt="Global Green Energy — Official Channel Partner, Tata Power Solaroof" class="header-combined-logo" width="160" height="32">
 </div>
-<nav aria-label="Main navigation">
+<nav id="main-nav" aria-label="Main navigation">
 <ul>
 <li><a href="/">Home</a></li>
 <li><a href="/#services">Services</a></li>
@@ -85,7 +85,7 @@
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
-<button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+<button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
 <span class="nav-toggle-bar"></span>
 <span class="nav-toggle-bar"></span>
 <span class="nav-toggle-bar"></span>
@@ -388,23 +388,27 @@ HYBRID SOLAR · BEHROR &amp; NEEMRANA · POWER BACKUP DURING OUTAGES
 <div class="contact-form-card">
 <h3>Request a Free Survey</h3>
 <p class="contact-role">We will respond within 24 hours</p>
-<form action="https://formsubmit.co/myadav@behrorsolar.in" method="POST">
-<input type="hidden" name="_subject" value="Hybrid Solar Enquiry — Behror Solar Website">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_captcha" value="true">
-<input type="hidden" name="_next" value="https://behrorsolar.in/thank-you.html">
-<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<form action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="bf939dc6-8712-4731-8924-e3915a9f9ce4">
+<input type="hidden" name="subject" value="Hybrid Solar Enquiry — Behror Solar Website">
+<input type="hidden" name="redirect" value="https://behrorsolar.in/thank-you.html">
+<input type="hidden" name="from_name" value="Behror Solar Website">
+<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+
 <div class="form-row">
 <label for="cf-name">Full Name</label>
-<input type="text" id="cf-name" name="Name" required>
+<input type="text" id="cf-name" name="Name" required autocomplete="name">
 </div>
+
 <div class="form-row">
 <label for="cf-phone">Phone Number</label>
-<input type="tel" id="cf-phone" name="Phone" required>
+<input type="tel" id="cf-phone" name="Phone" required autocomplete="tel" inputmode="numeric" pattern="[0-9+\s\-]{10,15}">
 </div>
+
 <div class="form-row">
 <label for="cf-location">Location</label>
-<select id="cf-location" name="Location" required>
+<select id="cf-location" name="Location">
 <option value="" disabled selected>Select your area</option>
 <option>Behror — Urban</option>
 <option>Behror — Rural</option>
@@ -417,15 +421,24 @@ HYBRID SOLAR · BEHROR &amp; NEEMRANA · POWER BACKUP DURING OUTAGES
 <option>Other</option>
 </select>
 </div>
+
 <div class="form-row">
-<label for="cf-bill">Monthly Electricity Bill (approx.)</label>
-<input type="text" id="cf-bill" name="Monthly Bill" placeholder="e.g. ₹3,000">
+<label for="cf-type">Property Type</label>
+<select id="cf-type" name="Property Type">
+<option value="" disabled selected>Select property type</option>
+<option>Residential</option>
+<option>Commercial</option>
+<option>Industrial</option>
+</select>
 </div>
+
 <div class="form-row">
 <label for="cf-message">Message (optional)</label>
-<textarea id="cf-message" name="Message" rows="3" placeholder="Any questions about hybrid solar or battery backup"></textarea>
+<textarea id="cf-message" name="Message" rows="3" placeholder="Roof size, monthly bill, or anything else useful"></textarea>
 </div>
+
 <button type="submit" class="btn btn-primary form-submit">Request Free Survey</button>
+
 </form>
 </div>
 
@@ -470,6 +483,7 @@ Instagram
 
 <div class="footer-pages">
 <p class="footer-pages-label">More from Behror Solar</p>
+<a href="/">Home — Solar Installation in Behror</a>
 <a href="/solar-installation-neemrana">Solar Installation in Neemrana</a>
 <a href="/hybrid-solar-behror-neemrana">Hybrid Solar with Battery Backup</a>
 <a href="/on-grid-hybrid-off-grid-solar-behror-neemrana">On-Grid vs Hybrid vs Off-Grid Guide</a>

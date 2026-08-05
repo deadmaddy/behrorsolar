@@ -849,6 +849,27 @@ SOLAR GUIDE · BEHROR &amp; NEEMRANA · NORTHEAST RAJASTHAN
 </section>
 
 <!-- ── CONTACT ──────────────────────────────────────── -->
+
+<section class="author-section">
+<div class="container">
+<div class="author-card">
+<div class="author-body">
+<span class="author-label">WRITTEN &amp; REVIEWED BY</span>
+<h3 class="author-name">Mahendra Yadav</h3>
+<p class="author-role">Solar &amp; BESS Consultant · Behror–Neemrana Region</p>
+<p class="author-desc">Mahendra advises homes and businesses across the Alwar region on rooftop solar, battery storage and the PM Surya Ghar subsidy, working with an Authorised Tata Power Solaroof Channel Partner (Global Green Energy, Alwar). Before solar, he spent 12+ years in digital marketing — which is why every page on this site aims to educate first and sell second.</p>
+<div class="author-links">
+<a href="tel:+919414453454">+91 94144 53454</a>
+<span aria-hidden="true">·</span>
+<a href="https://wa.me/919414453454">WhatsApp</a>
+<span aria-hidden="true">·</span>
+<a href="mailto:myadav@behrorsolar.in">myadav@behrorsolar.in</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
 <section id="contact" class="contact-section">
 <div class="container">
 
@@ -890,24 +911,27 @@ SOLAR GUIDE · BEHROR &amp; NEEMRANA · NORTHEAST RAJASTHAN
 <h3>Ask Us Which System Fits</h3>
 <p class="contact-role">We will respond within 24 hours</p>
 
-<form action="https://formsubmit.co/myadav@behrorsolar.in" method="POST">
-<input type="hidden" name="_subject" value="Solar System Enquiry — Guide Page">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_captcha" value="true">
-<input type="hidden" name="_next" value="https://behrorsolar.in/thank-you.html">
-<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<form action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="bf939dc6-8712-4731-8924-e3915a9f9ce4">
+<input type="hidden" name="subject" value="Solar System Guide Enquiry — Behror Solar Website">
+<input type="hidden" name="redirect" value="https://behrorsolar.in/thank-you.html">
+<input type="hidden" name="from_name" value="Behror Solar Website">
+<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
 
 <div class="form-row">
 <label for="cf-name">Full Name</label>
-<input type="text" id="cf-name" name="Name" required>
+<input type="text" id="cf-name" name="Name" required autocomplete="name">
 </div>
+
 <div class="form-row">
 <label for="cf-phone">Phone Number</label>
-<input type="tel" id="cf-phone" name="Phone" required>
+<input type="tel" id="cf-phone" name="Phone" required autocomplete="tel" inputmode="numeric" pattern="[0-9+\s\-]{10,15}">
 </div>
+
 <div class="form-row">
 <label for="cf-location">Location</label>
-<select id="cf-location" name="Location" required>
+<select id="cf-location" name="Location">
 <option value="" disabled selected>Select your area</option>
 <option>Behror — Urban</option>
 <option>Behror — Rural</option>
@@ -920,25 +944,24 @@ SOLAR GUIDE · BEHROR &amp; NEEMRANA · NORTHEAST RAJASTHAN
 <option>Other</option>
 </select>
 </div>
+
 <div class="form-row">
-<label for="cf-system">System I am interested in</label>
-<select id="cf-system" name="System Interest">
-<option value="" disabled selected>On-Grid / Hybrid / Off-Grid / Not sure</option>
-<option>On-Grid</option>
-<option>Hybrid (with battery backup)</option>
-<option>Off-Grid</option>
-<option>Not sure — need advice</option>
+<label for="cf-type">Property Type</label>
+<select id="cf-type" name="Property Type">
+<option value="" disabled selected>Select property type</option>
+<option>Residential</option>
+<option>Commercial</option>
+<option>Industrial</option>
 </select>
 </div>
+
 <div class="form-row">
-<label for="cf-bill">Approximate Monthly Bill</label>
-<input type="text" id="cf-bill" name="Monthly Bill" placeholder="e.g. ₹3,500">
+<label for="cf-message">Message (optional)</label>
+<textarea id="cf-message" name="Message" rows="3" placeholder="Roof size, monthly bill, or anything else useful"></textarea>
 </div>
-<div class="form-row">
-<label for="cf-message">Anything else</label>
-<textarea id="cf-message" name="Message" rows="3" placeholder="Property type, roof size, specific concerns"></textarea>
-</div>
-<button type="submit" class="btn btn-primary form-submit">Get a Free Recommendation</button>
+
+<button type="submit" class="btn btn-primary form-submit">Request Free Survey</button>
+
 </form>
 </div>
 
@@ -984,6 +1007,7 @@ Instagram
 
 <div class="footer-pages">
 <p class="footer-pages-label">More from Behror Solar</p>
+<a href="/">Home — Solar Installation in Behror</a>
 <a href="/solar-installation-neemrana">Solar Installation in Neemrana</a>
 <a href="/hybrid-solar-behror-neemrana">Hybrid Solar with Battery Backup</a>
 <a href="/on-grid-hybrid-off-grid-solar-behror-neemrana">On-Grid vs Hybrid vs Off-Grid Guide</a>

@@ -1898,3 +1898,72 @@ text-decoration:none;
 .result-metric a:hover{
 text-decoration:underline;
 }
+
+/* =====================
+AUTHOR BIO
+===================== */
+
+.author-section{
+padding:0 0 80px;
+background:var(--sand);
+}
+
+.author-card{
+max-width:760px;
+border:1px solid var(--line);
+border-left:4px solid var(--gold);
+border-radius:8px;
+padding:28px 32px;
+background:var(--sand-deep);
+}
+
+.author-label{
+display:block;
+font-family:'Space Mono',monospace;
+font-size:0.66rem;
+letter-spacing:0.1em;
+text-transform:uppercase;
+color:var(--gold-deep);
+margin-bottom:10px;
+}
+
+.author-name{
+font-size:1.25rem;
+margin-bottom:4px;
+color:var(--ink);
+}
+
+.author-role{
+font-family:'Space Mono',monospace;
+font-size:0.75rem;
+color:var(--steel);
+margin-bottom:14px;
+}
+
+.author-desc{
+font-size:0.92rem;
+color:#374151;
+line-height:1.7;
+margin-bottom:16px;
+}
+
+.author-links{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+font-size:0.85rem;
+}
+
+.author-links a{
+color:var(--gold-deep);
+text-decoration:none;
+font-weight:600;
+}
+
+.author-links a:hover{
+text-decoration:underline;
+}
+
+.author-links span{
+color:var(--line);
+}
