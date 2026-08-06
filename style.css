@@ -1676,6 +1676,14 @@ display:none;
 display:none;
 }
 
+/* backdrop-filter on .header re-anchors the fixed nav panel to the header
+   instead of the viewport (CSS containing-block rule) — disable on mobile */
+.header{
+backdrop-filter:none;
+-webkit-backdrop-filter:none;
+background:rgba(252,251,247,0.98);
+}
+
 nav{
 display:none;
 position:fixed;
