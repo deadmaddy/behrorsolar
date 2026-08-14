@@ -515,13 +515,11 @@ color:var(--ink);
 
 <nav id="main-nav" aria-label="Main navigation">
 <ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#services">Services</a></li>
+<li><a href="/">Home</a></li>
 <li><a href="/solar-installation-neemrana">Neemrana</a></li>
-<li><a href="/hybrid-solar-behror-neemrana">Hybrid Solar</a></li>
-<li><a href="#pm-surya-ghar">Savings</a></li>
-<li><a href="#faq">FAQ</a></li>
-<li><a href="#contact">Contact</a></li>
+<li><a href="/hybrid-solar-behror-neemrana">Hybrid</a></li>
+<li><a href="/#pm-surya-ghar">PM Surya Ghar</a></li>
+<li><a href="/#contact">Contact</a></li>
 </ul>
 </nav>
 
@@ -1081,6 +1079,21 @@ from bifacial technology.
 <p>Real results from residential installations in our service area.</p>
 </div>
 
+<div class="result-feature">
+<div class="result-feature-photo">
+<img src="images/uttam-singh-jatgaonra-3kw-hybrid.jpg" alt="3 kW hybrid solar system installed on the rooftop at Uttam Singh's home in Jatgaonra, Behror Rural, Rajasthan — August 2026" loading="lazy" decoding="async" width="1200" height="979">
+</div>
+<div class="result-feature-body">
+<span class="result-tag">Residential Hybrid — Jatgaonra, Behror Rural</span>
+<p>"Maine apne ghar par Jatgaonra, Behror Rural mein 3 kW Hybrid Solar System lagwaya hai. Installation ka kaam neat aur properly kiya gaya, aur team ne system ki working aur backup bhi achhe se samjhaya. Power cut ke time hybrid backup kaafi useful hai aur system abhi achha perform kar raha hai. Overall installation, behaviour aur after-sales support se main satisfied hoon. Behror Solar ki team ka kaam professional raha."</p>
+<div class="result-translation">
+<span class="result-translation-label">In English</span>
+<p>"I installed a 3 kW hybrid solar system at my home in Jatgaonra, Behror Rural. The installation was neat and done properly, and the team clearly explained how the system and the backup work. The hybrid backup is very useful during power cuts and the system is performing well. Overall I'm satisfied with the installation, conduct and after-sales support — Behror Solar's team worked professionally."</p>
+</div>
+<span class="result-metric">Uttam Singh &nbsp;·&nbsp; 3 kW Hybrid System · Reliable power-cut backup</span>
+</div>
+</div>
+
 <div class="results-grid">
 
 <div class="result-card">
@@ -1350,14 +1363,20 @@ Instagram
 <a href="/privacy_policy.html">Privacy Policy</a>
 </div>
 
-<div class="footer-pages">
-<p class="footer-pages-label">More from Behror Solar</p>
-<a href="/">Home — Solar Installation in Behror</a>
-<a href="/solar-installation-neemrana">Solar Installation in Neemrana</a>
-<a href="/hybrid-solar-behror-neemrana">Hybrid Solar with Battery Backup</a>
-<a href="/on-grid-hybrid-off-grid-solar-behror-neemrana">On-Grid vs Hybrid vs Off-Grid Guide</a>
+<nav class="footer-pages" aria-label="Footer menu">
+<p class="footer-pages-label">Menu</p>
+<a href="/">Home</a>
+<a href="/solar-installation-neemrana">Neemrana</a>
+<a href="/hybrid-solar-behror-neemrana">Hybrid</a>
+<a href="/#pm-surya-ghar">PM Surya Ghar</a>
+<a href="/#contact">Contact</a>
+</nav>
+
+<nav class="footer-pages footer-guides" aria-label="Solar guides">
+<p class="footer-pages-label">Guides</p>
+<a href="/on-grid-hybrid-off-grid-solar-behror-neemrana">On-Grid vs Hybrid vs Off-Grid</a>
 <a href="/solar-panels-behror-neemrana">Solar Panels — DCR &amp; Non-DCR</a>
-</div>
+</nav>
 
 </div>
 <div class="footer-col footer-partner-col">
@@ -1433,7 +1452,7 @@ Verify Tata Partner ↗
 "aggregateRating":{
 "@type":"AggregateRating",
 "ratingValue":"5",
-"reviewCount":"3",
+"reviewCount":"4",
 "bestRating":"5",
 "worstRating":"1"
 },
@@ -1461,6 +1480,14 @@ Verify Tata Partner ↗
 "name":"70% reduction in electricity bill for three-storey family home",
 "reviewBody":"Our three-storey home is shared by our extended family, so electricity consumption is quite high. After installing Tata Solaroof through Behror Solar, our electricity bill has reduced by around 70%.",
 "itemReviewed":{"@type":"Service","name":"Residential Rooftop Solar Installation","areaServed":"Neemrana, Rajasthan 301005"}
+},
+{
+"@type":"Review",
+"author":{"@type":"Person","name":"Uttam Singh"},
+"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},
+"name":"3 kW hybrid solar with reliable power-cut backup — professional installation",
+"reviewBody":"I installed a 3 kW hybrid solar system at my home in Jatgaonra, Behror Rural. The installation was neat and done properly, and the team clearly explained how the system and the backup work. The hybrid backup is very useful during power cuts and the system is performing well. Overall I am satisfied with the installation, conduct and after-sales support — Behror Solar's team worked professionally.",
+"itemReviewed":{"@type":"Service","name":"Residential Hybrid Solar Installation","areaServed":"Jatgaonra, Behror Rural, Rajasthan"}
 }
 ],
 "sameAs":[
@@ -1565,7 +1592,7 @@ Verify Tata Partner ↗
 <script>
 (function(){
 var btn = document.querySelector('.nav-toggle');
-var nav = document.querySelector('nav');
+var nav = document.getElementById('main-nav');
 if(!btn || !nav) return;
 btn.addEventListener('click', function(){
 var open = nav.classList.toggle('nav-open');
