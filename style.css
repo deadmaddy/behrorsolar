@@ -2689,3 +2689,30 @@ margin:auto;
 .partner-row-logo{height:30px;}
 .partner-row{padding:7px 0;}
 }
+
+/* ===================== FLOATING CONTACT BUTTON ===================== */
+.contact-fab{position:fixed;right:24px;bottom:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:14px;}
+.contact-fab-options{display:flex;flex-direction:column;align-items:flex-end;gap:14px;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .25s ease,transform .25s ease;}
+.contact-fab.open .contact-fab-options{opacity:1;transform:none;pointer-events:auto;}
+.fab-item{display:flex;align-items:center;gap:10px;text-decoration:none;opacity:0;transform:translateY(10px);transition:opacity .25s ease,transform .25s ease;}
+.contact-fab.open .fab-item{opacity:1;transform:none;}
+.contact-fab.open .fab-item:nth-child(1){transition-delay:.04s;}
+.contact-fab.open .fab-item:nth-child(2){transition-delay:.09s;}
+.contact-fab.open .fab-item:nth-child(3){transition-delay:.14s;}
+.fab-label{background:var(--ink);color:var(--sand);font-family:'Public Sans',sans-serif;font-size:.82rem;font-weight:600;padding:6px 12px;border-radius:6px;white-space:nowrap;box-shadow:0 4px 14px rgba(0,0,0,.18);}
+.fab-btn{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.25);flex-shrink:0;}
+.fab-btn svg{width:24px;height:24px;}
+.fab-call .fab-btn{background:var(--gold);color:var(--ink);}
+.fab-wa .fab-btn{background:#25D366;}
+.fab-mail .fab-btn{background:var(--ink-soft);}
+.contact-fab-toggle{width:62px;height:62px;border-radius:50%;border:none;cursor:pointer;background:var(--gold);color:var(--ink);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(11,19,32,.32);transition:transform .25s ease,background .25s ease;position:relative;}
+.contact-fab-toggle:hover{transform:translateY(-2px);}
+.contact-fab-toggle svg{width:28px;height:28px;position:absolute;transition:opacity .2s ease,transform .3s ease;}
+.contact-fab-toggle .fab-ic-close{opacity:0;transform:rotate(-90deg);}
+.contact-fab.open .contact-fab-toggle{background:var(--ink);color:var(--sand);}
+.contact-fab.open .contact-fab-toggle .fab-ic-open{opacity:0;transform:rotate(90deg);}
+.contact-fab.open .contact-fab-toggle .fab-ic-close{opacity:1;transform:none;}
+.contact-fab-toggle::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:0 0 0 0 rgba(217,164,65,.55);animation:fabpulse 2.4s infinite;}
+.contact-fab.open .contact-fab-toggle::after{display:none;}
+@keyframes fabpulse{0%{box-shadow:0 0 0 0 rgba(217,164,65,.5)}70%{box-shadow:0 0 0 16px rgba(217,164,65,0)}100%{box-shadow:0 0 0 0 rgba(217,164,65,0)}}
+@media(max-width:560px){.contact-fab{right:16px;bottom:16px;}.contact-fab-toggle{width:56px;height:56px;}.fab-btn{width:46px;height:46px;}}
