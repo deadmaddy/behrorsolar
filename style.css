@@ -2771,3 +2771,4 @@ margin:auto;
 /* ===================== NEEMRANA "LOCAL" IMAGE BADGE ===================== */
 .about-image img{display:block;}
 .about-image-tag{position:absolute;left:12px;bottom:12px;background:var(--ink);color:var(--sand);font-family:'Space Mono',monospace;font-size:.72rem;font-weight:700;line-height:1.3;letter-spacing:.02em;padding:8px 12px;border-radius:6px;border-left:3px solid var(--gold);box-shadow:0 6px 18px rgba(0,0,0,.28);}
+.about-image-caption{margin:12px 0 0;text-align:center;font-family:'Space Mono',monospace;font-size:.75rem;letter-spacing:.02em;color:var(--steel);}
