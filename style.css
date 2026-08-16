@@ -1047,9 +1047,7 @@ border-top:1px solid var(--line-light);
 }
 
 .footer .container{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
+display:block;
 }
 
 .footer-col{
@@ -2782,3 +2780,34 @@ margin:auto;
 .invest-v{display:block;font-family:'Space Grotesk',sans-serif;font-size:1.6rem;font-weight:700;color:var(--ink);margin-bottom:8px;}
 .invest-note{display:block;font-size:.86rem;color:#374151;line-height:1.55;}
 @media(max-width:768px){.invest-grid{grid-template-columns:1fr;}}
+
+/* ===================== CATEGORISED FOOTER ===================== */
+.footer-top{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;padding-bottom:38px;border-bottom:1px solid var(--line-light);}
+.footer-brand-col{min-width:0;}
+.footer-logo{display:block;text-decoration:none;margin-bottom:16px;}
+.footer-links{display:grid;grid-template-columns:repeat(5,1fr);gap:26px;padding:36px 0 6px;}
+.footer-group{display:flex;flex-direction:column;gap:10px;min-width:0;}
+.footer-group-label{font-family:'Space Mono',monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
+.footer-group a{font-size:.85rem;color:#9AA4B5;text-decoration:none;transition:color .2s;line-height:1.4;}
+.footer-group a:hover{color:var(--gold);}
+@media(max-width:900px){
+.footer-top{grid-template-columns:1fr;gap:30px;}
+.footer-partner-col{border-left:none;padding-left:0;border-top:1px solid var(--line-light);padding-top:26px;}
+.footer-links{grid-template-columns:repeat(3,1fr);gap:22px;}
+}
+@media(max-width:560px){.footer-links{grid-template-columns:repeat(2,1fr);}}
+
+/* ===================== BATTERY / Q&A PAGE ===================== */
+.qa{max-width:860px;}
+.qa .section-eyebrow{margin-bottom:12px;}
+.qa h2{font-size:2rem;color:var(--ink);margin-bottom:14px;line-height:1.2;}
+.q-answer{font-size:1.08rem;font-weight:600;color:var(--ink);line-height:1.65;margin-bottom:16px;max-width:860px;}
+.qa p{color:#374151;margin-bottom:14px;max-width:860px;line-height:1.75;}
+.qa .btn{margin-top:8px;}
+.qa a{color:var(--gold-deep);font-weight:600;text-decoration:none;}
+.qa a:hover{text-decoration:underline;}
+.section-dark .qa h2{color:var(--sand);}
+.section-dark .q-answer{color:var(--sand);}
+.section-dark .qa p{color:#A9B2C2;}
+.section-dark .qa a{color:var(--gold);}
+@media(max-width:560px){.qa h2{font-size:1.6rem;}}
