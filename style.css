@@ -544,6 +544,41 @@ color:var(--gold-deep);
 font-weight:700;
 }
 
+.stats-portal-cite{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:9px;
+flex-wrap:wrap;
+text-align:center;
+padding:16px 20px 20px;
+margin:0;
+border-top:1px solid var(--line);
+font-family:'Space Mono',monospace;
+font-size:0.74rem;
+letter-spacing:0.04em;
+color:var(--steel);
+}
+
+.stats-portal-cite a{
+color:var(--gold-deep);
+font-weight:700;
+text-decoration:none;
+border-bottom:1px solid var(--gold);
+}
+
+.stats-portal-cite a:hover{color:var(--ink);}
+
+.stats-portal-dot{
+width:7px;
+height:7px;
+border-radius:50%;
+background:var(--gold);
+display:inline-block;
+flex-shrink:0;
+box-shadow:0 0 0 3px rgba(198,160,74,0.18);
+}
+
 /* =====================
 SECTIONS — generic
 ===================== */
