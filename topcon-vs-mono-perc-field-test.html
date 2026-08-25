@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TOPCon vs Mono PERC: Rajasthan Rooftop Test | Behror Solar</title>
+
+<meta name="description" content="TOPCon vs Mono PERC field test in Rajasthan: 22.46 vs 16.7 kWh on the same roof, or 16.9% more per installed kWp on one test day.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Mahendra Yadav">
+<meta name="format-detection" content="telephone=no">
+
+<link rel="canonical" href="https://behrorsolar.in/topcon-vs-mono-perc-field-test">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://behrorsolar.in/topcon-vs-mono-perc-field-test">
+<meta property="og:site_name" content="Behror Solar">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="TOPCon vs Mono PERC — A Real-World Rooftop Test">
+<meta property="og:description" content="Same roof and test day: 22.46 vs 16.7 kWh, or 16.9% more per installed kWp for the TOPCon array. See the evidence and limitations.">
+<meta property="og:image" content="https://behrorsolar.in/images/mono-perc-vs-topcon-rooftop-test-og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="Mono PERC and TOPCon bifacial solar arrays compared on the same Rajasthan rooftop">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@BehrorSolar">
+<meta name="twitter:title" content="TOPCon vs Mono PERC — A Real-World Rooftop Test">
+<meta name="twitter:description" content="Same roof and test day: 22.46 vs 16.7 kWh, or 16.9% more per installed kWp for the TOPCon array. See the evidence.">
+<meta name="twitter:image" content="https://behrorsolar.in/images/mono-perc-vs-topcon-rooftop-test-og.jpg">
+<meta name="twitter:image:alt" content="Mono PERC and TOPCon bifacial solar arrays compared on the same Rajasthan rooftop">
+
+<meta name="theme-color" content="#0B1320">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preload" as="image" href="/images/behror-solar-logo.png">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+/* ── GUIDE / FIELD-NOTE PAGE ─────────────────────────── */
+.guide-hero{
+background:var(--ink);
+color:var(--sand);
+padding:92px 0 72px;
+position:relative;
+overflow:hidden;
+}
+.guide-hero .hero-grid-overlay{
+position:absolute;inset:0;opacity:.5;
+background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+background-size:44px 44px;
+}
+.guide-hero-inner{position:relative;max-width:820px}
+.guide-eyebrow{
+display:inline-flex;align-items:center;gap:9px;
+font-family:'Space Mono',monospace;font-size:.72rem;letter-spacing:.14em;
+text-transform:uppercase;color:var(--gold);margin-bottom:20px;font-weight:700;
+}
+.guide-eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);display:inline-block}
+.guide-hero h1{font-size:2.5rem;line-height:1.12;letter-spacing:-.02em;margin:0 0 18px}
+.guide-hero .guide-lede{font-size:1.15rem;line-height:1.55;color:rgba(255,255,255,.82);margin:0 0 24px}
+.guide-byline{
+font-family:'Space Mono',monospace;font-size:.76rem;letter-spacing:.05em;
+color:rgba(255,255,255,.6);border-top:1px solid rgba(255,255,255,.14);padding-top:16px;
+}
+.guide-byline a{color:var(--gold);text-decoration:none}
+
+.guide-body{padding:64px 0}
+.guide-body .container{max-width:820px}
+.guide-h2{font-size:1.6rem;letter-spacing:-.01em;margin:0 0 8px}
+.guide-kicker{
+font-family:'Space Mono',monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+color:var(--gold-deep);font-weight:700;display:block;margin-bottom:10px;
+}
+.guide-body p{font-size:1.06rem;line-height:1.72;color:var(--ink);margin:0 0 18px}
+.guide-block{margin:0 0 44px}
+.guide-body strong{color:var(--ink)}
+
+/* result card */
+.field-result{
+background:var(--sand-deep,#f2ece0);
+border:1px solid var(--line);
+border-left:4px solid var(--gold);
+border-radius:14px;padding:28px;margin:8px 0 20px;
+}
+.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+.result-cell{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px;text-align:center}
+.result-cell.win{border-color:var(--gold);box-shadow:0 0 0 3px rgba(198,160,74,.14)}
+.result-tag{font-family:'Space Mono',monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--steel);display:block;margin-bottom:8px}
+.result-big{font-family:'Space Grotesk',sans-serif;font-size:2.6rem;font-weight:700;color:var(--ink);line-height:1}
+.result-big span{font-size:1.1rem;color:var(--gold-deep)}
+.result-sub{font-size:.86rem;color:var(--steel);margin-top:8px}
+.result-note{font-family:'Space Mono',monospace;font-size:.8rem;color:var(--ink);text-align:center;margin:0}
+.result-note b{color:var(--gold-deep)}
+
+/* spec table */
+.guide-table{width:100%;border-collapse:collapse;margin:6px 0 8px;font-size:.96rem}
+.guide-table th,.guide-table td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}
+.guide-table thead th{font-family:'Space Mono',monospace;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--steel)}
+.guide-table td:first-child{color:var(--steel)}
+.guide-table .tc-win{color:var(--gold-deep);font-weight:700}
+.guide-table-wrap{overflow-x:auto}
+
+/* mechanism cards */
+.mech-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:8px 0 8px}
+.mech-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px}
+.mech-card h3{font-size:1.05rem;margin:0 0 8px}
+.mech-card .mech-when{font-family:'Space Mono',monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-deep);display:block;margin-bottom:10px}
+.mech-card p{font-size:.96rem;line-height:1.6;margin:0}
+
+/* callout */
+.guide-callout{
+background:var(--ink);color:var(--sand);border-radius:14px;padding:26px 28px;margin:8px 0 8px;
+}
+.guide-callout p{color:rgba(255,255,255,.88);font-size:1.02rem;line-height:1.65;margin:0}
+.guide-callout strong{color:var(--gold)}
+
+.guide-caveat{border:1px dashed var(--line);border-radius:12px;padding:20px 22px;background:var(--sand)}
+.guide-caveat p{font-size:.98rem;margin:0;color:var(--ink)}
+
+.guide-inline-links{background:var(--sand);border-radius:12px;padding:22px 24px;margin-top:8px}
+.guide-inline-links p{margin:0 0 6px;font-size:.98rem}
+.guide-inline-links a{color:var(--gold-deep);font-weight:600;text-decoration:none}
+.guide-inline-links a:hover{text-decoration:underline}
+
+@media(max-width:768px){
+.guide-hero h1{font-size:1.85rem}
+.result-grid,.mech-grid{grid-template-columns:1fr}
+.guide-body .container{padding-left:20px;padding-right:20px}
+}
+</style>
+
+</head>
+
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="header">
+<div class="container nav-container">
+
+<div class="logo-area">
+<a href="/" aria-label="Behror Solar — Home">
+<img src="images/behror-solar-logo.png" alt="Behror Solar — Engineered Rooftop Solar Solutions" class="header-bs-logo" width="183" height="53">
+</a>
+</div>
+
+<nav id="main-nav" aria-label="Main navigation">
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/solar-installation-neemrana">Neemrana</a></li>
+<li><a href="/hybrid-solar-behror-neemrana">Hybrid</a></li>
+<li><a href="/pm-surya-ghar">Subsidy</a></li>
+<li><a href="/solar-guides">Guides</a></li>
+<li><a href="/#contact">Contact</a></li>
+</ul>
+</nav>
+
+<button type="button" class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+<span class="nav-toggle-bar"></span>
+<span class="nav-toggle-bar"></span>
+<span class="nav-toggle-bar"></span>
+</button>
+
+<a href="tel:+919414453454" class="btn btn-ghost nav-cta">Call Now</a>
+
+</div>
+<div class="partner-row container">
+<img src="images/gge-tata-header-logo.png" alt="Authorized Tata Power Solaroof Channel Partner — Global Green Energy" class="partner-row-logo" width="338" height="36">
+</div>
+</header>
+
+<main id="main-content">
+
+<nav aria-label="Breadcrumb" class="breadcrumb-nav">
+<div class="container">
+<a href="/">Home</a> <span aria-hidden="true">/</span>
+<a href="/solar-guides">Solar Guides</a> <span aria-hidden="true">/</span>
+<span>TOPCon vs Mono PERC — Real-World Test</span>
+</div>
+</nav>
+
+<!-- ── HERO ──────────────────────────────────────────── -->
+<section class="guide-hero">
+<div class="hero-grid-overlay"></div>
+<div class="container">
+<div class="guide-hero-inner">
+<div class="guide-eyebrow"><span class="dot"></span>FIELD NOTE · SOLAR GUIDES</div>
+<h1>TOPCon vs Mono PERC: We Put Both on One Roof and Measured</h1>
+<p class="guide-lede">Same roof. Same reflective coating. Same monsoon day. The TOPCon array recorded 22.46 kWh and the Mono PERC array 16.7 kWh. Here is what we observed, what the numbers do and do not prove, and what they may mean if you're choosing panels in Behror or Neemrana.</p>
+<p class="guide-byline">By <a href="https://www.linkedin.com/in/mahendra-yadav-44983718/" target="_blank" rel="noopener noreferrer">Mahendra Yadav</a> · Behror Solar · <time datetime="2026-08-24">Updated 24 August 2026</time></p>
+</div>
+</div>
+</section>
+
+<article class="guide-body">
+<div class="container">
+
+<!-- Why we tested -->
+<div class="guide-block">
+<span class="guide-kicker">The question</span>
+<h2 class="guide-h2">Brochures argue. We wanted to measure.</h2>
+<p>The TOPCon-versus-Mono-PERC debate is usually fought on spec sheets. Every manufacturer's brochure claims the edge. So instead of trusting a brochure, we did the simple thing: we ran the two panel technologies side by side on the same rooftop and read the meters.</p>
+<p>This isn't a lab study. It's a working-installer field note from a real roof in the Behror–Neemrana belt — the kind of honest data we wish we'd had when we started fitting solar.</p>
+</div>
+
+<!-- The setup -->
+<div class="guide-block">
+<span class="guide-kicker">The setup</span>
+<h2 class="guide-h2">Two arrays observed on the same roof</h2>
+<p>Both arrays sat on the <strong>same roof</strong>, with the <strong>same white reflective coating</strong> underneath, under the <strong>same monsoon sky</strong>, on the <strong>same day</strong>. This reduced several environmental differences, but it was not a controlled laboratory test. Module model, electrical configuration, mounting and measurement conditions may also have affected the result.</p>
+<figure class="guide-figure">
+<picture>
+<source type="image/webp" srcset="images/mono-perc-vs-topcon-rooftop-test-640.webp 640w, images/mono-perc-vs-topcon-rooftop-test-960.webp 960w, images/mono-perc-vs-topcon-rooftop-test-1280.webp 1280w, images/mono-perc-vs-topcon-rooftop-test-1735.webp 1735w" sizes="(max-width: 860px) calc(100vw - 40px), 820px">
+<img src="images/mono-perc-vs-topcon-rooftop-test-og.jpg" alt="Mono PERC bifacial solar array on the left and TOPCon bifacial array on the right, mounted on the same Rajasthan rooftop at matching tilt and height" width="1200" height="627" loading="lazy" decoding="async">
+</picture>
+<figcaption>Rajasthan rooftop field test: Mono PERC array (left) and TOPCon array (right), installed with the same tilt, direction, mounting height and shading conditions.</figcaption>
+</figure>
+<div class="guide-table-wrap">
+<table class="guide-table">
+<caption>Recorded configuration of the two rooftop arrays</caption>
+<thead><tr><th scope="col">Specification</th><th scope="col">Array A</th><th scope="col">Array B</th></tr></thead>
+<tbody>
+<tr><th scope="row">Technology</th><td class="tc-win">N-type TOPCon bifacial</td><td>Mono PERC bifacial</td></tr>
+<tr><th scope="row">Panels</th><td>6 × 610 W</td><td>6 × 530 W</td></tr>
+<tr><th scope="row">Array size</th><td>3.66 kWp</td><td>3.18 kWp</td></tr>
+<tr><th scope="row">Inverter arrangement</th><td>Separate inverter</td><td>Separate inverter</td></tr>
+<tr><th scope="row">Tilt, direction &amp; height</th><td>Same</td><td>Same</td></tr>
+<tr><th scope="row">Shading conditions</th><td>Same</td><td>Same</td></tr>
+<tr><th scope="row">Roof &amp; coating</th><td>Same</td><td>Same</td></tr>
+<tr><th scope="row">Test date</th><td><time datetime="2026-08-21">21 August 2026</time></td><td><time datetime="2026-08-21">21 August 2026</time></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- The result -->
+<div class="guide-block">
+<span class="guide-kicker">The result</span>
+<h2 class="guide-h2">22.46 kWh vs 16.7 kWh</h2>
+<div class="field-result">
+<div class="result-grid">
+<div class="result-cell win">
+<span class="result-tag">TOPCon bifacial</span>
+<div class="result-big">22.46<span> kWh</span></div>
+<p class="result-sub">3.66 kWp array</p>
+</div>
+<div class="result-cell">
+<span class="result-tag">Mono PERC bifacial</span>
+<div class="result-big">16.7<span> kWh</span></div>
+<p class="result-sub">3.18 kWp array</p>
+</div>
+</div>
+<p class="result-note">Normalised by installed capacity → <b>6.14</b> kWh/kWp (TOPCon) vs <b>5.25</b> kWh/kWp (Mono PERC)</p>
+</div>
+<div class="evidence-grid" aria-label="Monitoring screenshots from 21 August 2026">
+<figure class="evidence-card">
+<picture>
+<source type="image/webp" srcset="images/topcon-generation-21-august-2026-480.webp 480w" sizes="(max-width: 640px) calc(100vw - 68px), 360px">
+<img src="images/topcon-generation-21-august-2026.png" alt="TOPCon bifacial solar array monitoring record for 21 August 2026 showing daily generation of 22.46 kWh" width="1084" height="2412" loading="lazy" decoding="async">
+</picture>
+<figcaption><strong>TOPCon:</strong> monitoring record for 21 August 2026 showing 22.46 kWh.</figcaption>
+</figure>
+<figure class="evidence-card">
+<img src="images/17unitsmonoperc.jpg" alt="Mono PERC bifacial solar array monitoring record for 21 August 2026 showing daily generation of 16.7 kWh" width="271" height="523" loading="lazy" decoding="async">
+<figcaption><strong>Mono PERC:</strong> monitoring record for 21 August 2026 showing 16.7 kWh.</figcaption>
+</figure>
+</div>
+<p>The raw gap is 22.46 versus 16.7 kWh — about <strong>34.5% more energy</strong>. One electricity “unit” equals one kilowatt-hour (kWh). The raw percentage is not a fair technology comparison because Array A also had more installed capacity.</p>
+</div>
+
+<!-- The honest math -->
+<div class="guide-block">
+<span class="guide-kicker">The honest math</span>
+<h2 class="guide-h2">On this test day, TOPCon produced 16.9% more per installed kWp</h2>
+<p>Part of the 34.5% raw gap comes from the higher-wattage TOPCon modules (610 W vs 530 W), which made Array A larger. Normalising by installed capacity gives a more useful comparison:</p>
+<p>TOPCon recorded <strong>6.14 kWh/kWp</strong>; Mono PERC recorded <strong>5.25 kWh/kWp</strong>. That is approximately <strong>16.9% more energy per installed kWp on this test day</strong>. It is an observed difference between these two arrays, not proof that cell technology alone caused the entire gap.</p>
+<div class="guide-callout">
+<p>If you hear a raw percentage for TOPCon versus Mono PERC, check the installed capacities. For these arrays, the more useful normalised observation is <strong>16.9% more per installed kWp on one test day</strong>—with the limitations described below.</p>
+</div>
+</div>
+
+<!-- Why -->
+<div class="guide-block">
+<span class="guide-kicker">Possible explanations</span>
+<h2 class="guide-h2">Why TOPCon may perform differently</h2>
+<p>This test did not measure irradiance, rear-side contribution or module temperature, so it cannot isolate the cause of the difference. Two characteristics may have contributed and are worth checking against the exact module datasheets:</p>
+<div class="mech-grid">
+<div class="mech-card">
+<span class="mech-when">Monsoon · possible factor</span>
+<h3>Low light + bifacial gain</h3>
+<p>Diffuse light and rear-side reflection from the white roof may have influenced output. The size of that effect depends on the particular modules, roof geometry, mounting height and rear-side irradiance; this test did not measure those contributions separately.</p>
+</div>
+<div class="mech-card">
+<span class="mech-when">Summer · what to expect</span>
+<h3>Lower heat loss</h3>
+<p>Many TOPCon modules have a less-negative power temperature coefficient than older PERC modules, which can reduce heat-related losses. The actual advantage must be calculated from the two module datasheets and operating temperatures.</p>
+</div>
+</div>
+<p class="guide-followup">A longer, season-by-season log is needed before estimating the annual difference between these particular arrays.</p>
+</div>
+
+<!-- What it means for you -->
+<div class="guide-block">
+<span class="guide-kicker">What it means for you</span>
+<h2 class="guide-h2">This isn't "one brand beats another"</h2>
+<p>A rooftop system is a 25-year investment, and that decision deserves measured data rather than marketing. Here's the balanced read:</p>
+<p>In this observation, the higher-wattage TOPCon bifacial array generated 16.9% more per installed kWp than the PERC array. That makes it a promising <strong>performance-and-roof-space</strong> option, but the buying decision should also compare installed price, module efficiency, product and performance warranties, service support, inverter compatibility and expected lifetime generation.</p>
+<p>TOPCon and PERC are technologies; Tata Power is a brand. A brand may offer modules using either technology, so compare the exact model and datasheet—not just the brand name or cell label.</p>
+<p>We fit both. Our job isn't to push one panel — it's to help you pick the right one for <strong>your roof, your budget and your goals</strong>, with the numbers on the table.</p>
+<div class="guide-inline-links">
+<p>Related reading:</p>
+<p>→ <a href="/solar-panels-behror-neemrana">Solar panels in Behror &amp; Neemrana — DCR &amp; non-DCR explained</a></p>
+<p>→ <a href="/solar-battery">Solar battery &amp; backup — Voltra LiFePO4 storage</a></p>
+<p>→ <a href="/pm-surya-ghar">PM Surya Ghar subsidy — how much you get and how to claim</a></p>
+</div>
+</div>
+
+<!-- Caveat -->
+<div class="guide-block">
+<span class="guide-kicker">The honest caveat</span>
+<h2 class="guide-h2">One day is a signal, not a season</h2>
+<div class="guide-caveat">
+<p>This is a single monsoon-day observation from <time datetime="2026-08-21">21 August 2026</time>, not a controlled or year-long study. Each array used a separate inverter; the inverter brands are intentionally not identified because this comparison is about the observed arrays, not inverter promotion. The TOPCon monitor briefly displayed about 4.2 kW, but that instantaneous value still needs its sampling interval and AC/DC basis documented before it can be interpreted confidently. We are logging more days across seasons before estimating an annual difference.</p>
+</div>
+</div>
+
+<!-- FAQ -->
+<div class="guide-block">
+<span class="guide-kicker">Common questions</span>
+<h2 class="guide-h2">TOPCon vs Mono PERC — quick answers</h2>
+<div class="faq-list">
+<details class="faq-item">
+<summary>Does TOPCon always beat Mono PERC?<span class="faq-icon" aria-hidden="true"></span></summary>
+<div class="faq-answer"><p>No. This was one comparison between two differently sized arrays on one roof and one monsoon day. Results vary by module model, inverter and MPPT configuration, mounting, shading, weather and season. In this observation, the TOPCon array recorded 16.9% more energy per installed kWp.</p></div>
+</details>
+<details class="faq-item">
+<summary>Is TOPCon eligible for the PM Surya Ghar subsidy?<span class="faq-icon" aria-hidden="true"></span></summary>
+<div class="faq-answer"><p>Yes — when it's a DCR (made-in-India) TOPCon module. We fit DCR-certified TOPCon panels that qualify for the full PM Surya Ghar subsidy, the same as any eligible system.</p></div>
+</details>
+<details class="faq-item">
+<summary>Should I compare TOPCon with a brand such as Tata Power?<span class="faq-icon" aria-hidden="true"></span></summary>
+<div class="faq-answer"><p>Compare the exact module models rather than treating a technology and a brand as opposites. Review efficiency, temperature coefficient, bifacial rating, warranties, service support, installed price and expected generation for your roof. We can help you compare those figures model by model.</p></div>
+</details>
+</div>
+</div>
+
+<p style="font-family:'Space Mono',monospace;font-size:.82rem;color:var(--steel);border-top:1px solid var(--line);padding-top:20px">First shared as a field note on <a href="https://www.linkedin.com/company/behror-solar/" target="_blank" rel="noopener noreferrer" style="color:var(--gold-deep);font-weight:700">LinkedIn</a> — join the discussion there.</p>
+
+</div>
+</article>
+
+<!-- ── AUTHOR ─────────────────────────────────────────── -->
+<section class="author-section">
+<div class="container">
+<div class="author-card">
+<div class="author-body">
+<span class="author-label">WRITTEN &amp; REVIEWED BY</span>
+<h3 class="author-name"><a href="https://www.linkedin.com/in/mahendra-yadav-44983718/" target="_blank" rel="noopener noreferrer">Mahendra Yadav</a></h3>
+<p class="author-role">Solar &amp; BESS Consultant · Behror–Neemrana Region</p>
+<p class="author-desc">Mahendra advises homes and businesses across the Alwar region on rooftop solar, battery storage and the PM Surya Ghar subsidy, working with an Authorised Tata Power Solaroof Channel Partner (Global Green Energy, Alwar). Before solar, he spent 12+ years in digital marketing — which is why every page on this site aims to educate first and sell second.</p>
+<div class="author-links">
+<a href="tel:+919414453454">+91 94144 53454</a>
+<span aria-hidden="true">·</span>
+<a href="https://wa.me/919414453454">WhatsApp</a>
+<span aria-hidden="true">·</span>
+<a href="mailto:myadav@behrorsolar.in">myadav@behrorsolar.in</a>
+<span aria-hidden="true">·</span>
+<a href="https://www.linkedin.com/in/mahendra-yadav-44983718/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact-section">
+<div class="container">
+
+<div class="section-title light">
+<span class="section-eyebrow">GET IN TOUCH</span>
+<h2>Choosing panels for your roof? Let's talk numbers.</h2>
+<p>Tell us your roof and your budget, and we'll recommend the right panel — TOPCon or trusted-brand — with the generation and payback laid out honestly. Call or WhatsApp and we'll respond the same day.</p>
+</div>
+
+<div class="contact-wrapper">
+
+<div class="contact-card">
+<h3>Mahendra Yadav</h3>
+<p class="contact-role">Solar Consultant &amp; Operations Lead</p>
+<div class="contact-item">
+<strong>Phone</strong>
+<p><a href="tel:+919414453454">+91 94144 53454</a></p>
+</div>
+<div class="contact-item">
+<strong>WhatsApp</strong>
+<p><a href="https://wa.me/919414453454">Chat on WhatsApp</a></p>
+</div>
+<div class="contact-item">
+<strong>Email</strong>
+<p><a href="mailto:myadav@behrorsolar.in">myadav@behrorsolar.in</a></p>
+</div>
+<div class="contact-item">
+<strong>Service Area</strong>
+<p>Behror, <a href="/solar-installation-neemrana">Neemrana</a>, Bhiwadi, Kotputli, Shahjahanpur and Alwar Region.</p>
+</div>
+<div class="contact-buttons">
+<a href="tel:+919414453454" class="btn btn-primary">Call Now</a>
+<a href="https://wa.me/919414453454" class="btn btn-whatsapp">WhatsApp</a>
+</div>
+</div>
+
+<div class="contact-form-card">
+<h3>Send a Message</h3>
+<p class="contact-role">We will respond within 24 hours</p>
+<form action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="bf939dc6-8712-4731-8924-e3915a9f9ce4">
+<input type="hidden" name="subject" value="Panel Enquiry (TOPCon Guide) — Behror Solar Website">
+<input type="hidden" name="redirect" value="https://behrorsolar.in/thank-you.html">
+<input type="hidden" name="from_name" value="Behror Solar Website">
+<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+<div class="form-row">
+<label for="cf-name">Full Name</label>
+<input type="text" id="cf-name" name="Name" required>
+</div>
+<div class="form-row">
+<label for="cf-phone">Phone Number</label>
+<input type="tel" id="cf-phone" name="Phone" required>
+</div>
+<div class="form-row">
+<label for="cf-location">Location</label>
+<select id="cf-location" name="Location">
+<option value="" disabled selected>Select your area</option>
+<option>Behror — Urban</option>
+<option>Behror — Rural</option>
+<option>Neemrana — Urban</option>
+<option>Neemrana — Rural</option>
+<option>Bhiwadi</option>
+<option>Kotputli</option>
+<option>Shahjahanpur</option>
+<option>Alwar Region</option>
+<option>Other</option>
+</select>
+</div>
+<div class="form-row">
+<label for="cf-interest">I am interested in</label>
+<select id="cf-interest" name="Interest">
+<option value="" disabled selected>Select</option>
+<option>Complete 3 kW installation</option>
+<option>Complete 5 kW installation</option>
+<option>TOPCon panels</option>
+<option>Tata Power system</option>
+<option>Custom requirement</option>
+</select>
+</div>
+<div class="form-row">
+<label for="cf-message">Message (optional)</label>
+<textarea id="cf-message" name="Message" rows="3" placeholder="Roof size, location, or any questions about panels"></textarea>
+</div>
+<button type="submit" class="btn btn-primary form-submit">Send Message</button>
+</form>
+</div>
+
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+<div class="container">
+
+<div class="footer-top">
+<div class="footer-brand-col">
+<a href="/" class="footer-logo" aria-label="Behror Solar — Home">
+<p class="footer-brand">BEHROR SOLAR</p>
+<p>Engineered Rooftop Solar Solutions</p>
+</a>
+<div class="footer-contact">
+<p>Managed by <a href="https://www.linkedin.com/in/mahendra-yadav-44983718/" target="_blank" rel="noopener noreferrer">Mahendra Yadav</a></p>
+<p>Email: <a href="mailto:myadav@behrorsolar.in">myadav@behrorsolar.in</a></p>
+<p>Phone: <a href="tel:+919414453454">9414453454</a></p>
+<p><a href="https://share.google/03ya5mdD3fvChe59E" target="_blank" rel="noopener noreferrer">Find us on Google ↗</a></p>
+</div>
+<div class="footer-social">
+<a href="https://www.facebook.com/behrorsolar" target="_blank" rel="noopener noreferrer" aria-label="Behror Solar on Facebook">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+Facebook
+</a>
+<a href="https://www.instagram.com/behrorsolar" target="_blank" rel="noopener noreferrer" aria-label="Behror Solar on Instagram">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+Instagram
+</a>
+<a href="https://www.linkedin.com/company/behror-solar/" target="_blank" rel="noopener noreferrer" aria-label="Behror Solar on LinkedIn">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+LinkedIn
+</a>
+<a href="https://x.com/BehrorSolar" target="_blank" rel="noopener noreferrer" aria-label="Behror Solar on X (Twitter)">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+X
+</a>
+</div>
+</div>
+<div class="footer-partner-col">
+
+<div class="footer-logos-row">
+<img src="images/global-green-energy-logo.png" alt="Global Green Energy, Alwar" class="footer-gge-logo" loading="lazy" decoding="async" width="244" height="60">
+</div>
+
+<p class="footer-partner-statement">
+BehrorSolar.in is the official marketing and customer engagement platform
+for <strong>Global Green Energy, Alwar</strong>, an Authorized Tata Rooftop
+Solar Channel Partner.
+</p>
+
+<p class="footer-partner-statement">
+Tata Rooftop Solar Channel Partner status can be independently verified
+using Tata Power's Dealer Locator.
+</p>
+
+<a href="https://www.tatapower.com/renewables/solar-energy/dealer-locator"
+target="_blank" rel="noopener noreferrer"
+class="btn btn-verify">
+Verify Tata Partner ↗
+</a>
+<span class="footer-verify-hint">Search "Alwar" or "Global Green Energy"</span>
+</div>
+</div>
+
+<nav class="footer-links" aria-label="Site sections">
+<div class="footer-group">
+<p class="footer-group-label"><a href="/solar-guides">Guides</a></p>
+<a href="/topcon-vs-mono-perc-field-test">TOPCon vs Mono PERC</a>
+</div>
+<div class="footer-group">
+<p class="footer-group-label"><a href="/on-grid-hybrid-off-grid-solar-behror-neemrana">Systems</a></p>
+<a href="/hybrid-solar-behror-neemrana">Hybrid Solar</a>
+<a href="/on-grid-hybrid-off-grid-solar-behror-neemrana">On-Grid vs Hybrid vs Off-Grid</a>
+</div>
+<div class="footer-group">
+<p class="footer-group-label"><a href="/solar-panels-behror-neemrana">Products</a></p>
+<a href="/solar-panels-behror-neemrana">Solar Panels &mdash; DCR &amp; Non-DCR</a>
+<a href="/solar-battery">Solar Battery &amp; Backup</a>
+</div>
+<div class="footer-group">
+<p class="footer-group-label"><a href="/pm-surya-ghar">Subsidy</a></p>
+<a href="/pm-surya-ghar">PM Surya Ghar Subsidy</a>
+</div>
+<div class="footer-group">
+<p class="footer-group-label"><a href="/solar-installation-neemrana">Areas We Serve</a></p>
+<a href="/">Behror</a>
+<a href="/solar-installation-neemrana">Neemrana</a>
+</div>
+<div class="footer-group">
+<p class="footer-group-label">Company</p>
+<a href="/#contact">Contact</a>
+<a href="/terms_and_conditions.html">Terms &amp; Conditions</a>
+<a href="/privacy_policy.html">Privacy Policy</a>
+</div>
+</nav>
+
+</div>
+</footer>
+
+<div class="contact-fab" id="contactFab">
+<div class="contact-fab-options" id="contactFabOptions">
+<a href="tel:+919414453454" class="fab-item fab-call" aria-label="Call Behror Solar">
+<span class="fab-label">Call Now</span>
+<span class="fab-btn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.5 3 3.95 3.45 3.5 4 3.5h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.21 2.2z"/></svg></span>
+</a>
+<a href="https://wa.me/919414453454?text=Hi%2C%20I%27m%20interested%20in%20solar%20for%20my%20property." target="_blank" rel="noopener noreferrer" class="fab-item fab-wa" aria-label="WhatsApp Behror Solar">
+<span class="fab-label">WhatsApp</span>
+<span class="fab-btn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.599 5.393l-.999 3.648 3.889-1.02zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></span>
+</a>
+<a href="mailto:myadav@behrorsolar.in" class="fab-item fab-mail" aria-label="Email Behror Solar">
+<span class="fab-label">Email</span>
+<span class="fab-btn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
+</a>
+</div>
+<button type="button" class="contact-fab-toggle" aria-expanded="false" aria-controls="contactFabOptions" aria-label="Open contact options">
+<svg class="fab-ic-open" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM7 9h10v2H7V9zm7 5H7v-2h7v2zm3-6H7V6h10v2z"/></svg><svg class="fab-ic-close" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</div>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"Article",
+"@id":"https://behrorsolar.in/topcon-vs-mono-perc-field-test",
+"headline":"TOPCon vs Mono PERC: A Real-World Rooftop Test in Rajasthan",
+"description":"A rooftop field observation comparing a 610 W TOPCon bifacial array with a 530 W Mono PERC bifacial array. On 21 August 2026, the TOPCon array recorded 16.9% more energy per installed kWp.",
+"dateModified":"2026-08-24T00:00:00+05:30",
+"mainEntityOfPage":{"@type":"WebPage","@id":"https://behrorsolar.in/topcon-vs-mono-perc-field-test"},
+"author":{"@type":"Person","name":"Mahendra Yadav","url":"https://www.linkedin.com/in/mahendra-yadav-44983718/","sameAs":["https://www.linkedin.com/in/mahendra-yadav-44983718/"]},
+"publisher":{"@type":"Organization","name":"Behror Solar","url":"https://behrorsolar.in/","logo":{"@type":"ImageObject","url":"https://behrorsolar.in/images/logo.png"}},
+"url":"https://behrorsolar.in/topcon-vs-mono-perc-field-test",
+"image":[
+{"@type":"ImageObject","url":"https://behrorsolar.in/images/mono-perc-vs-topcon-rooftop-test-og.jpg","width":1200,"height":627,"caption":"Mono PERC and TOPCon bifacial arrays compared on the same Rajasthan rooftop"}
+],
+"about":[
+{"@type":"Thing","name":"TOPCon solar panel"},
+{"@type":"Thing","name":"Mono PERC solar panel"},
+{"@type":"Thing","name":"Bifacial solar panel"},
+{"@type":"Place","name":"Behror, Rajasthan"},
+{"@type":"Place","name":"Neemrana, Rajasthan"}
+]
+}
+</script>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"BreadcrumbList",
+"itemListElement":[
+{"@type":"ListItem","position":1,"name":"Home","item":"https://behrorsolar.in/"},
+{"@type":"ListItem","position":2,"name":"Solar Guides","item":"https://behrorsolar.in/solar-guides"},
+{"@type":"ListItem","position":3,"name":"TOPCon vs Mono PERC — Real-World Test","item":"https://behrorsolar.in/topcon-vs-mono-perc-field-test"}
+]
+}
+</script>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"FAQPage",
+"mainEntity":[
+{"@type":"Question","name":"Does TOPCon always beat Mono PERC?","acceptedAnswer":{"@type":"Answer","text":"No. This was one comparison between two differently sized arrays on one roof and one monsoon day. Results vary by module model, inverter and MPPT configuration, mounting, shading, weather and season. In this observation, the TOPCon array recorded 16.9% more energy per installed kWp."}},
+{"@type":"Question","name":"Is TOPCon eligible for the PM Surya Ghar subsidy?","acceptedAnswer":{"@type":"Answer","text":"Yes, when it is a DCR (made-in-India) TOPCon module. Behror Solar fits DCR-certified TOPCon panels that qualify for the full PM Surya Ghar subsidy, the same as any eligible system."}},
+{"@type":"Question","name":"Should I compare TOPCon with a brand such as Tata Power?","acceptedAnswer":{"@type":"Answer","text":"Compare exact module models rather than treating a technology and a brand as opposites. Review efficiency, temperature coefficient, bifacial rating, warranties, service support, installed price and expected generation for the specific roof."}}
+]
+}
+</script>
+
+<script>
+(function(){
+var btn = document.querySelector('.nav-toggle');
+var nav = document.getElementById('main-nav');
+if(!btn || !nav) return;
+btn.addEventListener('click', function(){
+var open = nav.classList.toggle('nav-open');
+btn.classList.toggle('open', open);
+btn.setAttribute('aria-expanded', open);
+btn.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+document.body.style.overflow = open ? 'hidden' : '';
+});
+nav.querySelectorAll('a').forEach(function(link){
+link.addEventListener('click', function(){
+nav.classList.remove('nav-open');
+btn.classList.remove('open');
+btn.setAttribute('aria-expanded', 'false');
+btn.setAttribute('aria-label', 'Open navigation menu');
+document.body.style.overflow = '';
+});
+});
+})();
+</script>
+<script>
+(function(){
+var fab=document.getElementById('contactFab');
+if(!fab)return;
+var btn=fab.querySelector('.contact-fab-toggle');
+btn.addEventListener('click',function(e){e.stopPropagation();var o=fab.classList.toggle('open');btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'Close contact options':'Open contact options');});
+document.addEventListener('click',function(e){if(fab.classList.contains('open')&&!fab.contains(e.target)){fab.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){fab.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+})();
+</script>
+</body>
+</html>

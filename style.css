@@ -2725,8 +2725,8 @@ margin:auto;
 
 /* ===================== FLOATING CONTACT BUTTON ===================== */
 .contact-fab{position:fixed;right:24px;bottom:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:14px;}
-.contact-fab-options{display:flex;flex-direction:column;align-items:flex-end;gap:14px;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .25s ease,transform .25s ease;}
-.contact-fab.open .contact-fab-options{opacity:1;transform:none;pointer-events:auto;}
+.contact-fab-options{display:flex;flex-direction:column;align-items:flex-end;gap:14px;opacity:0;visibility:hidden;transform:translateY(12px);pointer-events:none;transition:opacity .25s ease,transform .25s ease,visibility 0s linear .25s;}
+.contact-fab.open .contact-fab-options{opacity:1;visibility:visible;transform:none;pointer-events:auto;transition-delay:0s;}
 .fab-item{display:flex;align-items:center;gap:10px;text-decoration:none;opacity:0;transform:translateY(10px);transition:opacity .25s ease,transform .25s ease;}
 .contact-fab.open .fab-item{opacity:1;transform:none;}
 .contact-fab.open .fab-item:nth-child(1){transition-delay:.04s;}
@@ -2820,10 +2820,12 @@ margin:auto;
 .footer-top{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;padding-bottom:38px;border-bottom:1px solid var(--line-light);}
 .footer-brand-col{min-width:0;}
 .footer-logo{display:block;text-decoration:none;margin-bottom:16px;}
-.footer-links{display:grid;grid-template-columns:repeat(5,1fr);gap:26px;padding:36px 0 6px;}
+.footer-links{display:grid;grid-template-columns:repeat(6,1fr);gap:26px;padding:36px 0 6px;}
 .footer-group{display:flex;flex-direction:column;gap:10px;min-width:0;}
 .footer-group-label{font-family:'Space Mono',monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
 .footer-group a{font-size:.85rem;color:#9AA4B5;text-decoration:none;transition:color .2s;line-height:1.4;}
+.footer-links .footer-group-label a{color:var(--gold);font-size:inherit;letter-spacing:inherit;text-decoration:none;transition:color .2s;}
+.footer-links .footer-group-label a:hover{color:#fff;}
 .footer-group a:hover{color:var(--gold);}
 @media(max-width:900px){
 .footer-top{grid-template-columns:1fr;gap:30px;}
@@ -3266,6 +3268,81 @@ max-width:900px;
 /* author name → LinkedIn */
 .author-name a{color:inherit;text-decoration:none;}
 .author-name a:hover,.author-name a:focus{color:var(--gold-deep);text-decoration:underline;}
+
+/* Field-note content helpers */
+.guide-followup{margin-top:18px;}
+.guide-figure{margin:26px 0 30px;}
+.guide-figure img{
+display:block;
+width:100%;
+height:auto;
+border:1px solid var(--line);
+border-radius:14px;
+box-shadow:0 10px 28px rgba(11,19,32,.08);
+}
+.guide-figure figcaption{
+font-size:.86rem;
+line-height:1.55;
+color:var(--steel);
+margin-top:10px;
+}
+.evidence-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+align-items:start;
+margin:28px 0;
+}
+.evidence-card{
+margin:0;
+background:#fff;
+border:1px solid var(--line);
+border-radius:14px;
+padding:14px;
+}
+.evidence-card img{
+display:block;
+width:100%;
+height:460px;
+object-fit:contain;
+background:#f7f7f7;
+border-radius:9px;
+}
+.evidence-card figcaption{
+font-size:.86rem;
+line-height:1.55;
+color:var(--steel);
+margin-top:12px;
+}
+@media(max-width:640px){
+.evidence-grid{grid-template-columns:1fr;}
+.evidence-card img{height:auto;max-height:560px;}
+}
+.guide-table caption{
+text-align:left;
+font-family:'Space Mono',monospace;
+font-size:.76rem;
+line-height:1.5;
+color:var(--steel);
+padding:0 0 10px;
+}
+.guide-table tbody th{
+padding:12px 14px;
+text-align:left;
+border-bottom:1px solid var(--line);
+font-weight:400;
+color:var(--steel);
+}
+
+@media (prefers-reduced-motion: reduce){
+*,*::before,*::after{
+scroll-behavior:auto!important;
+animation-duration:.01ms!important;
+animation-iteration-count:1!important;
+transition-duration:.01ms!important;
+transition-delay:0s!important;
+}
+}
 
 /* mobile overflow fix — MySine grid items must be allowed to shrink below min-content */
 .mysine-grid,.mysine-grid>*{min-width:0;}
