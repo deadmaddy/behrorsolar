@@ -3348,3 +3348,16 @@ transition-delay:0s!important;
 .mysine-grid,.mysine-grid>*{min-width:0;}
 .mysine-copy .q-answer,.mysine-points li{overflow-wrap:break-word;}
 .mysine-badge img{max-width:100%;}
+
+
+/* ===================== CONTENT LINK COLOR (theme) ===================== */
+main p a:not(.btn), main li a:not(.btn), .faq-answer a:not(.btn){
+  color:var(--gold-deep);
+  font-weight:600;
+  text-decoration:none;
+  transition:color .15s;
+}
+main p a:not(.btn):hover, main li a:not(.btn):hover, .faq-answer a:not(.btn):hover{
+  color:var(--ink);
+  text-decoration:underline;
+}
