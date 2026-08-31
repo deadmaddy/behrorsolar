@@ -1,4 +1,5 @@
-User-agent: *
-Allow: /
+# behrorsolar.in — origin robots.txt
+# Cloudflare "Manage robots.txt" prepends its AI-crawler + Content-Signal block above this.
+# Keep this file minimal; manage AI bot blocking in Cloudflare AI Crawl Control.
 
-Sitemap: https://behrorsolar.in/sitemap.xml
+Sitemap: https://behrorsolar.in/sitemap-index.xml
