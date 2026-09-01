@@ -1290,6 +1290,30 @@ grid-template-columns:repeat(3,1fr);
 .cov-3{grid-template-columns:repeat(2,1fr);}
 }
 
+/* Service-area — 4-wide secondary row (Neemrana page) */
+.cov-4{
+grid-template-columns:repeat(4,1fr);
+}
+
+.coverage-secondary-grid{
+margin-top:14px;
+}
+
+@media(max-width:640px){
+.cov-4{grid-template-columns:repeat(2,1fr);}
+}
+
+/* Compact savings snapshot note */
+.savings-note-inline{
+margin-top:22px;
+text-align:center;
+color:var(--steel);
+font-size:0.9rem;
+max-width:760px;
+margin-left:auto;
+margin-right:auto;
+}
+
 /* =====================
 CONTACT
 ===================== */
