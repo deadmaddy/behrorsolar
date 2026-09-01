@@ -516,11 +516,25 @@ color:var(--ink);
 <nav id="main-nav" aria-label="Main navigation">
 <ul>
 <li><a href="/">Home</a></li>
-<li><a href="/solar-installation-neemrana">Neemrana</a></li>
-<li><a href="/hybrid-solar-behror-neemrana">Hybrid</a></li>
+<li class="has-submenu">
+<span class="nav-parent" tabindex="0" role="button" aria-haspopup="true">Residential <span aria-hidden="true">&#9662;</span></span>
+<ul class="submenu">
+<li><a href="/3kw-solar-system">3 kW System</a></li>
+<li><a href="/5kw-solar-system">5 kW System</a></li>
+<li><a href="/10kw-solar-system">10 kW System</a></li>
+</ul>
+</li>
+<li class="has-submenu">
+<span class="nav-parent" tabindex="0" role="button" aria-haspopup="true">Systems <span aria-hidden="true">&#9662;</span></span>
+<ul class="submenu">
+<li><a href="/solar-panels-behror-neemrana">Solar Panels</a></li>
+<li><a href="/solar-battery">Solar Battery</a></li>
+<li><a href="/hybrid-solar-behror-neemrana">Hybrid Solar</a></li>
+<li><a href="/on-grid-hybrid-off-grid-solar-behror-neemrana">On-Grid vs Hybrid vs Off-Grid</a></li>
+</ul>
+</li>
 <li><a href="/pm-surya-ghar">Subsidy</a></li>
 <li><a href="/solar-guides">Guides</a></li>
-<li><a href="/#contact">Contact</a></li>
 </ul>
 </nav>
 
@@ -635,40 +649,40 @@ metering support handled end to end.
 <h2>Residential, rural and industrial solar</h2>
 </div>
 
-<div class="services-grid">
+<div class="services-grid svc-grid">
 
 <div class="service-card">
-<span class="service-mark">RES</span>
+<span class="service-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span>
 <h3>Residential — Neemrana Urban</h3>
 <p>Rooftop systems for homes and colonies across Neemrana town, sized to your bill and roof.</p>
 </div>
 
 <div class="service-card">
-<span class="service-mark">RUR</span>
+<span class="service-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 11 11 .9a1 1 0 0 1 .8 1.1l-.665 4.158a1 1 0 0 1-.988.842H20"/><path d="M16 18h-5"/><path d="M18 5a1 1 0 0 0-1 1v5.573"/><path d="M3 4h8.129a1 1 0 0 1 .99.863L13 11.246"/><path d="M4 11V4"/><path d="M7 15h.01"/><path d="M8 10.1V4"/><circle cx="18" cy="18" r="2"/><circle cx="7" cy="15" r="5"/></svg></span>
 <h3>Rural — Neemrana Rural</h3>
 <p>Farmhouse and rural property installations, with JVVNL net metering handled for you. For properties with daily load shedding, consider <a href="/hybrid-solar-behror-neemrana">hybrid solar with battery backup</a>.</p>
 </div>
 
 <div class="service-card">
-<span class="service-mark">IND</span>
+<span class="service-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16h.01"/><path d="M16 16h.01"/><path d="M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z"/><path d="M8 16h.01"/></svg></span>
 <h3>Industrial — NIA Neemrana</h3>
 <p>High-load systems engineered for industrial sheds in Neemrana's manufacturing zone.</p>
 </div>
 
 <div class="service-card">
-<span class="service-mark">PSG</span>
+<span class="service-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="M8 8h8"/><path d="M8 12h8"/><path d="m13 17-5-1h1a4 4 0 0 0 0-8"/></svg></span>
 <h3>PM Surya Ghar Assistance</h3>
 <p>Subsidy documentation and application handled end to end for Neemrana applicants.</p>
 </div>
 
 <div class="service-card">
-<span class="service-mark">NET</span>
+<span class="service-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3 4 7l4 4"/><path d="M4 7h16"/><path d="m16 21 4-4-4-4"/><path d="M20 17H4"/></svg></span>
 <h3>JVVNL Net Metering</h3>
 <p>Approvals, paperwork and JVVNL coordination, managed for you from start to finish.</p>
 </div>
 
 <div class="service-card">
-<span class="service-mark">AMC</span>
+<span class="service-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></svg></span>
 <h3>Maintenance & Support</h3>
 <p>A 20-minute response radius means real after-sales support, not a distant call centre.</p>
 </div>
@@ -685,31 +699,41 @@ metering support handled end to end.
 <h2>From site visit to switch-on in Neemrana</h2>
 </div>
 
-<div class="process-grid">
+<div class="timeline">
 
-<div class="process-step">
-<span class="process-num">01</span>
+<div class="tl-grid">
+
+<div class="tl-step">
+<span class="tl-node">01</span>
+<span class="tl-dur">Day 1</span>
 <h3>Site Survey</h3>
 <p>Our Behror-based team reaches your Neemrana property within a day of enquiry.</p>
 </div>
 
-<div class="process-step">
-<span class="process-num">02</span>
+<div class="tl-step">
+<span class="tl-node">02</span>
+<span class="tl-dur">Within 48 hours</span>
 <h3>System Design</h3>
 <p>Capacity and structure specified for your roof — urban, rural or industrial.</p>
 </div>
 
-<div class="process-step">
-<span class="process-num">03</span>
+<div class="tl-step">
+<span class="tl-node">03</span>
+<span class="tl-dur">1&ndash;2 days on site</span>
 <h3>Installation</h3>
 <p>HDG structure and panels installed by the same trained crew that surveyed your site.</p>
 </div>
 
-<div class="process-step">
-<span class="process-num">04</span>
-<h3>JVVNL Net Metering & Handover</h3>
+<div class="tl-step">
+<span class="tl-node">04</span>
+<span class="tl-dur">Live in 3&ndash;5 weeks</span>
+<h3>JVVNL Net Metering &amp; Handover</h3>
 <p>JVVNL approvals secured, system commissioned, handed over running.</p>
 </div>
+
+</div>
+
+<p class="tl-caption">Most of the 3&ndash;5 weeks is JVVNL paperwork and inspection — which we handle for you, start to finish.</p>
 
 </div>
 </div>
@@ -1054,6 +1078,7 @@ Verify Tata Partner ↗
 <div class="footer-group">
 <p class="footer-group-label"><a href="/solar-guides">Guides</a></p>
 <a href="/topcon-vs-mono-perc-field-test">TOPCon vs Mono PERC</a>
+<a href="/pm-surya-ghar">PM Surya Ghar Subsidy</a>
 </div>
 <div class="footer-group">
 <p class="footer-group-label"><a href="/on-grid-hybrid-off-grid-solar-behror-neemrana">Systems</a></p>
@@ -1066,8 +1091,10 @@ Verify Tata Partner ↗
 <a href="/solar-battery">Solar Battery &amp; Backup</a>
 </div>
 <div class="footer-group">
-<p class="footer-group-label"><a href="/pm-surya-ghar">Subsidy</a></p>
-<a href="/pm-surya-ghar">PM Surya Ghar Subsidy</a>
+<p class="footer-group-label">Residential</p>
+<a href="/3kw-solar-system">3 kW Solar System</a>
+<a href="/5kw-solar-system">5 kW Solar System</a>
+<a href="/10kw-solar-system">10 kW Solar System</a>
 </div>
 <div class="footer-group">
 <p class="footer-group-label"><a href="/solar-installation-neemrana">Areas We Serve</a></p>
