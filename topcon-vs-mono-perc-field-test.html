@@ -42,7 +42,7 @@
 <link rel="manifest" href="/site.webmanifest">
 
 <link rel="preload" as="image" href="/images/behror-solar-logo.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -141,6 +141,7 @@ background:var(--ink);color:var(--sand);border-radius:14px;padding:26px 28px;mar
 }
 </style>
 
+<script src="/site.js" defer></script>
 </head>
 
 <body>
@@ -152,7 +153,7 @@ background:var(--ink);color:var(--sand);border-radius:14px;padding:26px 28px;mar
 
 <div class="logo-area">
 <a href="/" aria-label="Behror Solar — Home">
-<img src="images/behror-solar-logo.png" alt="Behror Solar — Engineered Rooftop Solar Solutions" class="header-bs-logo" width="183" height="53">
+<img src="/images/behror-solar-logo.png" alt="Behror Solar — Engineered Rooftop Solar Solutions" class="header-bs-logo" width="183" height="53">
 </a>
 </div>
 
@@ -160,21 +161,25 @@ background:var(--ink);color:var(--sand);border-radius:14px;padding:26px 28px;mar
 <ul>
 <li><a href="/">Home</a></li>
 <li class="has-submenu">
-<span class="nav-parent" tabindex="0" role="button" aria-haspopup="true">Residential <span aria-hidden="true">&#9662;</span></span>
+<details class="nav-dropdown">
+<summary class="nav-parent">Residential <span aria-hidden="true">&#9662;</span></summary>
 <ul class="submenu">
 <li><a href="/3kw-solar-system">3 kW System</a></li>
 <li><a href="/5kw-solar-system">5 kW System</a></li>
 <li><a href="/10kw-solar-system">10 kW System</a></li>
 </ul>
+</details>
 </li>
 <li class="has-submenu">
-<span class="nav-parent" tabindex="0" role="button" aria-haspopup="true">Systems <span aria-hidden="true">&#9662;</span></span>
+<details class="nav-dropdown">
+<summary class="nav-parent">Systems <span aria-hidden="true">&#9662;</span></summary>
 <ul class="submenu">
 <li><a href="/solar-panels-behror-neemrana">Solar Panels</a></li>
 <li><a href="/solar-battery">Solar Battery</a></li>
 <li><a href="/hybrid-solar-behror-neemrana">Hybrid Solar</a></li>
 <li><a href="/on-grid-hybrid-off-grid-solar-behror-neemrana">On-Grid vs Hybrid vs Off-Grid</a></li>
 </ul>
+</details>
 </li>
 <li><a href="/pm-surya-ghar">Subsidy</a></li>
 <li><a href="/solar-guides">Guides</a></li>
@@ -191,7 +196,7 @@ background:var(--ink);color:var(--sand);border-radius:14px;padding:26px 28px;mar
 
 </div>
 <div class="partner-row container">
-<img src="images/gge-tata-header-logo.png" alt="Authorized Tata Power Solaroof Channel Partner — Global Green Energy" class="partner-row-logo" width="338" height="36">
+<img src="/images/gge-tata-header-logo.png" alt="Authorized Tata Power Solaroof Channel Partner — Global Green Energy" class="partner-row-logo" width="338" height="36">
 </div>
 </header>
 
@@ -236,8 +241,8 @@ background:var(--ink);color:var(--sand);border-radius:14px;padding:26px 28px;mar
 <p>Both arrays sat on the <strong>same roof</strong>, with the <strong>same white reflective coating</strong> underneath, under the <strong>same monsoon sky</strong>, on the <strong>same day</strong>. This reduced several environmental differences, but it was not a controlled laboratory test. Module model, electrical configuration, mounting and measurement conditions may also have affected the result.</p>
 <figure class="guide-figure">
 <picture>
-<source type="image/webp" srcset="images/mono-perc-vs-topcon-rooftop-test-640.webp 640w, images/mono-perc-vs-topcon-rooftop-test-960.webp 960w, images/mono-perc-vs-topcon-rooftop-test-1280.webp 1280w, images/mono-perc-vs-topcon-rooftop-test-1735.webp 1735w" sizes="(max-width: 860px) calc(100vw - 40px), 820px">
-<img src="images/mono-perc-vs-topcon-rooftop-test-og.jpg" alt="Mono PERC bifacial solar array on the left and TOPCon bifacial array on the right, mounted on the same Rajasthan rooftop at matching tilt and height" width="1200" height="627" loading="lazy" decoding="async">
+<source type="image/webp" srcset="/images/mono-perc-vs-topcon-rooftop-test-640.webp 640w, /images/mono-perc-vs-topcon-rooftop-test-960.webp 960w, /images/mono-perc-vs-topcon-rooftop-test-1280.webp 1280w, /images/mono-perc-vs-topcon-rooftop-test-1735.webp 1735w" sizes="(max-width: 860px) calc(100vw - 40px), 820px">
+<img src="/images/mono-perc-vs-topcon-rooftop-test-og.jpg" alt="Mono PERC bifacial solar array on the left and TOPCon bifacial array on the right, mounted on the same Rajasthan rooftop at matching tilt and height" width="1200" height="627" loading="lazy" decoding="async">
 </picture>
 <figcaption>Rajasthan rooftop field test: Mono PERC array (left) and TOPCon array (right), installed with the same tilt, direction, mounting height and shading conditions.</figcaption>
 </figure>
@@ -281,13 +286,13 @@ background:var(--ink);color:var(--sand);border-radius:14px;padding:26px 28px;mar
 <div class="evidence-grid" aria-label="Monitoring screenshots from 21 August 2026">
 <figure class="evidence-card">
 <picture>
-<source type="image/webp" srcset="images/topcon-generation-21-august-2026-480.webp 480w" sizes="(max-width: 640px) calc(100vw - 68px), 360px">
-<img src="images/topcon-generation-21-august-2026.png" alt="TOPCon bifacial solar array monitoring record for 21 August 2026 showing daily generation of 22.46 kWh" width="1084" height="2412" loading="lazy" decoding="async">
+<source type="image/webp" srcset="/images/topcon-generation-21-august-2026-480.webp 480w" sizes="(max-width: 640px) calc(100vw - 68px), 360px">
+<img src="/images/topcon-generation-21-august-2026.png" alt="TOPCon bifacial solar array monitoring record for 21 August 2026 showing daily generation of 22.46 kWh" width="1084" height="2412" loading="lazy" decoding="async">
 </picture>
 <figcaption><strong>TOPCon:</strong> monitoring record for 21 August 2026 showing 22.46 kWh.</figcaption>
 </figure>
 <figure class="evidence-card">
-<img src="images/17unitsmonoperc.jpg" alt="Mono PERC bifacial solar array monitoring record for 21 August 2026 showing daily generation of 16.7 kWh" width="271" height="523" loading="lazy" decoding="async">
+<img src="/images/17unitsmonoperc.jpg" alt="Mono PERC bifacial solar array monitoring record for 21 August 2026 showing daily generation of 16.7 kWh" width="271" height="523" loading="lazy" decoding="async">
 <figcaption><strong>Mono PERC:</strong> monitoring record for 21 August 2026 showing 16.7 kWh.</figcaption>
 </figure>
 </div>
@@ -313,15 +318,15 @@ background:var(--ink);color:var(--sand);border-radius:14px;padding:26px 28px;mar
 <div class="evidence-grid" aria-label="Monitoring screenshots from 27 August 2026">
 <figure class="evidence-card">
 <picture>
-<source type="image/webp" srcset="images/field-test-topcon-27aug-480.webp 480w" sizes="(max-width: 640px) calc(100vw - 68px), 360px">
-<img src="images/field-test-topcon-27aug.png" alt="TOPCon bifacial solar array monitoring record for 27 August 2026 showing daily generation of 22.16 kWh on a Behror rooftop" width="1084" height="2412" loading="lazy" decoding="async">
+<source type="image/webp" srcset="/images/field-test-topcon-27aug-480.webp 480w" sizes="(max-width: 640px) calc(100vw - 68px), 360px">
+<img src="/images/field-test-topcon-27aug.png" alt="TOPCon bifacial solar array monitoring record for 27 August 2026 showing daily generation of 22.16 kWh on a Behror rooftop" width="1084" height="2412" loading="lazy" decoding="async">
 </picture>
 <figcaption><strong>TOPCon:</strong> monitoring record for 27 August 2026 showing 22.16 kWh.</figcaption>
 </figure>
 <figure class="evidence-card">
 <picture>
-<source type="image/webp" srcset="images/field-test-monoperc-27aug-480.webp 480w" sizes="(max-width: 640px) calc(100vw - 68px), 360px">
-<img src="images/field-test-monoperc-27aug.png" alt="Mono PERC bifacial solar array monitoring record for 27 August 2026 showing daily generation of 16.4 kWh on the same Behror rooftop" width="1084" height="2132" loading="lazy" decoding="async">
+<source type="image/webp" srcset="/images/field-test-monoperc-27aug-480.webp 480w" sizes="(max-width: 640px) calc(100vw - 68px), 360px">
+<img src="/images/field-test-monoperc-27aug.png" alt="Mono PERC bifacial solar array monitoring record for 27 August 2026 showing daily generation of 16.4 kWh on the same Behror rooftop" width="1084" height="2132" loading="lazy" decoding="async">
 </picture>
 <figcaption><strong>Mono PERC:</strong> monitoring record for 27 August 2026 showing 16.4 kWh.</figcaption>
 </figure>
@@ -506,7 +511,7 @@ background:var(--ink);color:var(--sand);border-radius:14px;padding:26px 28px;mar
 </div>
 <div class="form-row">
 <label for="cf-phone">Phone Number</label>
-<input type="tel" id="cf-phone" name="Phone" required>
+<input type="tel" id="cf-phone" name="Phone" required autocomplete="tel" inputmode="tel" pattern="\+?(?:[0-9][ \-]*){9,14}[0-9]" title="Enter a phone number with 10 to 15 digits; spaces, hyphens and a leading + are allowed.">
 </div>
 <div class="form-row">
 <label for="cf-location">Location</label>
@@ -587,7 +592,7 @@ X
 <div class="footer-partner-col">
 
 <div class="footer-logos-row">
-<img src="images/global-green-energy-logo.png" alt="Global Green Energy, Alwar" class="footer-gge-logo" loading="lazy" decoding="async" width="244" height="60">
+<img src="/images/global-green-energy-logo.png" alt="Global Green Energy, Alwar" class="footer-gge-logo" loading="lazy" decoding="async" width="244" height="60">
 </div>
 
 <p class="footer-partner-statement">
@@ -650,7 +655,7 @@ Verify Tata Partner ↗
 </footer>
 
 <div class="contact-fab" id="contactFab">
-<div class="contact-fab-options" id="contactFabOptions">
+<div class="contact-fab-options" id="contact-options">
 <a href="tel:+919414453454" class="fab-item fab-call" aria-label="Call Behror Solar">
 <span class="fab-label">Call Now</span>
 <span class="fab-btn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.5 3 3.95 3.45 3.5 4 3.5h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.21 2.2z"/></svg></span>
@@ -664,7 +669,7 @@ Verify Tata Partner ↗
 <span class="fab-btn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
 </a>
 </div>
-<button type="button" class="contact-fab-toggle" aria-expanded="false" aria-controls="contactFabOptions" aria-label="Open contact options">
+<button type="button" class="contact-fab-toggle" aria-expanded="false" aria-controls="contact-options" aria-label="Open contact options">
 <svg class="fab-ic-open" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM7 9h10v2H7V9zm7 5H7v-2h7v2zm3-6H7V6h10v2z"/></svg><svg class="fab-ic-close" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
 </button>
 </div>
@@ -679,7 +684,7 @@ Verify Tata Partner ↗
 "dateModified":"2026-08-27T00:00:00+05:30",
 "mainEntityOfPage":{"@type":"WebPage","@id":"https://behrorsolar.in/topcon-vs-mono-perc-field-test"},
 "author":{"@type":"Person","name":"Mahendra Yadav","url":"https://www.linkedin.com/in/mahendra-yadav-44983718/","sameAs":["https://www.linkedin.com/in/mahendra-yadav-44983718/"]},
-"publisher":{"@type":"Organization","name":"Behror Solar","url":"https://behrorsolar.in/","logo":{"@type":"ImageObject","url":"https://behrorsolar.in/images/logo.png"}},
+"publisher":{"@type":"Organization","name":"Behror Solar","legalName":"Global Green Energy","url":"https://behrorsolar.in/","logo":{"@type":"ImageObject","url":"https://behrorsolar.in/images/logo.png"}},
 "url":"https://behrorsolar.in/topcon-vs-mono-perc-field-test",
 "image":[
 {"@type":"ImageObject","url":"https://behrorsolar.in/images/mono-perc-vs-topcon-rooftop-test-og.jpg","width":1200,"height":627,"caption":"Mono PERC and TOPCon bifacial arrays compared on the same Rajasthan rooftop"},
@@ -720,38 +725,7 @@ Verify Tata Partner ↗
 }
 </script>
 
-<script>
-(function(){
-var btn = document.querySelector('.nav-toggle');
-var nav = document.getElementById('main-nav');
-if(!btn || !nav) return;
-btn.addEventListener('click', function(){
-var open = nav.classList.toggle('nav-open');
-btn.classList.toggle('open', open);
-btn.setAttribute('aria-expanded', open);
-btn.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
-document.body.style.overflow = open ? 'hidden' : '';
-});
-nav.querySelectorAll('a').forEach(function(link){
-link.addEventListener('click', function(){
-nav.classList.remove('nav-open');
-btn.classList.remove('open');
-btn.setAttribute('aria-expanded', 'false');
-btn.setAttribute('aria-label', 'Open navigation menu');
-document.body.style.overflow = '';
-});
-});
-})();
-</script>
-<script>
-(function(){
-var fab=document.getElementById('contactFab');
-if(!fab)return;
-var btn=fab.querySelector('.contact-fab-toggle');
-btn.addEventListener('click',function(e){e.stopPropagation();var o=fab.classList.toggle('open');btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'Close contact options':'Open contact options');});
-document.addEventListener('click',function(e){if(fab.classList.contains('open')&&!fab.contains(e.target)){fab.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'){fab.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
-})();
-</script>
+
+
 </body>
 </html>

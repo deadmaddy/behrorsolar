@@ -47,449 +47,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 
-<style id="critical-css">:root{
---ink:#0B1320;
---ink-soft:#141F33;
---sand:#FCFBF7;
---sand-deep:#F1ECE1;
---gold:#D9A441;
---gold-deep:#8B5E1A;
---steel:#4F5A6B;
---line:rgba(11,19,32,0.10);
---line-light:rgba(255,255,255,0.14);
-}
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-html{
-scroll-behavior:smooth;
-}
-.skip-link{
-position:absolute;
-left:-9999px;
-top:0;
-z-index:10000;
-background:var(--gold);
-color:var(--ink);
-padding:12px 20px;
-font-weight:700;
-text-decoration:none;
-font-size:0.95rem;
-}
-.skip-link:focus{
-left:0;
-outline:none;
-box-shadow:0 0 0 3px var(--gold-deep);
-}
-body{
-font-family:'Public Sans',sans-serif;
-line-height:1.7;
-color:var(--ink);
-background:var(--sand);
-}
-h1,h2,h3{
-font-family:'Space Grotesk',sans-serif;
-letter-spacing:-0.01em;
-}
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-.section-eyebrow,
-.stat-eyebrow,
-.panel-label,
-.hero-tag{
-font-family:'Space Mono',monospace;
-text-transform:uppercase;
-letter-spacing:0.12em;
-font-size:0.75rem;
-}
-.section-eyebrow{
-display:inline-block;
-color:var(--gold-deep);
-margin-bottom:14px;
-font-weight:700;
-}
-.section-title.light .section-eyebrow{
-color:var(--gold);
-}
-.header{
-position:sticky;
-top:0;
-z-index:1000;
-background:rgba(252,251,247,0.92);
-backdrop-filter:blur(8px);
--webkit-backdrop-filter:blur(8px);
-border-bottom:1px solid var(--line);
-}
-.nav-container{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:16px 0;
-gap:30px;
-}
-.logo-area{
-display:flex;
-align-items:center;
-gap:10px;
-}
-.header-bs-logo{
-height:48px;
-width:auto;
-display:block;
-}
-.header-combined-logo{
-height:32px;
-width:auto;
-display:block;
-opacity:0.92;
-}
-.header-divider{
-width:1px;
-height:32px;
-background:var(--line);
-flex-shrink:0;
-}
-nav{
-flex:1;
-}
-nav ul{
-display:flex;
-justify-content:center;
-list-style:none;
-gap:34px;
-}
-nav a{
-text-decoration:none;
-font-weight:600;
-font-size:0.95rem;
-color:var(--ink);
-position:relative;
-padding-bottom:4px;
-}
-nav a::after{
-content:"";
-position:absolute;
-left:0;
-right:100%;
-bottom:0;
-height:2px;
-background:var(--gold);
-transition:right .25s ease;
-}
-nav a:hover::after{
-right:0;
-}
-.nav-cta{
-flex-shrink:0;
-}
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible,
-summary:focus-visible{
-outline:2px solid var(--gold);
-outline-offset:2px;
-}
-.nav-toggle{
-display:none;
-flex-direction:column;
-gap:5px;
-background:none;
-border:none;
-cursor:pointer;
-padding:8px;
-z-index:1001;
-position:relative;
-}
-.btn{
-display:inline-block;
-padding:14px 26px;
-border-radius:4px;
-text-decoration:none;
-font-weight:700;
-font-size:0.95rem;
-letter-spacing:0.01em;
-transition:.25s ease;
-border:1px solid transparent;
-}
-.btn-primary{
-background:var(--gold);
-color:var(--ink);
-}
-.btn-primary:hover{
-background:var(--gold-deep);
-color:var(--sand);
-transform:translateY(-2px);
-}
-.btn-whatsapp{
-background:transparent;
-color:var(--sand);
-border:1px solid var(--line-light);
-}
-.btn-whatsapp:hover{
-border-color:var(--gold);
-color:var(--gold);
-transform:translateY(-2px);
-}
-.btn-ghost{
-border:1px solid var(--line);
-color:var(--ink);
-padding:10px 20px;
-font-size:0.88rem;
-}
-.btn-ghost:hover{
-border-color:var(--gold-deep);
-color:var(--gold-deep);
-}
-.hero{
-position:relative;
-background:var(--ink);
-color:var(--sand);
-padding:110px 0 90px;
-overflow:hidden;
-}
-.hero-grid-overlay{
-position:absolute;
-inset:0;
-background-image:
-linear-gradient(var(--line-light) 1px, transparent 1px),
-linear-gradient(90deg, var(--line-light) 1px, transparent 1px);
-background-size:64px 64px;
-opacity:0.35;
-mask-image:linear-gradient(to bottom, transparent, rgba(0,0,0,0.9) 40%, transparent);
-}
-.hero-content{
-position:relative;
-z-index:2;
-display:grid;
-grid-template-columns:1.15fr 0.85fr;
-gap:60px;
-align-items:center;
-}
-.hero-tag{
-display:inline-flex;
-align-items:center;
-gap:10px;
-padding:9px 16px;
-border:1px solid var(--line-light);
-border-radius:30px;
-margin-bottom:30px;
-color:var(--gold);
-}
-.hero-tag .dot{
-width:7px;
-height:7px;
-border-radius:50%;
-background:var(--gold);
-display:inline-block;
-}
-.hero h1{
-font-size:3.3rem;
-font-weight:700;
-line-height:1.12;
-margin-bottom:24px;
-}
-.hero-sub{
-font-size:1.08rem;
-max-width:560px;
-margin-bottom:34px;
-color:#D7DCE5;
-}
-.hero-buttons{
-display:flex;
-flex-wrap:wrap;
-gap:15px;
-margin-bottom:40px;
-}
-.hero-features{
-display:flex;
-flex-wrap:wrap;
-gap:10px 28px;
-border-top:1px solid var(--line-light);
-padding-top:22px;
-}
-.hero-features span{
-font-family:'Space Mono',monospace;
-font-size:0.78rem;
-letter-spacing:0.04em;
-color:#9AA4B5;
-}
-.hero-features span::before{
-content:"— ";
-color:var(--gold);
-}
-.hero-panel{
-background:var(--ink-soft);
-border:1px solid var(--line-light);
-border-radius:10px;
-padding:24px;
-}
-.panel-partner{
-padding-bottom:16px;
-margin-bottom:16px;
-border-bottom:1px solid var(--line-light);
-display:flex;
-justify-content:center;
-}
-.panel-partner img{
-height:32px;
-width:auto;
-display:block;
-}
-.panel-label{
-display:flex;
-justify-content:space-between;
-color:var(--steel);
-margin-bottom:18px;
-}
-.panel-unit{
-color:var(--gold);
-}
-.sun-curve{
-width:100%;
-height:auto;
-display:block;
-}
-.grid-lines line{
-stroke:var(--line-light);
-stroke-width:1;
-}
-.curve-fill{
-fill:rgba(217,164,65,0.14);
-}
-.curve-line{
-fill:none;
-stroke:var(--gold);
-stroke-width:2.5;
-}
-.curve-point{
-fill:var(--gold);
-stroke:var(--ink-soft);
-stroke-width:3;
-}
-.panel-footer{
-display:flex;
-justify-content:space-between;
-margin-top:10px;
-font-family:'Space Mono',monospace;
-font-size:0.72rem;
-color:var(--steel);
-}
-.panel-label,
-.panel-footer{
-color:#9AA4B5;
-}
-.stats{
-background:var(--sand);
-border-top:3px solid var(--gold);
-border-bottom:1px solid var(--line);
-}
-.stats-attribution{
-padding:32px 0 20px;
-border-bottom:1px solid var(--line);
-margin-bottom:0;
-text-align:center;
-}
-.stats-attribution-badge{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:16px;
-flex-wrap:nowrap;
-margin-bottom:12px;
-}
-.stats-attribution-main{
-font-family:'Space Grotesk',sans-serif;
-font-size:1.35rem;
-font-weight:700;
-color:var(--ink);
-letter-spacing:-0.01em;
-}
-.stats-attribution-divider{
-width:4px;
-height:4px;
-border-radius:50%;
-background:var(--gold);
-display:inline-block;
-flex-shrink:0;
-}
-.stats-attribution-tag{
-display:inline-block;
-font-family:'Space Mono',monospace;
-font-size:0.68rem;
-letter-spacing:0.1em;
-text-transform:uppercase;
-color:var(--sand);
-background:var(--ink);
-padding:5px 12px;
-border-radius:20px;
-font-weight:600;
-}
-.stats-attribution-sub{
-display:block;
-font-family:'Space Mono',monospace;
-font-size:0.78rem;
-letter-spacing:0.1em;
-text-transform:uppercase;
-color:var(--gold-deep);
-font-weight:600;
-}
-.stats-row{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-}
-.stats-row-2{
-border-top:1px solid var(--line);
-}
-.stat-cell{
-padding:38px 20px;
-text-align:center;
-border-left:1px solid var(--line);
-}
-.stat-cell:first-child{
-border-left:none;
-}
-.stat-eyebrow{
-color:var(--steel);
-display:block;
-margin-bottom:10px;
-}
-.stat-cell .stat-num{
-font-family:'Space Grotesk',sans-serif;
-font-size:2.4rem;
-color:var(--ink);
-font-weight:700;
-}
-.stat-cell .stat-num span{
-font-size:1.2rem;
-color:var(--gold-deep);
-font-weight:700;
-}
-.about-section,
-.services-section,
-.why-section,
-.components-section,
-.gallery-section,
-.coverage-section{
-padding:100px 0;
-}
-.section-title{
-margin-bottom:56px;
-max-width:560px;
-}
-.section-title h2{
-font-size:2.2rem;
-font-weight:700;
-color:var(--ink);
-}</style>
-<link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="style.css"></noscript>
+<link rel="stylesheet" href="/style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -497,6 +55,7 @@ color:var(--ink);
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Public+Sans:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap"></noscript>
 
 
+<script src="/site.js" defer></script>
 </head>
 
 
@@ -509,7 +68,7 @@ color:var(--ink);
 
 <div class="logo-area">
 <a href="/" aria-label="Behror Solar — Home">
-<img src="images/behror-solar-logo.png" alt="Behror Solar — Engineered Rooftop Solar Solutions" class="header-bs-logo" width="183" height="53">
+<img src="/images/behror-solar-logo.png" alt="Behror Solar — Engineered Rooftop Solar Solutions" class="header-bs-logo" width="183" height="53">
 </a>
 </div>
 
@@ -517,21 +76,25 @@ color:var(--ink);
 <ul>
 <li><a href="/">Home</a></li>
 <li class="has-submenu">
-<span class="nav-parent" tabindex="0" role="button" aria-haspopup="true">Residential <span aria-hidden="true">&#9662;</span></span>
+<details class="nav-dropdown">
+<summary class="nav-parent">Residential <span aria-hidden="true">&#9662;</span></summary>
 <ul class="submenu">
 <li><a href="/3kw-solar-system">3 kW System</a></li>
 <li><a href="/5kw-solar-system">5 kW System</a></li>
 <li><a href="/10kw-solar-system">10 kW System</a></li>
 </ul>
+</details>
 </li>
 <li class="has-submenu">
-<span class="nav-parent" tabindex="0" role="button" aria-haspopup="true">Systems <span aria-hidden="true">&#9662;</span></span>
+<details class="nav-dropdown">
+<summary class="nav-parent">Systems <span aria-hidden="true">&#9662;</span></summary>
 <ul class="submenu">
 <li><a href="/solar-panels-behror-neemrana">Solar Panels</a></li>
 <li><a href="/solar-battery">Solar Battery</a></li>
 <li><a href="/hybrid-solar-behror-neemrana">Hybrid Solar</a></li>
 <li><a href="/on-grid-hybrid-off-grid-solar-behror-neemrana">On-Grid vs Hybrid vs Off-Grid</a></li>
 </ul>
+</details>
 </li>
 <li><a href="/pm-surya-ghar">Subsidy</a></li>
 <li><a href="/solar-guides">Guides</a></li>
@@ -548,7 +111,7 @@ color:var(--ink);
 
 </div>
 <div class="partner-row container">
-<img src="images/gge-tata-header-logo.png" alt="Authorized Tata Power Solaroof Channel Partner — Global Green Energy" class="partner-row-logo" width="338" height="36">
+<img src="/images/gge-tata-header-logo.png" alt="Authorized Tata Power Solaroof Channel Partner — Global Green Energy" class="partner-row-logo" width="338" height="36">
 </div>
 </header>
 
@@ -654,7 +217,7 @@ metering support handled end to end.
 <div class="container about-grid">
 
 <figure class="about-image">
-<img src="images/neemrana-uttam-install.jpg" alt="Residential rooftop solar installation in Neemrana, Rajasthan" loading="lazy" decoding="async" width="720" height="900">
+<img src="/images/neemrana-uttam-install.jpg" alt="Residential rooftop solar installation in Neemrana, Rajasthan" loading="lazy" decoding="async" width="720" height="900">
 <figcaption class="about-image-caption">Real installation. Real local support.</figcaption>
 </figure>
 
@@ -859,7 +422,7 @@ metering support handled end to end.
 
 <div class="gallery-card">
 <div class="gallery-img-wrap">
-<img src="images/rajesh-surya-nagar-neemrana-5kw.jpg" alt="5 kW PM Surya Ghar rooftop solar installation — Rajesh Sharma, Surya Nagar, Neemrana 301705, Rajasthan, July 2026" loading="lazy" decoding="async" width="600" height="310">
+<img src="/images/rajesh-surya-nagar-neemrana-5kw.jpg" alt="5 kW PM Surya Ghar rooftop solar installation — Rajesh Sharma, Surya Nagar, Neemrana 301705, Rajasthan, July 2026" loading="lazy" decoding="async" width="600" height="310">
 </div>
 <div class="gallery-content">
 <h3>5 kW Installation — Surya Nagar, Neemrana (301705)</h3>
@@ -869,7 +432,7 @@ metering support handled end to end.
 
 <div class="gallery-card">
 <div class="gallery-img-wrap">
-<img src="images/sulekha-yadav-neemrana-inverter.jpg" alt="Solar inverter installation — Sulekha Yadav, Neemrana 301708, Rajasthan, July 2026" loading="lazy" decoding="async" width="600" height="320">
+<img src="/images/sulekha-yadav-neemrana-inverter.jpg" alt="Solar inverter installation — Sulekha Yadav, Neemrana 301708, Rajasthan, July 2026" loading="lazy" decoding="async" width="600" height="320">
 </div>
 <div class="gallery-content">
 <h3>Inverter Installation — Neemrana (301708)</h3>
@@ -879,7 +442,7 @@ metering support handled end to end.
 
 <div class="gallery-card">
 <div class="gallery-img-wrap">
-<img src="images/jagdish-indra-colony-neemrana-6kw.jpg" alt="6 kW PM Surya Ghar rooftop solar installation — Jagdish Saini, Indra Colony, Neemrana 301709, Rajasthan, July 2026" loading="lazy" decoding="async" width="600" height="310">
+<img src="/images/jagdish-indra-colony-neemrana-6kw.jpg" alt="6 kW PM Surya Ghar rooftop solar installation — Jagdish Saini, Indra Colony, Neemrana 301709, Rajasthan, July 2026" loading="lazy" decoding="async" width="600" height="310">
 </div>
 <div class="gallery-content">
 <h3>6 kW Installation — Indra Colony, Neemrana (301709)</h3>
@@ -889,7 +452,7 @@ metering support handled end to end.
 
 <div class="gallery-card">
 <div class="gallery-img-wrap">
-<img src="images/sunil-shiv-colony-5kw.jpg" alt="5 kW PM Surya Ghar rooftop solar installation — Sunil Kumar Yadav, Shiv Colony, Neemrana 301020, Rajasthan, July 2026" loading="lazy" decoding="async" width="600" height="302">
+<img src="/images/sunil-shiv-colony-5kw.jpg" alt="5 kW PM Surya Ghar rooftop solar installation — Sunil Kumar Yadav, Shiv Colony, Neemrana 301020, Rajasthan, July 2026" loading="lazy" decoding="async" width="600" height="302">
 </div>
 <div class="gallery-content">
 <h3>5 kW Installation — Shiv Colony, Neemrana (301020)</h3>
@@ -1057,7 +620,7 @@ metering support handled end to end.
 
 <div class="form-row">
 <label for="cf-phone">Phone Number</label>
-<input type="tel" id="cf-phone" name="Phone" required>
+<input type="tel" id="cf-phone" name="Phone" required autocomplete="tel" inputmode="tel" pattern="\+?(?:[0-9][ \-]*){9,14}[0-9]" title="Enter a phone number with 10 to 15 digits; spaces, hyphens and a leading + are allowed.">
 </div>
 
 <div class="form-row">
@@ -1152,7 +715,7 @@ X
 <div class="footer-partner-col">
 
 <div class="footer-logos-row">
-<img src="images/global-green-energy-logo.png" alt="Global Green Energy, Alwar" class="footer-gge-logo" loading="lazy" decoding="async" width="244" height="60">
+<img src="/images/global-green-energy-logo.png" alt="Global Green Energy, Alwar" class="footer-gge-logo" loading="lazy" decoding="async" width="244" height="60">
 </div>
 
 <p class="footer-partner-statement">
@@ -1215,7 +778,7 @@ Verify Tata Partner ↗
 </footer>
 
 <div class="contact-fab" id="contactFab">
-<div class="contact-fab-options">
+<div class="contact-fab-options" id="contact-options">
 <a href="tel:+919414453454" class="fab-item fab-call" aria-label="Call Behror Solar">
 <span class="fab-label">Call Now</span>
 <span class="fab-btn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.5 3 3.95 3.45 3.5 4 3.5h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.21 2.2z"/></svg></span>
@@ -1229,35 +792,13 @@ Verify Tata Partner ↗
 <span class="fab-btn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
 </a>
 </div>
-<button type="button" class="contact-fab-toggle" aria-expanded="false" aria-controls="contactFab" aria-label="Open contact options">
+<button type="button" class="contact-fab-toggle" aria-expanded="false" aria-controls="contact-options" aria-label="Open contact options">
 <svg class="fab-ic-open" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM7 9h10v2H7V9zm7 5H7v-2h7v2zm3-6H7V6h10v2z"/></svg><svg class="fab-ic-close" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
 </button>
 </div>
 
 
-<script>
-(function(){
-var btn = document.querySelector('.nav-toggle');
-var nav = document.querySelector('nav');
-if(!btn || !nav) return;
-btn.addEventListener('click', function(){
-var open = nav.classList.toggle('nav-open');
-btn.classList.toggle('open', open);
-btn.setAttribute('aria-expanded', open);
-btn.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
-document.body.style.overflow = open ? 'hidden' : '';
-});
-nav.querySelectorAll('a').forEach(function(link){
-link.addEventListener('click', function(){
-nav.classList.remove('nav-open');
-btn.classList.remove('open');
-btn.setAttribute('aria-expanded', 'false');
-btn.setAttribute('aria-label', 'Open navigation menu');
-document.body.style.overflow = '';
-});
-});
-})();
-</script>
+
 
 <script type="application/ld+json">
 {
@@ -1266,7 +807,7 @@ document.body.style.overflow = '';
 "@id":"https://behrorsolar.in/solar-installation-neemrana.html#business",
 "parentOrganization":{"@id":"https://behrorsolar.in/#organization"},
 "name":"Behror Solar — Neemrana",
-"alternateName":"Global Green Energy",
+"legalName":"Global Green Energy",
 "url":"https://behrorsolar.in/solar-installation-neemrana.html",
 "image":"https://behrorsolar.in/images/og-cover.jpg",
 "logo":"https://behrorsolar.in/images/behror-solar-logo.png",
@@ -1415,16 +956,7 @@ document.body.style.overflow = '';
 }
 </script>
 
-<script>
-(function(){
-var fab=document.getElementById('contactFab');
-if(!fab)return;
-var btn=fab.querySelector('.contact-fab-toggle');
-btn.addEventListener('click',function(e){e.stopPropagation();var o=fab.classList.toggle('open');btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'Close contact options':'Open contact options');});
-document.addEventListener('click',function(e){if(fab.classList.contains('open')&&!fab.contains(e.target)){fab.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'){fab.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
-})();
-</script>
+
 </body>
 </html>
 

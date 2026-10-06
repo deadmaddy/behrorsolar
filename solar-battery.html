@@ -30,11 +30,12 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:0;top:0;z-index:9999;background:var(--gold);color:var(--ink);padding:8px 16px}</style>
+<script src="/site.js" defer></script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -44,7 +45,7 @@
 
 <div class="logo-area">
 <a href="/" aria-label="Behror Solar — Home">
-<img src="images/behror-solar-logo.png" alt="Behror Solar — Engineered Rooftop Solar Solutions" class="header-bs-logo" width="183" height="53">
+<img src="/images/behror-solar-logo.png" alt="Behror Solar — Engineered Rooftop Solar Solutions" class="header-bs-logo" width="183" height="53">
 </a>
 </div>
 
@@ -52,21 +53,25 @@
 <ul>
 <li><a href="/">Home</a></li>
 <li class="has-submenu">
-<span class="nav-parent" tabindex="0" role="button" aria-haspopup="true">Residential <span aria-hidden="true">&#9662;</span></span>
+<details class="nav-dropdown">
+<summary class="nav-parent">Residential <span aria-hidden="true">&#9662;</span></summary>
 <ul class="submenu">
 <li><a href="/3kw-solar-system">3 kW System</a></li>
 <li><a href="/5kw-solar-system">5 kW System</a></li>
 <li><a href="/10kw-solar-system">10 kW System</a></li>
 </ul>
+</details>
 </li>
 <li class="has-submenu">
-<span class="nav-parent" tabindex="0" role="button" aria-haspopup="true">Systems <span aria-hidden="true">&#9662;</span></span>
+<details class="nav-dropdown">
+<summary class="nav-parent">Systems <span aria-hidden="true">&#9662;</span></summary>
 <ul class="submenu">
 <li><a href="/solar-panels-behror-neemrana">Solar Panels</a></li>
 <li><a href="/solar-battery">Solar Battery</a></li>
 <li><a href="/hybrid-solar-behror-neemrana">Hybrid Solar</a></li>
 <li><a href="/on-grid-hybrid-off-grid-solar-behror-neemrana">On-Grid vs Hybrid vs Off-Grid</a></li>
 </ul>
+</details>
 </li>
 <li><a href="/pm-surya-ghar">Subsidy</a></li>
 <li><a href="/solar-guides">Guides</a></li>
@@ -83,7 +88,7 @@
 
 </div>
 <div class="partner-row container">
-<img src="images/gge-tata-header-logo.png" alt="Authorized Tata Power Solaroof Channel Partner — Global Green Energy" class="partner-row-logo" width="338" height="36">
+<img src="/images/gge-tata-header-logo.png" alt="Authorized Tata Power Solaroof Channel Partner — Global Green Energy" class="partner-row-logo" width="338" height="36">
 </div>
 </header>
 
@@ -360,16 +365,16 @@
 </div>
 
 <div class="voltra-pillars" role="list">
-<div class="pillar" role="listitem"><img src="images/icon-life.png" alt="" width="48" height="48" loading="lazy" decoding="async"><div><strong>Ultra-long life</strong><span>Up to 15 years · 6,000+ cycles</span></div></div>
-<div class="pillar" role="listitem"><img src="images/icon-bms.png" alt="" width="48" height="48" loading="lazy" decoding="async"><div><strong>Intelligent BMS</strong><span>Multi-level, cell-by-cell monitoring</span></div></div>
-<div class="pillar" role="listitem"><img src="images/icon-safe.png" alt="" width="48" height="48" loading="lazy" decoding="async"><div><strong>Safe &amp; reliable</strong><span>Multi-layer protection · thermal watch</span></div></div>
-<div class="pillar" role="listitem"><img src="images/icon-flex.png" alt="" width="48" height="48" loading="lazy" decoding="async"><div><strong>Flexible configuration</strong><span>Modular — scale as you grow</span></div></div>
+<div class="pillar" role="listitem"><img src="/images/icon-life.png" alt="" width="48" height="48" loading="lazy" decoding="async"><div><strong>Ultra-long life</strong><span>Up to 15 years · 6,000+ cycles</span></div></div>
+<div class="pillar" role="listitem"><img src="/images/icon-bms.png" alt="" width="48" height="48" loading="lazy" decoding="async"><div><strong>Intelligent BMS</strong><span>Multi-level, cell-by-cell monitoring</span></div></div>
+<div class="pillar" role="listitem"><img src="/images/icon-safe.png" alt="" width="48" height="48" loading="lazy" decoding="async"><div><strong>Safe &amp; reliable</strong><span>Multi-layer protection · thermal watch</span></div></div>
+<div class="pillar" role="listitem"><img src="/images/icon-flex.png" alt="" width="48" height="48" loading="lazy" decoding="async"><div><strong>Flexible configuration</strong><span>Modular — scale as you grow</span></div></div>
 </div>
 
 <div class="battery-gallery">
-<figure><img src="images/voltra-lv200.jpg" alt="Voltra VOLT-LV200 floor-mounted LiFePO4 home battery" loading="lazy" decoding="async" width="275" height="620"><figcaption>VOLT-LV200 · floor</figcaption></figure>
-<figure><img src="images/voltra-lvw8s.jpg" alt="Voltra VOLT-LVW 8S wall-mounted LiFePO4 battery" loading="lazy" decoding="async" width="580" height="345"><figcaption>VOLT-LVW 8S · wall</figcaption></figure>
-<figure><img src="images/voltra-lvw4s.jpg" alt="Voltra VOLT-LVW 4S wall-mounted LiFePO4 battery" loading="lazy" decoding="async" width="395" height="330"><figcaption>VOLT-LVW 4S · wall</figcaption></figure>
+<figure><img src="/images/voltra-lv200.jpg" alt="Voltra VOLT-LV200 floor-mounted LiFePO4 home battery" loading="lazy" decoding="async" width="275" height="620"><figcaption>VOLT-LV200 · floor</figcaption></figure>
+<figure><img src="/images/voltra-lvw8s.jpg" alt="Voltra VOLT-LVW 8S wall-mounted LiFePO4 battery" loading="lazy" decoding="async" width="580" height="345"><figcaption>VOLT-LVW 8S · wall</figcaption></figure>
+<figure><img src="/images/voltra-lvw4s.jpg" alt="Voltra VOLT-LVW 4S wall-mounted LiFePO4 battery" loading="lazy" decoding="async" width="395" height="330"><figcaption>VOLT-LVW 4S · wall</figcaption></figure>
 </div>
 
 <div class="components-grid" style="margin-top:26px;">
@@ -427,9 +432,6 @@
 <p class="q-answer" style="font-weight:400;color:#374151;margin-top:22px;max-width:860px;">Final model, exact usable kWh, discharge power, enclosure rating and inverter communication are selected and confirmed against your project — the cards show the range we work within.</p>
 
 <div class="hvc-band">
-<div class="hvc-media">
-<img src="images/voltra-hvc.jpg" alt="Voltra VOLT-HVC high-voltage floor-cabinet LiFePO4 battery" loading="lazy" decoding="async" width="376" height="493">
-</div>
 <div class="hvc-body">
 <span class="model-role hvc-role">Step-up range · very large homes · big commercial · small industrial</span>
 <h3>VOLT-HVC — High-Voltage Series</h3>
@@ -468,7 +470,7 @@
 <a href="#contact" class="btn btn-primary">Ask us about Tata MySine</a>
 </div>
 <div class="mysine-badge">
-<img src="images/tata-power-solaroof-logo.png" alt="Tata Power Solaroof" width="200" height="66">
+<img src="/images/tata-power-solaroof-logo.png" alt="Tata Power Solaroof" width="200" height="66">
 <p>Supplied and installed by Behror Solar as your authorised Tata Power Solaroof channel partner.</p>
 </div>
 </div>
@@ -521,7 +523,7 @@
 </div>
 <div class="result-feature">
 <div class="result-feature-photo">
-<img src="images/uttam-singh-jatgaonra-3kw-hybrid.jpg" alt="3 kW hybrid solar system with LiFePO4 battery backup on the rooftop at Uttam Singh's home in Jatgaonra, Behror Rural, Rajasthan" loading="lazy" decoding="async" width="1200" height="979">
+<img src="/images/uttam-singh-jatgaonra-3kw-hybrid.jpg" alt="3 kW hybrid solar system with LiFePO4 battery backup on the rooftop at Uttam Singh's home in Jatgaonra, Behror Rural, Rajasthan" loading="lazy" decoding="async" width="1200" height="979">
 </div>
 <div class="result-feature-body">
 <span class="result-tag">Residential Hybrid + Battery — Jatgaonra, Behror Rural</span>
@@ -606,7 +608,7 @@
 
 <div class="form-row">
 <label for="cf-phone">Phone Number</label>
-<input type="tel" id="cf-phone" name="Phone" required autocomplete="tel" inputmode="numeric" pattern="[0-9+\s\-]{10,15}">
+<input type="tel" id="cf-phone" name="Phone" required autocomplete="tel" inputmode="tel" pattern="\+?(?:[0-9][ \-]*){9,14}[0-9]" title="Enter a phone number with 10 to 15 digits; spaces, hyphens and a leading + are allowed.">
 </div>
 
 <div class="form-row">
@@ -733,7 +735,7 @@ X
 <div class="footer-partner-col">
 
 <div class="footer-logos-row">
-<img src="images/global-green-energy-logo.png" alt="Global Green Energy, Alwar" class="footer-gge-logo" loading="lazy" decoding="async" width="244" height="60">
+<img src="/images/global-green-energy-logo.png" alt="Global Green Energy, Alwar" class="footer-gge-logo" loading="lazy" decoding="async" width="244" height="60">
 </div>
 
 <p class="footer-partner-statement">
@@ -796,7 +798,7 @@ Verify Tata Partner ↗
 </footer>
 
 <div class="contact-fab" id="contactFab">
-<div class="contact-fab-options">
+<div class="contact-fab-options" id="contact-options">
 <a href="tel:+919414453454" class="fab-item fab-call" aria-label="Call Behror Solar">
 <span class="fab-label">Call Now</span>
 <span class="fab-btn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.5 3 3.95 3.45 3.5 4 3.5h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.21 2.2z"/></svg></span>
@@ -810,46 +812,15 @@ Verify Tata Partner ↗
 <span class="fab-btn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
 </a>
 </div>
-<button type="button" class="contact-fab-toggle" aria-expanded="false" aria-controls="contactFab" aria-label="Open contact options">
+<button type="button" class="contact-fab-toggle" aria-expanded="false" aria-controls="contact-options" aria-label="Open contact options">
 <svg class="fab-ic-open" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM7 9h10v2H7V9zm7 5H7v-2h7v2zm3-6H7V6h10v2z"/></svg><svg class="fab-ic-close" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
 </button>
 </div>
 
-<script>
-(function(){
-var btn = document.querySelector('.nav-toggle');
-var nav = document.getElementById('main-nav');
-if(!btn || !nav) return;
-btn.addEventListener('click', function(){
-var open = nav.classList.toggle('nav-open');
-btn.classList.toggle('open', open);
-btn.setAttribute('aria-expanded', open);
-btn.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
-document.body.style.overflow = open ? 'hidden' : '';
-});
-nav.querySelectorAll('a').forEach(function(link){
-link.addEventListener('click', function(){
-nav.classList.remove('nav-open');
-btn.classList.remove('open');
-btn.setAttribute('aria-expanded', 'false');
-btn.setAttribute('aria-label', 'Open navigation menu');
-document.body.style.overflow = '';
-});
-});
-})();
-</script>
-<script>
-(function(){
-var fab=document.getElementById('contactFab');
-if(!fab)return;
-var btn=fab.querySelector('.contact-fab-toggle');
-btn.addEventListener('click',function(e){e.stopPropagation();var o=fab.classList.toggle('open');btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'Close contact options':'Open contact options');});
-document.addEventListener('click',function(e){if(fab.classList.contains('open')&&!fab.contains(e.target)){fab.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'){fab.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
-})();
-</script>
+
+
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","@id":"https://behrorsolar.in/solar-battery#service","name":"Solar Battery & Backup (BESS) Installation","description":"LiFePO4 solar battery backup (BESS) for homes in Behror and Neemrana, Rajasthan. Custom kWh and kW sizing, hybrid inverter integration, retrofit assessment, project-specific battery selection and local service support.","provider":{"@type":"LocalBusiness","@id":"https://behrorsolar.in/#organization","name":"Behror Solar","url":"https://behrorsolar.in"},"areaServed":[{"@type":"City","name":"Behror"},{"@type":"City","name":"Neemrana"}],"serviceType":"Solar Battery Storage Installation","category":"Solar Energy Storage"}
+{"@context":"https://schema.org","@type":"Service","@id":"https://behrorsolar.in/solar-battery#service","name":"Solar Battery & Backup (BESS) Installation","description":"LiFePO4 solar battery backup (BESS) for homes in Behror and Neemrana, Rajasthan. Custom kWh and kW sizing, hybrid inverter integration, retrofit assessment, project-specific battery selection and local service support.","provider":{"@type":"LocalBusiness","@id":"https://behrorsolar.in/#organization","name":"Behror Solar","legalName":"Global Green Energy","url":"https://behrorsolar.in"},"areaServed":[{"@type":"City","name":"Behror"},{"@type":"City","name":"Neemrana"}],"serviceType":"Solar Battery Storage Installation","category":"Solar Energy Storage"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://behrorsolar.in/"},{"@type":"ListItem","position":2,"name":"Solar Battery & Backup — Behror & Neemrana","item":"https://behrorsolar.in/solar-battery"}]}

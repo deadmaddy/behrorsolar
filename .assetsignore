@@ -1,0 +1,7 @@
+README.md
+wrangler.jsonc
+AGENTS.md
+.git
+.wrangler
+.dev.vars*
+.env*
