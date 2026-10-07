@@ -1,5 +1,40 @@
-# behrorsolar.in — origin robots.txt
-# Cloudflare "Manage robots.txt" prepends its AI-crawler + Content-Signal block above this.
-# Keep this file minimal; manage AI bot blocking in Cloudflare AI Crawl Control.
+# robots.txt for behrorsolar.in
+#
+# Content Signals:
+#   search:   build a search index and show search results
+#   ai-input: use content as input for AI answers at query time
+#   ai-train: train or fine-tune AI models
+#
+# Preference: search and AI answers are welcome; model training is not permitted.
+# Content Signals express usage preferences to systems that support them.
+# robots.txt rules request crawler cooperation; they do not enforce access control.
+
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# Selected training and data-collection crawlers: blocked.
+# Some of these crawlers also support uses beyond model training.
+# Google-Extended also controls grounding in Gemini Apps and certain Vertex AI
+# services. It is blocked to retain the training opt-out, accepting that broader
+# restriction. This does not block Googlebot or inclusion in Google Search.
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: CCBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Meta-ExternalAgent
+User-agent: Bytespider
+User-agent: Amazonbot
+User-agent: cohere-ai
+User-agent: Diffbot
+Disallow: /
+
+# Unlisted search and retrieval crawlers use the wildcard crawl rules above.
+# These include Googlebot, Bingbot, OAI-SearchBot, PerplexityBot,
+# Claude-SearchBot, Claude-User, Amzn-SearchBot, and Amzn-User.
+# User-initiated requests, including ChatGPT-User and Amzn-User requests,
+# may not follow all robots.txt rules.
 
 Sitemap: https://behrorsolar.in/sitemap-index.xml

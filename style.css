@@ -3003,6 +3003,22 @@ scroll-margin-top:90px;
 .system-section.alt{background:var(--sand-deep);}
 .system-section .section-title{max-width:760px;}
 
+/* System pages: static installation price comparisons. */
+.system-price-table-wrap{margin-bottom:16px;background:var(--sand);}
+.system-price-table-wrap:focus-visible{outline:3px solid var(--gold-deep);outline-offset:3px;}
+.system-price-table{min-width:620px;table-layout:fixed;font-size:.94rem;}
+.system-price-table caption{text-align:left;padding:16px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;background:var(--sand-deep);color:var(--ink);}
+.system-price-table thead th{width:23%;font-size:.87rem;}
+.system-price-table thead th:first-child{width:31%;}
+.system-price-table tbody th{padding:16px;text-align:left;vertical-align:middle;color:var(--ink);border-right:1px solid var(--line);}
+.system-price-table tbody td{white-space:nowrap;font-variant-numeric:tabular-nums;}
+.system-price-table tbody td:last-child{text-align:left;}
+.system-price-brand-note{display:block;margin-top:6px;font-size:.8rem;font-weight:400;line-height:1.5;color:var(--steel);}
+.system-price-note{max-width:90ch;font-size:.9rem;color:#374151;margin-bottom:16px;}
+.system-price-reference{margin-top:20px;}
+.system-price-scroll-note{display:none;font-size:.85rem;color:var(--steel);margin-bottom:10px;}
+@media(max-width:640px){.system-price-scroll-note{display:block;}}
+
 .tech-table-wrap{
 overflow-x:auto;
 -webkit-overflow-scrolling:touch;
