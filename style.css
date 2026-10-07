@@ -3882,7 +3882,11 @@ vertical-align:middle;
 .section-dark p a:not(.btn):hover,
 .section-title.light p a:not(.btn):hover{color:var(--sand);}
 
-/* Homepage: approved partner figures and installation price comparison. */
+/* Homepage: layout, approved partner figures and installation price comparison. */
+.home-page .hero{padding-top:56px;}
+.home-page .hero-content{align-items:start;}
+.home-page .philosophy-copy{margin-inline:auto;}
+.home-page .philosophy-copy p:last-child{margin-bottom:0;}
 .home-page .hero-tag{max-width:100%;line-height:1.6;}
 .home-page .hero-tag .dot{flex-shrink:0;}
 .home-page .hero-tag > span:last-child{min-width:0;}
@@ -3971,6 +3975,7 @@ color:var(--ink);
 .home-page .price-explanation .btn{margin-top:4px;}
 
 @media(max-width:768px){
+.home-page .hero{padding-top:36px;}
 .home-page .partner-strip-logo{flex-direction:column;align-items:center;gap:16px;text-align:center;}
 .home-page .partner-strip-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px;}
 .home-page .price-explanations{grid-template-columns:1fr;}
