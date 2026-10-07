@@ -1,6 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://behrorsolar.in/solar-guides</loc><lastmod>2026-09-07</lastmod></url>
-  <url><loc>https://behrorsolar.in/on-grid-hybrid-off-grid-solar-behror-neemrana</loc><lastmod>2026-09-07</lastmod></url>
-  <url><loc>https://behrorsolar.in/topcon-vs-mono-perc-field-test</loc><lastmod>2026-09-07</lastmod></url>
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://behrorsolar.in/solar-guides</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://behrorsolar.in/on-grid-hybrid-off-grid-solar-behror-neemrana</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://behrorsolar.in/topcon-vs-mono-perc-field-test</loc>
+    <lastmod>2026-10-06</lastmod>
+    <image:image>
+      <image:loc>https://behrorsolar.in/images/mono-perc-vs-topcon-rooftop-test-og.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://behrorsolar.in/images/topcon-generation-21-august-2026.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://behrorsolar.in/images/17unitsmonoperc.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://behrorsolar.in/images/field-test-topcon-27aug.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://behrorsolar.in/images/field-test-monoperc-27aug.png</image:loc>
+    </image:image>
+  </url>
 </urlset>

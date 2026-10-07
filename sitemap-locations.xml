@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://behrorsolar.in/solar-installation-neemrana</loc><lastmod>2026-09-07</lastmod></url>
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://behrorsolar.in/solar-installation-neemrana</loc>
+    <lastmod>2026-10-06</lastmod>
+    <image:image>
+      <image:loc>https://behrorsolar.in/images/neemrana-uttam-install.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://behrorsolar.in/images/rajesh-surya-nagar-neemrana-5kw.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://behrorsolar.in/images/sulekha-yadav-neemrana-inverter.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://behrorsolar.in/images/jagdish-indra-colony-neemrana-6kw.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://behrorsolar.in/images/sunil-shiv-colony-5kw.jpg</image:loc>
+    </image:image>
+  </url>
 </urlset>
