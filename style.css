@@ -4002,3 +4002,62 @@ color:var(--ink);
 .home-page .price-selector-options{display:grid;grid-template-columns:1fr;}
 .home-page .price-explanation{padding:20px;}
 }
+
+/* PM Surya Ghar: scoped guide layout and readable subsidy comparisons. */
+.psg-page .psg-hero{padding:48px 0;}
+.psg-page .psg-hero-inner{max-width:none;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;align-items:start;}
+.psg-page .psg-hero-copy{min-width:0;}
+.psg-page .psg-hero h1{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.2;}
+.psg-page .psg-hero-sub{max-width:65ch;margin-bottom:24px;}
+.psg-page .hero-buttons{margin-bottom:0;}
+.psg-support-summary{padding:24px;border:1px solid var(--line-light);border-radius:8px;background:var(--ink-soft);}
+.psg-support-summary h2{font-size:1.1rem;line-height:1.4;color:var(--sand);margin-bottom:18px;}
+.psg-support-amounts{margin:0;}
+.psg-support-amounts > div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 12px;align-items:baseline;padding:10px 0;}
+.psg-support-amounts dt{font-size:.85rem;color:#D7DCE5;}
+.psg-support-amounts dd{margin:0;font-family:'Space Grotesk',sans-serif;font-weight:700;color:var(--sand);}
+.psg-support-amounts .psg-support-total{border-top:1px solid var(--line-light);margin-top:8px;padding-top:16px;}
+.psg-support-total dd{font-size:1.6rem;color:var(--gold);}
+.psg-support-note{font-size:.82rem;line-height:1.6;color:#D7DCE5;margin:8px 0 16px;}
+.psg-portal-support{display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--line-light);padding-top:16px;}
+.psg-portal-support a{font-size:.82rem;color:var(--gold);text-underline-offset:3px;overflow-wrap:anywhere;}
+.psg-page .psg-overview{padding:24px 0;}
+.psg-page .psg-toc{margin-top:0;}
+.psg-page .psg-edit-date{margin-bottom:6px;}
+.psg-page .system-section{padding:64px 0;}
+.psg-page .section-title{text-align:left;margin-bottom:32px;}
+.psg-page .section-title p{max-width:80ch;margin-left:0;}
+.psg-page .psg-slab-wrap{max-width:760px;}
+.psg-page .psg-slab-table{min-width:0;table-layout:fixed;}
+.psg-slab-table caption{padding:14px 16px;text-align:left;font-weight:600;background:var(--sand-deep);color:var(--ink);}
+.psg-slab-table tbody th{padding:16px;text-align:left;border-right:1px solid var(--line);}
+.psg-page .psg-slab-table th,.psg-page .psg-slab-table td{width:50%;white-space:normal;overflow-wrap:break-word;}
+.psg-page .psg-slab-table td:last-child{text-align:left;}
+.psg-page .psg-slab-table tbody th,.psg-page .psg-price-table tbody th{border-top:1px solid var(--line);}
+.psg-page .psg-doc-body ul{padding-left:18px;margin-bottom:12px;font-size:.87rem;line-height:1.6;color:#374151;}
+.psg-doc-body li + li{margin-top:6px;}
+.psg-page .psg-nm-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+.psg-page .psg-nm-card:last-child{grid-column:1/-1;}
+.psg-page .psg-nm-card p{max-width:100ch;}
+.psg-page .psg-price-table{min-width:700px;}
+.psg-page .psg-price-table thead th:first-child{width:34%;}
+.psg-page .psg-price-table thead th:not(:first-child){width:22%;}
+.psg-page .psg-price-table tbody th a{color:var(--gold-deep);text-underline-offset:3px;}
+.psg-scroll-hint{display:none;}
+.psg-capacity-note{max-width:100ch;margin-top:24px;font-size:.9rem;line-height:1.7;color:#374151;}
+.psg-page .author-name{font-size:1.1rem;line-height:1.6;}
+@media(max-width:900px){
+.psg-page .psg-hero-inner{grid-template-columns:1fr;gap:28px;}
+.psg-support-summary{max-width:760px;}
+}
+@media(max-width:768px){
+.psg-page .psg-hero{padding:32px 0;}
+.psg-page .system-section{padding:48px 0;}
+.psg-support-summary{padding:20px;}
+.psg-support-amounts .psg-support-total{grid-template-columns:1fr;}
+.psg-page .psg-doc-grid{grid-template-columns:1fr;}
+.psg-page .psg-nm-grid{grid-template-columns:1fr;}
+.psg-scroll-hint{display:block;margin-bottom:10px;font-size:.82rem;color:var(--steel);}
+.psg-page .psg-slab-table{font-size:.85rem;}
+.psg-page .psg-slab-table th,.psg-page .psg-slab-table td{padding:12px;}
+}
