@@ -3928,7 +3928,7 @@ text-underline-offset:3px;
 .home-page .ps-stat .ps-stat-num{font-size:clamp(1.6rem,2.5vw,2rem);}
 .home-page .ps-stat p{font-size:.86rem;line-height:1.5;margin-top:6px;}
 .home-page .stats-attribution-badge{flex-wrap:wrap;}
-.home-page .local-impact-scope{
+:is(.home-page,.neemrana-page) .local-impact-scope{
 margin:24px 0 0;
 text-align:center;
 font-family:'Space Mono',monospace;
@@ -3936,16 +3936,16 @@ font-size:.8rem;
 color:var(--gold-deep);
 font-weight:700;
 }
-.home-page .local-impact-row{grid-template-columns:repeat(2,minmax(0,1fr));max-width:760px;margin:auto;}
-.home-page .local-impact-row .stat-cell{padding:28px 12px;border-top:0;border-left:1px solid var(--line);}
-.home-page .local-impact-row .stat-cell:first-child{border-left:0;}
-.home-page .local-impact-row .stat-eyebrow{min-height:2.8em;line-height:1.4;display:flex;align-items:center;justify-content:center;}
-.home-page .local-impact-row .stat-num{white-space:nowrap;}
+:is(.home-page,.neemrana-page) .local-impact-row{grid-template-columns:repeat(2,minmax(0,1fr));max-width:760px;margin:auto;}
+:is(.home-page,.neemrana-page) .local-impact-row .stat-cell{padding:28px 12px;border-top:0;border-left:1px solid var(--line);}
+:is(.home-page,.neemrana-page) .local-impact-row .stat-cell:first-child{border-left:0;}
+:is(.home-page,.neemrana-page) .local-impact-row .stat-eyebrow{min-height:2.8em;line-height:1.4;display:flex;align-items:center;justify-content:center;}
+:is(.home-page,.neemrana-page) .local-impact-row .stat-num{white-space:nowrap;}
 .home-page .spec-card ul{margin-top:0;}
-.home-page .price-selector{border:0;margin:0 0 24px;min-width:0;}
-.home-page .price-selector legend{font-weight:600;margin-bottom:12px;}
-.home-page .price-selector-options{display:flex;flex-wrap:wrap;gap:12px;}
-.home-page .price-selector label{
+[data-price-comparison] .price-selector{border:0;margin:0 0 24px;min-width:0;}
+[data-price-comparison] .price-selector legend{font-weight:600;margin-bottom:12px;}
+[data-price-comparison] .price-selector-options{display:flex;flex-wrap:wrap;gap:12px;}
+[data-price-comparison] .price-selector label{
 display:flex;
 align-items:center;
 gap:12px;
@@ -3957,17 +3957,17 @@ background:var(--sand);
 cursor:pointer;
 font-weight:600;
 }
-.home-page .price-selector input{width:20px;height:20px;flex-shrink:0;accent-color:#2563EB;cursor:pointer;}
-.home-page .price-selector label:has(input:checked){border-color:#2563EB;background:#EFF6FF;}
-.home-page .price-selector label:focus-within{outline:3px solid #2563EB;outline-offset:3px;}
-.home-page .price-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;}
-.home-page .price-option-note{font-size:.92rem;color:var(--steel);margin-bottom:12px;}
-.home-page .price-panel + .price-panel{margin-top:28px;}
-.home-page .price-panel[hidden] + .price-panel{margin-top:0;}
-.home-page .price-table-wrap{margin-bottom:20px;}
-.home-page .price-table-wrap:focus-visible{outline:3px solid #2563EB;outline-offset:3px;}
-.home-page .price-table{min-width:620px;font-size:.94rem;}
-.home-page .price-table caption{
+[data-price-comparison] .price-selector input{width:20px;height:20px;flex-shrink:0;accent-color:#2563EB;cursor:pointer;}
+[data-price-comparison] .price-selector label:has(input:checked){border-color:#2563EB;background:#EFF6FF;}
+[data-price-comparison] .price-selector label:focus-within{outline:3px solid #2563EB;outline-offset:3px;}
+[data-price-comparison] .price-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;}
+[data-price-comparison] .price-option-note{font-size:.92rem;color:var(--steel);margin-bottom:12px;}
+[data-price-comparison] .price-panel + .price-panel{margin-top:28px;}
+[data-price-comparison] .price-panel[hidden] + .price-panel{margin-top:0;}
+[data-price-comparison] .price-table-wrap{margin-bottom:20px;}
+[data-price-comparison] .price-table-wrap:focus-visible{outline:3px solid #2563EB;outline-offset:3px;}
+[data-price-comparison] .price-table{min-width:620px;font-size:.94rem;}
+[data-price-comparison] .price-table caption{
 text-align:left;
 padding:16px;
 font-family:'Space Grotesk',sans-serif;
@@ -3976,31 +3976,31 @@ font-size:1.1rem;
 background:var(--sand-deep);
 color:var(--ink);
 }
-.home-page .price-table thead th{font-size:.87rem;width:25%;}
-.home-page .price-table tbody th{padding:16px;text-align:left;border-right:1px solid var(--line);}
-.home-page .price-table tbody th a{color:var(--gold-deep);text-underline-offset:3px;white-space:nowrap;}
-.home-page .price-table tbody td{white-space:nowrap;font-variant-numeric:tabular-nums;}
-.home-page .price-table tbody td:last-child{text-align:left;}
-.home-page .price-scroll-note{display:none;font-size:.85rem;color:var(--steel);margin-bottom:10px;}
-.home-page .price-eligibility-note{max-width:90ch;font-size:.9rem;color:var(--steel);margin-bottom:28px;}
-.home-page .price-explanations{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;}
-.home-page .price-explanation{padding:24px;border:1px solid var(--line);border-radius:8px;background:var(--sand-deep);}
-.home-page .price-explanation h3{font-size:1.2rem;line-height:1.4;margin-bottom:16px;}
-.home-page .price-explanation p{margin-bottom:14px;color:#374151;}
-.home-page .price-explanation p:last-child{margin-bottom:0;}
-.home-page .price-explanation .btn{margin-top:4px;}
+[data-price-comparison] .price-table thead th{font-size:.87rem;width:25%;}
+[data-price-comparison] .price-table tbody th{padding:16px;text-align:left;border-right:1px solid var(--line);}
+[data-price-comparison] .price-table tbody th a{color:var(--gold-deep);text-underline-offset:3px;white-space:nowrap;}
+[data-price-comparison] .price-table tbody td{white-space:nowrap;font-variant-numeric:tabular-nums;}
+[data-price-comparison] .price-table tbody td:last-child{text-align:left;}
+[data-price-comparison] .price-scroll-note{display:none;font-size:.85rem;color:var(--steel);margin-bottom:10px;}
+[data-price-comparison] .price-eligibility-note{max-width:90ch;font-size:.9rem;color:var(--steel);margin-bottom:28px;}
+[data-price-comparison] .price-explanations{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;}
+[data-price-comparison] .price-explanation{padding:24px;border:1px solid var(--line);border-radius:8px;background:var(--sand-deep);}
+[data-price-comparison] .price-explanation h3{font-size:1.2rem;line-height:1.4;margin-bottom:16px;}
+[data-price-comparison] .price-explanation p{margin-bottom:14px;color:#374151;}
+[data-price-comparison] .price-explanation p:last-child{margin-bottom:0;}
+[data-price-comparison] .price-explanation .btn{margin-top:4px;}
 
 @media(max-width:768px){
 .home-page .hero{padding-top:36px;}
 .home-page .partner-strip-logo{flex-direction:column;align-items:center;gap:16px;text-align:center;}
 .home-page .partner-strip-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px;}
-.home-page .price-explanations{grid-template-columns:1fr;}
-.home-page .local-impact-row .stat-num{font-size:clamp(1.8rem,6vw,2.4rem);}
+[data-price-comparison] .price-explanations{grid-template-columns:1fr;}
+:is(.home-page,.neemrana-page) .local-impact-row .stat-num{font-size:clamp(1.8rem,6vw,2.4rem);}
 }
 @media(max-width:640px){
-.home-page .price-scroll-note{display:block;}
-.home-page .price-selector-options{display:grid;grid-template-columns:1fr;}
-.home-page .price-explanation{padding:20px;}
+[data-price-comparison] .price-scroll-note{display:block;}
+[data-price-comparison] .price-selector-options{display:grid;grid-template-columns:1fr;}
+[data-price-comparison] .price-explanation{padding:20px;}
 }
 
 /* PM Surya Ghar: scoped guide layout and readable subsidy comparisons. */
@@ -4061,3 +4061,23 @@ color:var(--ink);
 .psg-page .psg-slab-table{font-size:.85rem;}
 .psg-page .psg-slab-table th,.psg-page .psg-slab-table td{padding:12px;}
 }
+
+/* Neemrana: preserve the site design while fixing spacing and photo proportions. */
+.neemrana-page .hero{padding-top:48px;}
+.neemrana-page .hero-content{align-items:start;}
+.neemrana-page .hero-tag{max-width:100%;line-height:1.6;}
+.neemrana-page .hero-tag .dot{flex-shrink:0;}
+.neemrana-page .hero-tag > span:last-child{min-width:0;}
+.neemrana-page .offer-badge{line-height:1.5;}
+.neemrana-page .offer-subsidy-note{line-height:1.6;}
+.neemrana-page .offer-fine{font-size:.78rem;color:#B9C2D0;}
+.neemrana-page .offer-row{gap:16px;}
+.neemrana-page .offer-v{flex-shrink:0;}
+.neemrana-page .offer-proof-link{display:inline-block;margin-top:12px;color:var(--gold);font-size:.88rem;font-weight:700;text-underline-offset:3px;}
+.neemrana-page .stats-attribution-badge{flex-wrap:wrap;}
+.neemrana-page .gallery-img-wrap{display:block;height:auto;aspect-ratio:4/3;background:var(--sand-deep);}
+.neemrana-page .gallery-card img{display:block;object-fit:contain;}
+.neemrana-page .gallery-img-wrap:focus-visible{outline:3px solid var(--gold-deep);outline-offset:-3px;}
+.neemrana-page .result-translation-label{cursor:pointer;line-height:1.6;padding:10px 0;}
+.neemrana-page .result-translation-label:focus-visible{outline:3px solid var(--gold);outline-offset:3px;}
+@media(max-width:768px){.neemrana-page .hero{padding-top:32px;}}
