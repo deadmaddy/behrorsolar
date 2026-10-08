@@ -3282,10 +3282,10 @@ margin:auto;
 }
 .contact-ready{--contact-clearance:calc(88px + env(safe-area-inset-bottom, 0px));scroll-padding-bottom:var(--contact-clearance);}
 .contact-ready body{padding-bottom:var(--contact-clearance);}
-.contact-ready .contact-actions{position:fixed;left:24px;bottom:calc(24px + env(safe-area-inset-bottom, 0px));z-index:999;margin:0;padding:0;}
+.contact-ready .contact-actions{position:fixed;right:calc(24px + env(safe-area-inset-right, 0px));bottom:calc(24px + env(safe-area-inset-bottom, 0px));z-index:999;margin:0;padding:0;}
 .menu-open .contact-actions{visibility:hidden;}
 @media(max-width:992px){
-.contact-ready .contact-actions{left:16px;bottom:calc(16px + env(safe-area-inset-bottom, 0px));}
+.contact-ready .contact-actions{right:calc(16px + env(safe-area-inset-right, 0px));bottom:calc(16px + env(safe-area-inset-bottom, 0px));}
 .contact-action-whatsapp{width:56px;height:56px;}
 }
 @media(prefers-reduced-motion:reduce){

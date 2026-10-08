@@ -148,7 +148,7 @@
       const position = getComputedStyle(contact);
       const size = getComputedStyle(contact.querySelector('a'));
       // Include the pulse ring in the area reserved for WhatsApp.
-      const right = parseFloat(position.left) + parseFloat(size.width) + 12;
+      const left = innerWidth - parseFloat(position.right) - parseFloat(size.width) - 12;
       const top = innerHeight - parseFloat(position.bottom) - parseFloat(size.height) - 12;
       actionObserver = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
@@ -156,7 +156,7 @@
           else obstructedLinks.delete(entry.target);
         });
         updateContactVisibility();
-      }, { rootMargin: -Math.max(0, top) + 'px ' + -Math.max(0, innerWidth - right) + 'px 0px 0px' });
+      }, { rootMargin: -Math.max(0, top) + 'px 0px 0px ' + -Math.max(0, left) + 'px' });
       document.querySelectorAll('main .btn').forEach(function (link) {
         actionObserver.observe(link);
       });
