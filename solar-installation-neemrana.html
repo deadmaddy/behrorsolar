@@ -383,29 +383,28 @@ Rooftop solar for Neemrana's homes, industrial units and rural properties — in
 </div>
 </section>
 
-<section class="coverage-section">
+<section id="service-areas" class="coverage-section neemrana-coverage" aria-labelledby="service-area-title">
 <div class="container">
 
 <div class="section-title">
 <span class="section-eyebrow">SERVICE AREA</span>
-<h2>Neemrana — urban, rural & industrial</h2>
-<p>Based in Behror, 20 km / 20 minutes away. Also serving Behror, Bhiwadi, Kotputli, Shahjahanpur and the wider Alwar region.</p>
+<h2 id="service-area-title">Neemrana — Shahjahanpur - Residential - Commercial and Industrial</h2>
+<p>Based in Behror, 20 km / 20 minutes away.</p>
 </div>
 
-<div class="coverage-grid cov-3">
-<div class="coverage-card coverage-primary">Neemrana Town <span>Urban</span></div>
-<div class="coverage-card coverage-primary">Neemrana Rural <span>Villages &amp; Farmhouses</span></div>
-<div class="coverage-card coverage-primary">NIA Neemrana <span>Industrial</span></div>
-</div>
-<div class="coverage-grid coverage-secondary-grid">
-<div class="coverage-card">Behror</div>
-<div class="coverage-card">Bhiwadi</div>
-<div class="coverage-card">Kotputli</div>
-<div class="coverage-card">Shahjahanpur</div>
-<div class="coverage-card">Mandhan</div>
-<div class="coverage-card">Kathuwas</div>
-<div class="coverage-card">Majri</div>
-</div>
+<ul class="coverage-grid cov-3" aria-label="Service areas">
+<li class="coverage-card coverage-primary">Jat Behror</li>
+<li class="coverage-card coverage-primary">Mundawar</li>
+<li class="coverage-card coverage-primary">Khairthal</li>
+</ul>
+<ul class="coverage-grid coverage-secondary-grid" aria-label="Additional service areas">
+<li class="coverage-card">Harsora</li>
+<li class="coverage-card">Tatarpur</li>
+<li class="coverage-card">Harsoli</li>
+<li class="coverage-card">Bibirani</li>
+<li class="coverage-card">Ghiloth</li>
+<li class="coverage-card">Mandhan</li>
+</ul>
 
 </div>
 </section>
@@ -714,7 +713,8 @@ title="Behror Solar office location on Google Maps — our Behror base, 20 minut
 <p>Engineered Rooftop Solar Solutions</p>
 </a>
 <div class="footer-contact">
-<p>Managed by <a href="https://www.linkedin.com/in/mahendra-yadav-44983718/" target="_blank" rel="noopener noreferrer">Mahendra Yadav</a></p>
+<h3 class="footer-contact-name"><a href="https://www.linkedin.com/in/mahendra-yadav-44983718/" target="_blank" rel="noopener noreferrer">Mahendra Yadav</a></h3>
+<p class="footer-contact-role">Founder, Behror Solar · Partner, Global Green Energy.</p>
 <p>Email: <a href="mailto:myadav@behrorsolar.in">myadav@behrorsolar.in</a></p>
 <p>Phone: <a href="tel:+919414453454">+91 94144 53454</a></p>
 <p class="footer-address">Near Hanuman Mandir, Mohalla-Nainsukh, Behror, Rajasthan 301701</p>
@@ -747,11 +747,12 @@ X
 </div>
 
 <p class="footer-partner-statement">
-Tata Power Solaroof Channel Partner.
+BehrorSolar.in is Global Green Energy's local solar platform for Behror, Neemrana and surrounding areas. Behror Solar was founded and is led by Mahendra Yadav, a partner and investor in Global Green Energy.
 </p>
 
 <p class="footer-partner-statement">
-Tata Power Solaroof Channel Partner status can be independently verified using Tata Power's Dealer Locator.
+Tata Rooftop Solar Channel Partner status can be independently verified
+using Tata Power's Dealer Locator.
 </p>
 
 <a href="https://www.tatapower.com/renewables/solar-energy/dealer-locator"
@@ -828,126 +829,207 @@ Verify Tata Partner ↗
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
-  "@id": "https://behrorsolar.in/solar-installation-neemrana#business",
-  "parentOrganization": {
-    "@id": "https://behrorsolar.in/#global-green-energy"
-  },
-  "name": "Behror Solar — Neemrana",
-  "url": "https://behrorsolar.in/solar-installation-neemrana",
-  "image": "https://behrorsolar.in/images/og-cover.jpg",
-  "logo": "https://behrorsolar.in/images/behror-solar-logo.png",
-  "email": "myadav@behrorsolar.in",
-  "telephone": "+919414453454",
-  "priceRange": "₹₹",
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
-    ],
-    "opens": "09:00",
-    "closes": "17:00"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Behror",
-    "addressRegion": "Rajasthan",
-    "addressCountry": "IN"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 27.8867939,
-    "longitude": 76.2827805
-  },
-  "hasMap": "https://share.google/03ya5mdD3fvChe59E",
-  "areaServed": [
+  "@graph": [
     {
-      "@type": "City",
-      "name": "Neemrana"
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Neemrana Rural"
-    },
-    {
-      "@type": "Place",
-      "name": "NIA Neemrana Industrial Area"
-    },
-    {
-      "@type": "Place",
-      "name": "Shahjahanpur"
-    },
-    {
-      "@type": "Place",
-      "name": "Mandhan"
-    },
-    {
-      "@type": "Place",
-      "name": "Kathuwas"
-    },
-    {
-      "@type": "Place",
-      "name": "Majri"
-    }
-  ],
-  "founder": {
-    "@type": "Person",
-    "name": "Mahendra Yadav",
-    "jobTitle": "Founder, Behror Solar · Partner, Global Green Energy",
-    "url": "https://www.linkedin.com/in/mahendra-yadav-44983718/",
-    "sameAs": [
-      "https://www.linkedin.com/in/mahendra-yadav-44983718/"
-    ]
-  },
-  "description": "Tata partner rooftop solar serving Neemrana town, Neemrana Rural and the NIA industrial belt, operated from a base 20 minutes away in Behror. JVVNL net metering and PM Surya Ghar support.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "reviewCount": "2",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "author": {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://behrorsolar.in/#organization",
+      "parentOrganization": {
+        "@id": "https://behrorsolar.in/#global-green-energy"
+      },
+      "name": "Behror Solar",
+      "url": "https://behrorsolar.in/",
+      "image": "https://behrorsolar.in/images/logo.png",
+      "logo": "https://behrorsolar.in/images/logo.png",
+      "email": "myadav@behrorsolar.in",
+      "telephone": "+919414453454",
+      "priceRange": "₹₹",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Near Hanuman Mandir, Mohalla - Nainsukh",
+        "addressLocality": "Behror",
+        "addressRegion": "Rajasthan",
+        "postalCode": "301701",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 27.8867939,
+        "longitude": 76.2827805
+      },
+      "hasMap": "https://maps.google.com/?q=27.8867939,76.2827805",
+      "founder": {
         "@type": "Person",
-        "name": "Rahul"
+        "name": "Mahendra Yadav",
+        "jobTitle": "Founder, Behror Solar · Partner, Global Green Energy",
+        "url": "https://www.linkedin.com/in/mahendra-yadav-44983718/",
+        "sameAs": [
+          "https://www.linkedin.com/in/mahendra-yadav-44983718/"
+        ]
       },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "name": "5 kW Tata hybrid at farmhouse in Vijaysinghpura, Neemrana",
-      "reviewBody": "Got a 5 kW Tata Power Solar hybrid system installed at my farmhouse in Vijaysinghpura, Neemrana. Installation was completed on time and the team did their job. The backup during power cuts is very useful at the farmhouse and the monitoring system is handy. Overall I am happy with the system and its performance."
+      "sameAs": [
+        "https://wa.me/919414453454",
+        "https://www.facebook.com/behrorsolar",
+        "https://www.instagram.com/behrorsolar",
+        "https://www.linkedin.com/company/behror-solar/",
+        "https://x.com/BehrorSolar"
+      ]
     },
     {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Sakshi"
+      "@type": "Service",
+      "@id": "https://behrorsolar.in/solar-installation-neemrana#service",
+      "name": "Neemrana — Shahjahanpur - Residential - Commercial and Industrial",
+      "serviceType": [
+        "Residential solar installation",
+        "Commercial solar installation",
+        "Industrial solar installation"
+      ],
+      "url": "https://behrorsolar.in/solar-installation-neemrana",
+      "mainEntityOfPage": "https://behrorsolar.in/solar-installation-neemrana",
+      "description": "Based in Behror, 20 km / 20 minutes away.",
+      "provider": {
+        "@id": "https://behrorsolar.in/#organization"
       },
-      "reviewRating": {
-        "@type": "Rating",
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Neemrana",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Rajasthan"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Shahjahanpur",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Rajasthan"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Jat Behror",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Rajasthan"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Mundawar",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Rajasthan"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Khairthal",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Rajasthan"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Harsora",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Rajasthan"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Tatarpur",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Rajasthan"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Harsoli",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Rajasthan"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Bibirani",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Rajasthan"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Ghiloth",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Rajasthan"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Mandhan",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Rajasthan"
+          }
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
         "ratingValue": "5",
-        "bestRating": "5"
+        "reviewCount": "2",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      "name": "3 kW Tata on-grid system in Bichpuri, Neemrana",
-      "reviewBody": "We had a 3 kW On-Grid Tata Power Solar system installed at our home in Bichpuri, Neemrana. Quality was maintained throughout and every task was carried out professionally. Mahendra ji personally supervised the installation and guided us on future care. We are completely satisfied with Behror Solar's service, quality and conduct."
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Rahul"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "name": "5 kW Tata hybrid at farmhouse in Vijaysinghpura, Neemrana",
+          "reviewBody": "Got a 5 kW Tata Power Solar hybrid system installed at my farmhouse in Vijaysinghpura, Neemrana. Installation was completed on time and the team did their job. The backup during power cuts is very useful at the farmhouse and the monitoring system is handy. Overall I am happy with the system and its performance."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sakshi"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "name": "3 kW Tata on-grid system in Bichpuri, Neemrana",
+          "reviewBody": "We had a 3 kW On-Grid Tata Power Solar system installed at our home in Bichpuri, Neemrana. Quality was maintained throughout and every task was carried out professionally. Mahendra ji personally supervised the installation and guided us on future care. We are completely satisfied with Behror Solar's service, quality and conduct."
+        }
+      ]
     }
-  ],
-  "sameAs": [
-    "https://wa.me/919414453454",
-    "https://www.facebook.com/behrorsolar",
-    "https://www.instagram.com/behrorsolar",
-    "https://www.linkedin.com/company/behror-solar/",
-    "https://x.com/BehrorSolar"
   ]
 }
 </script>
