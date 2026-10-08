@@ -6,7 +6,7 @@
   const mobile = window.matchMedia('(max-width: 992px)');
   const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
   const dropdowns = nav ? Array.from(nav.querySelectorAll('.nav-dropdown')) : [];
-  const background = Array.from(document.querySelectorAll('main, footer, .contact-fab'));
+  const background = Array.from(document.querySelectorAll('main, footer, .contact-actions'));
   let savedOverflow = '';
   let savedInert = [];
 
@@ -118,30 +118,52 @@
     setMenu(false);
   }
 
-  const fab = document.getElementById('contactFab');
-  const fabToggle = fab && fab.querySelector('.contact-fab-toggle');
-  const fabOptions = fab && fab.querySelector('.contact-fab-options');
-  if (fab && fabToggle && fabOptions) {
-    function setContact(open, restoreFocus) {
-      fab.classList.toggle('open', open);
-      fabToggle.setAttribute('aria-expanded', String(open));
-      fabToggle.setAttribute('aria-label', open ? 'Close contact options' : 'Open contact options');
-      fabOptions.inert = !open;
-      if (restoreFocus) fabToggle.focus();
+  const contact = document.querySelector('.contact-actions');
+  if (contact && 'IntersectionObserver' in window) {
+    const visibleForms = new Set();
+    const obstructedLinks = new Set();
+    let actionObserver;
+    document.documentElement.classList.add('contact-ready');
+    function updateContactVisibility() {
+      contact.hidden = (visibleForms.size > 0 || obstructedLinks.size > 0) && !contact.contains(document.activeElement);
     }
-    fabToggle.addEventListener('click', function () {
-      setContact(!fab.classList.contains('open'));
+    // Keep the floating WhatsApp link clear of enquiry forms.
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) visibleForms.add(entry.target);
+        else visibleForms.delete(entry.target);
+      });
+      updateContactVisibility();
+    }, { rootMargin: '0px 0px 88px 0px' });
+    document.querySelectorAll('form').forEach(function (form) {
+      observer.observe(form);
     });
-    document.addEventListener('click', function (event) {
-      if (!fab.contains(event.target)) setContact(false);
+    document.addEventListener('focusin', updateContactVisibility);
+    contact.addEventListener('focusout', function () {
+      queueMicrotask(updateContactVisibility);
     });
-    document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape' && fab.classList.contains('open')) {
-        setContact(false, fab.contains(document.activeElement));
-      }
-    });
-    document.documentElement.classList.add('contact-enhanced');
-    setContact(false);
+    function watchActionLinks() {
+      if (actionObserver) actionObserver.disconnect();
+      obstructedLinks.clear();
+      const position = getComputedStyle(contact);
+      const size = getComputedStyle(contact.querySelector('a'));
+      // Include the pulse ring in the area reserved for WhatsApp.
+      const right = parseFloat(position.left) + parseFloat(size.width) + 12;
+      const top = innerHeight - parseFloat(position.bottom) - parseFloat(size.height) - 12;
+      actionObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) obstructedLinks.add(entry.target);
+          else obstructedLinks.delete(entry.target);
+        });
+        updateContactVisibility();
+      }, { rootMargin: -Math.max(0, top) + 'px ' + -Math.max(0, innerWidth - right) + 'px 0px 0px' });
+      document.querySelectorAll('main .btn').forEach(function (link) {
+        actionObserver.observe(link);
+      });
+      updateContactVisibility();
+    }
+    window.addEventListener('resize', watchActionLinks);
+    watchActionLinks();
   }
 
 })();

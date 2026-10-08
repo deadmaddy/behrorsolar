@@ -1460,6 +1460,27 @@ background:var(--ink);
 color:var(--sand);
 }
 
+/* Legal pages: preserve the contact-card design with readable document spacing. */
+.privacy-page .contact-section,.terms-page .contact-section{padding:80px 0;}
+.privacy-page .section-title,.terms-page .section-title{max-width:800px;}
+.privacy-page .section-title h1,.terms-page .section-title h1{font-size:2.5rem;color:var(--sand);margin-bottom:16px;}
+.privacy-page .contact-wrapper,.terms-page .contact-wrapper{grid-template-columns:1fr;max-width:800px;}
+.privacy-content,.terms-content{display:block;}
+.privacy-content h2,.terms-content h2{font-size:1.35rem;line-height:1.35;margin:32px 0 12px;}
+.privacy-content h2:first-child,.terms-content h2:first-child{margin-top:0;}
+.privacy-content p,.terms-content p{color:#374151;margin-bottom:16px;}
+.privacy-content p:last-child,.terms-content p:last-child{margin-bottom:0;}
+.privacy-content ul,.terms-content ul{color:#374151;margin-bottom:16px;padding-left:20px;}
+.privacy-content li+li,.terms-content li+li{margin-top:8px;}
+.privacy-content a,.terms-content a{color:var(--gold-deep);text-underline-offset:3px;overflow-wrap:anywhere;}
+.privacy-contact,.terms-contact{font-style:normal;border-top:1px solid var(--line);padding-top:20px;}
+
+/* Legal-page spacing on narrow screens. */
+@media(max-width:992px){
+.privacy-page .contact-section,.terms-page .contact-section{padding:56px 0;}
+.privacy-content,.terms-content{padding:28px 36px 28px 24px;}
+}
+
 /* =====================
 CONTACT FORM
 ===================== */
@@ -1513,6 +1534,20 @@ text-align:center;
 border:none;
 cursor:pointer;
 margin-top:6px;
+}
+
+.form-privacy-notice{
+margin-top:12px;
+padding-right:16px;
+font-size:0.8rem;
+line-height:1.6;
+color:var(--steel);
+}
+
+.contact-form-card .form-privacy-notice a{
+color:var(--gold-deep);
+text-decoration:underline;
+text-underline-offset:3px;
 }
 
 .contact-map{
@@ -3228,33 +3263,34 @@ margin:auto;
 .partner-row{padding:7px 0;}
 }
 
-/* ===================== FLOATING CONTACT BUTTON ===================== */
-.contact-fab{position:fixed;right:24px;bottom:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:14px;}
-.contact-fab-options{display:flex;flex-direction:column;align-items:flex-end;gap:14px;opacity:0;visibility:hidden;transform:translateY(12px);pointer-events:none;transition:opacity .25s ease,transform .25s ease,visibility 0s linear .25s;}
-.contact-fab.open .contact-fab-options{opacity:1;visibility:visible;transform:none;pointer-events:auto;transition-delay:0s;}
-.menu-open .contact-fab{visibility:hidden;}
-.fab-item{display:flex;align-items:center;gap:10px;text-decoration:none;opacity:0;transform:translateY(10px);transition:opacity .25s ease,transform .25s ease;}
-.contact-fab.open .fab-item{opacity:1;transform:none;}
-.contact-fab.open .fab-item:nth-child(1){transition-delay:.04s;}
-.contact-fab.open .fab-item:nth-child(2){transition-delay:.09s;}
-.contact-fab.open .fab-item:nth-child(3){transition-delay:.14s;}
-.fab-label{background:var(--ink);color:var(--sand);font-family:'Public Sans',sans-serif;font-size:.82rem;font-weight:600;padding:6px 12px;border-radius:6px;white-space:nowrap;box-shadow:0 4px 14px rgba(0,0,0,.18);}
-.fab-btn{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.25);flex-shrink:0;}
-.fab-btn svg{width:24px;height:24px;}
-.fab-call .fab-btn{background:var(--gold);color:var(--ink);}
-.fab-wa .fab-btn{background:#25D366;}
-.fab-mail .fab-btn{background:var(--ink-soft);}
-.contact-fab-toggle{width:62px;height:62px;border-radius:50%;border:none;cursor:pointer;background:var(--gold);color:var(--ink);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(11,19,32,.32);transition:transform .25s ease,background .25s ease;position:relative;}
-.contact-fab-toggle:hover{transform:translateY(-2px);}
-.contact-fab-toggle svg{width:28px;height:28px;position:absolute;transition:opacity .2s ease,transform .3s ease;}
-.contact-fab-toggle .fab-ic-close{opacity:0;transform:rotate(-90deg);}
-.contact-fab.open .contact-fab-toggle{background:var(--ink);color:var(--sand);}
-.contact-fab.open .contact-fab-toggle .fab-ic-open{opacity:0;transform:rotate(90deg);}
-.contact-fab.open .contact-fab-toggle .fab-ic-close{opacity:1;transform:none;}
-.contact-fab-toggle::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:0 0 0 0 rgba(217,164,65,.55);animation:fabpulse 2.4s infinite;}
-.contact-fab.open .contact-fab-toggle::after{display:none;}
-@keyframes fabpulse{0%{box-shadow:0 0 0 0 rgba(217,164,65,.5)}70%{box-shadow:0 0 0 16px rgba(217,164,65,0)}100%{box-shadow:0 0 0 0 rgba(217,164,65,0)}}
-@media(max-width:560px){.contact-fab{right:16px;bottom:16px;}.contact-fab-toggle{width:56px;height:56px;}.fab-btn{width:46px;height:46px;}}
+/* ===================== WHATSAPP + HEADER CALL ===================== */
+.contact-actions{display:flex;justify-content:center;padding:16px;width:fit-content;max-width:100%;margin:auto;}
+.contact-actions[hidden]{display:none;}
+.contact-action-whatsapp{position:relative;display:flex;align-items:center;justify-content:center;width:62px;height:62px;border-radius:50%;background:#25D366;color:var(--ink);box-shadow:0 6px 18px rgba(11,19,32,.22);--contact-pulse:37,211,102;}
+.contact-action-whatsapp svg{width:28px;height:28px;}
+.contact-action-whatsapp:hover{background:#22C55E;}
+.contact-action-whatsapp:focus-visible{outline:3px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 6px var(--sand);}
+.nav-cta{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;background:var(--gold);border-color:var(--gold);color:var(--ink);--contact-pulse:217,164,65;}
+.nav-cta svg{width:18px;height:18px;flex-shrink:0;}
+.nav-cta:hover{background:var(--gold-deep);border-color:var(--gold-deep);color:#fff;}
+.nav-cta:focus-visible{outline:3px solid var(--ink);outline-offset:3px;}
+.contact-action-whatsapp::after,.nav-cta::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;animation:contact-pulse 2.4s ease-out infinite;}
+@keyframes contact-pulse{
+0%{box-shadow:0 0 0 0 rgba(var(--contact-pulse),.45);}
+70%{box-shadow:0 0 0 12px rgba(var(--contact-pulse),0);}
+100%{box-shadow:0 0 0 0 rgba(var(--contact-pulse),0);}
+}
+.contact-ready{--contact-clearance:calc(88px + env(safe-area-inset-bottom, 0px));scroll-padding-bottom:var(--contact-clearance);}
+.contact-ready body{padding-bottom:var(--contact-clearance);}
+.contact-ready .contact-actions{position:fixed;left:24px;bottom:calc(24px + env(safe-area-inset-bottom, 0px));z-index:999;margin:0;padding:0;}
+.menu-open .contact-actions{visibility:hidden;}
+@media(max-width:992px){
+.contact-ready .contact-actions{left:16px;bottom:calc(16px + env(safe-area-inset-bottom, 0px));}
+.contact-action-whatsapp{width:56px;height:56px;}
+}
+@media(prefers-reduced-motion:reduce){
+.contact-action-whatsapp::after,.nav-cta::after{animation:none;}
+}
 
 /* ===================== OUR PHILOSOPHY (overlay hero) ===================== */
 .visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}

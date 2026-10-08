@@ -1,19 +1,19 @@
 # Behror Solar
 
-> Behror Solar (Global Green Energy) is an Authorized Tata Power Solaroof Channel Partner installing rooftop solar across Behror, Neemrana and northeast Rajasthan — residential, rural and industrial. We handle PM Surya Ghar subsidy paperwork (up to ₹95,000) and JVVNL net metering end to end, and build with Tata Power Solaroof components and Hot-Dip Galvanized structures engineered for a 30-year service life.
+> BehrorSolar.in is Global Green Energy's local solar platform for Behror, Neemrana and surrounding areas. Behror Solar was founded and is led by Mahendra Yadav, a partner and investor in Global Green Energy. Global Green Energy is an Authorised Tata Power Solaroof Channel Partner installing rooftop solar across Behror, Neemrana and northeast Rajasthan — residential, rural and industrial. We handle PM Surya Ghar subsidy paperwork and JVVNL net metering end to end, and build with Tata Power Solaroof components and Hot-Dip Galvanized structures engineered for a 30-year service life.
 
 Based near Hanuman Mandir, Mohalla Nainsukh, Behror, Rajasthan 301701. Service area: Behror, Neemrana (urban, rural and NIA industrial), Bhiwadi, Kotputli, Shahjahanpur and the wider Alwar region. Contact: +91 94144 53454 / myadav@behrorsolar.in.
 
 ## Main pages
 
-- [Solar Installation in Behror & Neemrana (Home)](https://behrorsolar.in/): Rooftop solar across Behror and Neemrana — urban and rural — by an Authorized Tata Power Solaroof Channel Partner. Residential, commercial and industrial, with PM Surya Ghar and net metering support.
+- [Solar Installation in Behror & Neemrana (Home)](https://behrorsolar.in/): Rooftop solar across Behror and Neemrana — urban and rural — by Global Green Energy, an Authorised Tata Power Solaroof Channel Partner. Residential, commercial and industrial, with PM Surya Ghar and net metering support.
 - [Solar Installation in Neemrana](https://behrorsolar.in/solar-installation-neemrana): Solar in Neemrana — urban, rural and NIA industrial — from a Tata partner based 20 minutes away in Behror. PM Surya Ghar subsidy and JVVNL net metering handled end to end.
 
 ## Residential system sizes
 
 - [3 kW Solar System](https://behrorsolar.in/3kw-solar-system): 3 kW rooftop solar for a typical home (~250 sq ft roof, ~500 units/month). Tata and custom TOPCon options, pricing, subsidy math and payback.
 - [5 kW Solar System](https://behrorsolar.in/5kw-solar-system): 5 kW rooftop solar for larger homes (~400 sq ft roof, ~700 units/month). Two offerings, subsidy math, savings and real installs.
-- [10 kW Solar System](https://behrorsolar.in/10kw-solar-system): 10 kW rooftop solar (sized ~9.8–9.9 kW to stay within subsidy) for high-consumption homes. Pricing, subsidy, savings and payback.
+- [10 kW Solar System](https://behrorsolar.in/10kw-solar-system): 10 kW rooftop solar for high-consumption homes. For eligible residential systems above 3 kW, central CFA remains capped at ₹78,000. The 10 kW threshold relates to the simplified technical-feasibility/load-enhancement process, not a maximum subsidy-eligible system size. Pricing, subsidy, savings and payback.
 
 ## Systems and products
 
@@ -24,16 +24,16 @@ Based near Hanuman Mandir, Mohalla Nainsukh, Behror, Rajasthan 301701. Service a
 
 ## Subsidy and guides
 
-- [PM Surya Ghar Subsidy](https://behrorsolar.in/pm-surya-ghar): PM Surya Ghar Muft Bijli Yojana explained for Rajasthan — up to ₹95,000 subsidy (₹78,000 central + ₹17,000 state), eligibility, and a savings calculator.
+- [PM Surya Ghar Subsidy](https://behrorsolar.in/pm-surya-ghar): PM Surya Ghar in Behror & Neemrana: up to ₹78,000 central CFA plus ₹17,000 Rajasthan support for eligible consumers, JVVNL net metering, documents and application help. The additional ₹17,000 Rajasthan–RRECL state subsidy applies only to eligible consumers enrolled in the 100/150-units-free Mukhya Mantri Nishulk Bijli Yojana.
 - [TOPCon vs Mono PERC Field Test](https://behrorsolar.in/topcon-vs-mono-perc-field-test): A real side-by-side field test measuring TOPCon vs Mono PERC generation on matched rooftop arrays in northeast Rajasthan.
 - [Solar Guides](https://behrorsolar.in/solar-guides): Solar guides and explainers covering subsidy, net metering, system types and panel technology.
 
 ## Company
 
-- [About Behror Solar](https://behrorsolar.in/about): About Behror Solar / Global Green Energy — an Authorized Tata Power Solaroof Channel Partner serving northeast Rajasthan.
+- [About Behror Solar](https://behrorsolar.in/about): BehrorSolar.in is Global Green Energy's local solar platform for Behror, Neemrana and surrounding areas. Behror Solar was founded and is led by Mahendra Yadav, a partner and investor in Global Green Energy.
 - [Contact & Free Site Survey](https://behrorsolar.in/#contact): Contact Behror Solar for a free site survey — phone, WhatsApp and enquiry form.
 
 ## Optional
 
-- [Terms & Conditions](https://behrorsolar.in/terms_and_conditions.html)
-- [Privacy Policy](https://behrorsolar.in/privacy_policy.html)
+- [Terms & Conditions](https://behrorsolar.in/terms_and_conditions)
+- [Privacy Policy](https://behrorsolar.in/privacy_policy)
