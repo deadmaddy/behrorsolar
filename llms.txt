@@ -31,9 +31,14 @@ Additional service areas: Harsora · Tatarpur · Harsoli · Bibirani · Ghiloth 
 
 Prices are all-inclusive, including GST. Three-phase supply is an additional cost for 5 kW Tata and Premier systems; the 10 kW options include three-phase supply. Exact costs follow a free site survey.
 
-Recorded 3 kW generation: This 3 kW on-grid solar plant with 6 TOPCon panels generated 529.13 units (kWh) between 1 and 30 September 2026 — an average of about 17.64 units per day.
+Recorded 3 kW-class generation (one unit = 1 kWh):
 
-Performance disclaimer: These figures are actual recorded generation from this specific installation and period, not a generation guarantee. Solar output varies with weather, season, location, orientation, shading, grid availability, equipment and site conditions.
+- [Tata generation — Alwar City](https://behrorsolar.in/3kw-solar-system#tata-generation-alwar): Six 590 W Tata panels, rated DC panel-array capacity 3.54 kWp. From 9 September to 8 October 2026 (30 days): total 521.1 kWh; daily average 17.4 kWh; peak 21.6 kWh on 9 and 10 September. Generation per rated DC capacity: 147.20 kWh/kWp over the period. Source: supplied generation chart and summary.
+- [TOPCon generation — Behror](https://behrorsolar.in/3kw-solar-system#september-generation): Six 610 W TOPCon panels on an on-grid installation, rated DC panel-array capacity 3.66 kWp. From 1 to 30 September 2026 (30 days): total 529.13 kWh; daily average 17.64 kWh; best daily generation shown approximately 23 kWh. Generation per rated DC capacity: 144.57 kWh/kWp over the period. Source: monitoring-app September month view. This recorded six-panel installation is separate from the current five-panel custom Premier TOPCon option.
+
+These records have different locations, dates and panel-array capacities; they do not establish a Tata-versus-TOPCon performance ranking. The nominal 3 kW system label is separate from the rated DC capacity calculated from all six panels.
+
+Performance disclaimer: These figures are actual recorded generation from these specific installations and periods, not a generation guarantee. Solar output varies with weather, season, location, orientation, shading, grid availability, equipment and site conditions.
 
 ## Systems and products
 
@@ -55,7 +60,11 @@ The panel page also lists bulk DCR supply separately from installed systems. Min
 ## Subsidy and guides
 
 - [PM Surya Ghar Subsidy](https://behrorsolar.in/pm-surya-ghar): PM Surya Ghar in Behror & Neemrana: up to ₹78,000 central CFA plus ₹17,000 Rajasthan support for eligible consumers, JVVNL net metering, documents and application help. The additional ₹17,000 Rajasthan–RRECL state subsidy applies only to eligible consumers enrolled in the 100/150-units-free Mukhya Mantri Nishulk Bijli Yojana.
-- [TOPCon vs Mono PERC Field Test](https://behrorsolar.in/topcon-vs-mono-perc-field-test): A real side-by-side field test measuring TOPCon vs Mono PERC generation on matched rooftop arrays in northeast Rajasthan.
+- [TOPCon vs Mono PERC — Solar Quality and Long-Term Value](https://behrorsolar.in/topcon-vs-mono-perc-field-test): A lower-cost solar quote can cost more over time when lower output or weaker support erodes the upfront saving. High-quality Tata Mono PERC and premium TOPCon are both competitive options. September monitoring records compare the same budget and TOPCon arrays used in the August rooftop test; the Tata record is a separate Alwar City example.
+
+Same-roof September 2026 generation, 1–30 September (30 days): premium TOPCon, six 610 W panels / 3.66 kWp DC, recorded 529.13 kWh (17.64 kWh/day; 144.57 kWh/kWp). Budget Mono PERC, six 530 W panels / 3.18 kWp DC, recorded 385.4 kWh (12.85 kWh/day; 121.19 kWh/kWp). TOPCon recorded 143.73 additional kWh, or 37.3% more raw energy; accounting for DC capacity, the observed difference was 19.3% per kWp. The same arrays had observed normalized differences of 16.9% on 21 August and 17.4% on 27 August. Separate inverters and unmeasured conditions prevent attributing the entire difference to cell technology. These records do not establish an annual advantage or lifetime savings figure.
+
+The Tata Mono PERC Alwar City record uses six 590 W panels / 3.54 kWp DC and shows 521.1 kWh from 9 September to 8 October 2026 (17.4 kWh/day; 147.20 kWh/kWp). The location and dates differ from the paired Behror records, so it illustrates competitive high-quality Mono PERC output without establishing a matched Tata-versus-TOPCon ranking.
 - [Solar Guides](https://behrorsolar.in/solar-guides): Solar guides and explainers covering subsidy, net metering, system types and panel technology.
 
 For eligible residential systems above 3 kW, central CFA remains capped at ₹78,000. The 10 kW threshold relates to the simplified technical-feasibility/load-enhancement process, not a maximum subsidy-eligible system size.
