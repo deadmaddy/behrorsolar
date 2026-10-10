@@ -157,7 +157,7 @@
         });
         updateContactVisibility();
       }, { rootMargin: -Math.max(0, top) + 'px 0px 0px ' + -Math.max(0, left) + 'px' });
-      document.querySelectorAll('main .btn').forEach(function (link) {
+      document.querySelectorAll('main .btn, footer a').forEach(function (link) {
         actionObserver.observe(link);
       });
       updateContactVisibility();

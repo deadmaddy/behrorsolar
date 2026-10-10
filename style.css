@@ -35,7 +35,7 @@ box-sizing:border-box;
 
 html{
 scroll-behavior:smooth;
-scroll-padding-top:140px;
+scroll-padding-top:114px;
 }
 
 .skip-link{
@@ -117,7 +117,7 @@ border-bottom:1px solid var(--line);
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:16px 0;
+padding:8px 0;
 gap:30px;
 }
 
@@ -137,7 +137,7 @@ display:block;
 display:flex;
 justify-content:center;
 align-items:center;
-padding:9px 0;
+padding:4px 0;
 border-top:1px solid var(--line);
 }
 .partner-row-logo{
@@ -3251,11 +3251,11 @@ margin:auto;
 .nav-container{gap:10px;}
 .header-bs-logo{height:34px;}
 .partner-row-logo{height:30px;}
-.partner-row{padding:7px 0;}
+.partner-row{padding:4px 0;}
 }
 
 /* ===================== WHATSAPP + HEADER CALL ===================== */
-.contact-actions{display:flex;justify-content:center;padding:16px;width:fit-content;max-width:100%;margin:auto;}
+.contact-actions{position:fixed;right:calc(24px + env(safe-area-inset-right, 0px));bottom:calc(24px + env(safe-area-inset-bottom, 0px));z-index:999;display:flex;justify-content:center;width:fit-content;max-width:100%;margin:0;padding:0;}
 .contact-actions[hidden]{display:none;}
 .contact-action-whatsapp{position:relative;display:flex;align-items:center;justify-content:center;width:62px;height:62px;border-radius:50%;background:#25D366;color:var(--ink);box-shadow:0 6px 18px rgba(11,19,32,.22);--contact-pulse:37,211,102;}
 .contact-action-whatsapp svg{width:28px;height:28px;}
@@ -3277,11 +3277,9 @@ margin:auto;
 100%{box-shadow:0 0 0 0 rgba(var(--contact-pulse),0);}
 }
 .contact-ready{--contact-clearance:calc(88px + env(safe-area-inset-bottom, 0px));scroll-padding-bottom:var(--contact-clearance);}
-.contact-ready body{padding-bottom:var(--contact-clearance);}
-.contact-ready .contact-actions{position:fixed;right:calc(24px + env(safe-area-inset-right, 0px));bottom:calc(24px + env(safe-area-inset-bottom, 0px));z-index:999;margin:0;padding:0;}
 .menu-open .contact-actions{visibility:hidden;}
 @media(max-width:992px){
-.contact-ready .contact-actions{right:calc(16px + env(safe-area-inset-right, 0px));bottom:calc(16px + env(safe-area-inset-bottom, 0px));}
+.contact-actions{right:calc(16px + env(safe-area-inset-right, 0px));bottom:calc(16px + env(safe-area-inset-bottom, 0px));}
 .contact-action-whatsapp{width:56px;height:56px;}
 }
 @media(prefers-reduced-motion:reduce){
