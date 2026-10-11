@@ -1,0 +1,25 @@
+.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:0;top:0;z-index:9999;background:var(--gold);color:var(--ink);padding:8px 16px}
+.hybrid-flow-body{padding:16px 0}
+.hybrid-flow-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.hybrid-flow-row-2{margin-top:12px}
+.hybrid-flow-node{display:flex;flex-direction:column;align-items:center;gap:4px;background:rgba(255,255,255,0.06);border:1px solid var(--line-light);border-radius:6px;padding:8px 12px;font-size:0.78rem;color:var(--sand);font-family:'Space Mono',monospace;min-width:70px;text-align:center}
+.hybrid-flow-arrow{color:var(--gold);font-size:1.1rem;font-weight:700}
+.hybrid-flow-arrow-gold{color:var(--gold)}
+.hybrid-panel-legend{justify-content:center;gap:16px}
+.legend-grid{color:#5cb84a}
+.legend-outage{color:var(--gold)}
+.hybrid-states{display:flex;flex-direction:column;gap:0}
+.hybrid-state{padding:40px 0;border-top:1px solid var(--line-light)}
+.hybrid-state:first-child{border-top:none}
+.hybrid-state-badge{display:inline-block;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;padding:6px 14px;border-radius:30px;margin-bottom:16px;font-weight:700}
+.badge-day{background:rgba(92,184,74,0.15);color:#5cb84a;border:1px solid rgba(92,184,74,0.3)}
+.badge-outage{background:rgba(217,164,65,0.15);color:var(--gold);border:1px solid rgba(217,164,65,0.3)}
+.badge-night{background:rgba(107,118,133,0.2);color:#A9B2C2;border:1px solid rgba(107,118,133,0.3)}
+.hybrid-state h3{font-size:1.3rem;color:var(--sand);margin-bottom:14px}
+.hybrid-state p{color:#A9B2C2;max-width:760px;margin-bottom:14px;line-height:1.75}
+.hybrid-state p strong{color:var(--sand)}
+.hybrid-state-flow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:20px;padding:16px 20px;background:rgba(255,255,255,0.04);border-radius:6px;border:1px solid var(--line-light)}
+.hybrid-state-flow span{font-family:'Space Mono',monospace;font-size:0.78rem;color:var(--sand)}
+.flow-arrow{color:var(--gold);font-weight:700}
+.hybrid-state-note{margin-top:12px;font-family:'Space Mono',monospace;font-size:0.75rem;color:var(--steel);letter-spacing:0.04em}
+.process-subtitle{color:#A9B2C2;margin-top:10px}

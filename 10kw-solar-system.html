@@ -42,152 +42,13 @@
 <link rel="manifest" href="/site.webmanifest">
 
 <link rel="preload" as="image" href="/images/behror-solar-logo.png">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.min.css?v=0da993c45e88">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-<style>
-/* ── HERO ────────────────────────────────────────────── */
-.size-hero{background:var(--ink);color:var(--sand);padding:100px 0 80px;position:relative;overflow:hidden}
-.size-hero .hero-grid-overlay{position:absolute;inset:0;background-image:linear-gradient(var(--line-light) 1px,transparent 1px),linear-gradient(90deg,var(--line-light) 1px,transparent 1px);background-size:64px 64px;opacity:0.35;mask-image:linear-gradient(to bottom,transparent,rgba(0,0,0,0.9) 40%,transparent)}
-.size-hero-inner{position:relative;z-index:2;max-width:780px}
-.size-eyebrow{display:inline-flex;align-items:center;gap:10px;padding:9px 16px;border:1px solid var(--line-light);border-radius:30px;margin-bottom:28px;color:var(--gold);font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase}
-.size-hero h1{font-size:2.6rem;line-height:1.15;margin-bottom:20px}
-.size-hero p{font-size:1.05rem;color:#D7DCE5;max-width:640px;margin-bottom:32px}
-.size-meta{display:flex;gap:24px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.05em;color:#9AA4B5;padding-top:24px;border-top:1px solid var(--line-light)}
-
-/* ── SPEC STRIP ──────────────────────────────────────── */
-.spec-strip{background:var(--sand-deep);border-bottom:1px solid var(--line)}
-.spec-strip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
-.spec-cell{padding:28px 24px;border-right:1px solid var(--line);text-align:center}
-.spec-cell:last-child{border-right:none}
-.spec-cell .spec-num{font-family:'Space Grotesk',sans-serif;font-size:1.9rem;font-weight:700;color:var(--ink);line-height:1.1;margin-bottom:4px}
-.spec-cell .spec-lab{font-family:'Space Mono',monospace;font-size:0.68rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--steel)}
-
-/* ── FIT CARDS ───────────────────────────────────────── */
-.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
-.fit-card{padding:32px;border-radius:8px;border:1px solid var(--line);background:var(--sand)}
-.fit-card.fit-yes{background:#F0FDF4;border-color:#86EFAC}
-.fit-card.fit-warn{background:#FEF2F2;border-color:#FCA5A5}
-.fit-card-label{font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:700;margin-bottom:14px;display:block}
-.fit-yes .fit-card-label{color:#166534}
-.fit-warn .fit-card-label{color:#B91C1C}
-.fit-card.fit-alt .fit-card-label{color:var(--steel)}
-.fit-card h3{font-size:1.15rem;margin-bottom:12px;color:var(--ink)}
-.fit-card p{font-size:0.93rem;color:#374151;line-height:1.7;margin-bottom:10px}
-.fit-card ul{list-style:none;display:flex;flex-direction:column;gap:6px;margin-top:4px}
-.fit-card li{font-size:0.9rem;color:#374151;padding-left:18px;position:relative}
-.fit-yes li::before{content:'✓';position:absolute;left:0;color:#166534;font-weight:700}
-.fit-alt li::before{content:'→';position:absolute;left:0;color:var(--steel);font-weight:700}
-
-/* ── OFFERING (TWO OFFERS) CARDS ─────────────────────── */
-.install-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
-.install-card{background:var(--sand);border:1px solid var(--line);border-radius:10px;padding:36px;position:relative;overflow:hidden}
-.install-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--gold)}
-.install-card.card-value::before{background:var(--gold-deep)}
-.install-size{font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:12px;display:block}
-.install-card h3{font-size:1.4rem;margin-bottom:6px}
-.install-actual{font-family:'Space Mono',monospace;font-size:0.78rem;color:#166534;margin-bottom:20px;display:block}
-.install-price{font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:700;color:var(--ink);margin-bottom:6px}
-.install-price small{font-size:0.9rem;font-weight:500;color:var(--steel)}
-.install-price-note{font-size:0.82rem;color:var(--steel);margin-bottom:24px}
-.install-includes{list-style:none;display:flex;flex-direction:column;gap:8px}
-.install-includes li{font-size:0.9rem;color:#374151;padding-left:20px;position:relative}
-.install-includes li::before{content:'✓';position:absolute;left:0;color:#166534;font-weight:700}
-.install-subsidy{margin-top:20px;padding:12px 16px;background:#F0FDF4;border-radius:6px;color:#166534;font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.04em}
-.install-warranty{margin-top:20px;padding:16px;background:var(--sand-deep);border-radius:6px;border:1px solid var(--line)}
-.install-warranty-label{font-family:'Space Mono',monospace;font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:10px;font-weight:700}
-.install-warranty ul{list-style:none;display:flex;flex-direction:column;gap:6px}
-.install-warranty li{font-size:0.82rem;color:#374151;padding-left:18px;position:relative;line-height:1.5}
-.install-warranty li::before{content:'●';position:absolute;left:0;color:var(--gold-deep);font-size:0.6rem;top:4px}
-.offer-best{margin-top:16px;font-size:0.85rem;color:var(--ink);font-weight:600;line-height:1.5}
-.offer-callout{margin-top:28px;background:var(--sand-deep);border:1px solid var(--line);border-radius:8px;padding:20px 24px;font-size:0.92rem;color:#374151;line-height:1.7}
-.offer-callout strong{color:var(--ink)}
-
-/* ── RESIDENTIAL VS COMMERCIAL ───────────────────────── */
-.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
-.split-card{background:var(--sand);border:1px solid var(--line);border-radius:8px;padding:28px}
-.split-card.is-lead{border-color:var(--gold);background:#FFFBF3}
-.split-card h3{font-size:1.1rem;color:var(--ink);margin-bottom:6px}
-.split-tag{font-family:'Space Mono',monospace;font-size:0.68rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;margin-bottom:10px;display:block}
-.split-card p{font-size:0.9rem;color:#374151;line-height:1.65;margin:0}
-
-/* ── GENERATION ──────────────────────────────────────── */
-.gen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
-.gen-card{background:var(--sand);border:1px solid var(--line);border-radius:8px;padding:28px;text-align:center}
-.gen-num{font-family:'Space Grotesk',sans-serif;font-size:2.1rem;font-weight:700;color:var(--gold-deep);line-height:1.1;margin-bottom:6px}
-.gen-lab{font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--steel);margin-bottom:8px}
-.gen-sub{font-size:0.85rem;color:#374151;line-height:1.5}
-.gen-proof{margin-top:32px;background:#F0FDF4;border:1px solid #86EFAC;border-radius:8px;padding:22px 26px}
-.gen-proof-label{font-family:'Space Mono',monospace;font-size:0.68rem;letter-spacing:0.08em;text-transform:uppercase;color:#166534;font-weight:700;margin-bottom:8px;display:block}
-.gen-proof p{font-size:0.95rem;color:#374151;line-height:1.7;margin:0}
-.gen-proof strong{color:#166534}
-
-/* ── SAVINGS / MONEY ─────────────────────────────────── */
-.money-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:40px;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.money-cell{padding:28px 22px;text-align:center;border-right:1px solid var(--line);background:var(--sand);position:relative}
-.money-cell:last-child{border-right:none;background:var(--ink)}
-.money-lab{font-family:'Space Mono',monospace;font-size:0.66rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--steel);margin-bottom:8px}
-.money-cell:last-child .money-lab{color:var(--gold)}
-.money-num{font-family:'Space Grotesk',sans-serif;font-size:1.5rem;font-weight:700;color:var(--ink);line-height:1.15}
-.money-cell:last-child .money-num{color:var(--sand)}
-.money-sub{font-size:0.78rem;color:var(--steel);margin-top:6px}
-.money-cell:last-child .money-sub{color:#9AA4B5}
-
-/* ── TECH / COMPARE TABLE ────────────────────────────── */
-.tech-table-wrap{overflow-x:auto;border-radius:8px;border:1px solid var(--line);-webkit-overflow-scrolling:touch;margin-top:40px}
-.tech-table{width:100%;border-collapse:collapse;font-size:0.9rem;min-width:560px}
-.tech-table thead{background:var(--ink)}
-.tech-table thead th{padding:16px 20px;text-align:left;color:var(--sand);font-family:'Space Grotesk',sans-serif;font-size:0.85rem;font-weight:600;border-right:1px solid rgba(255,255,255,0.08)}
-.tech-table thead th:last-child{border-right:none}
-.tech-table tbody tr{border-bottom:1px solid var(--line)}
-.tech-table tbody tr:last-child{border-bottom:none}
-.tech-table tbody tr:nth-child(even){background:var(--sand-deep)}
-.tech-table tbody td{padding:14px 20px;color:#374151;border-right:1px solid var(--line);vertical-align:middle}
-.tech-table tbody td:last-child{border-right:none}
-.tech-table .row-here{background:#FFF7ED !important}
-.tech-table .row-here td:first-child{font-weight:700;color:var(--ink)}
-
-/* ── FIELD-TEST EVIDENCE ─────────────────────────────── */
-.evidence-callout{margin-top:40px;background:var(--ink);color:var(--sand);border-radius:10px;padding:32px 36px;position:relative;overflow:hidden}
-.evidence-callout .ec-label{font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;display:block}
-.evidence-callout h3{font-size:1.3rem;color:var(--sand);margin-bottom:12px}
-.evidence-callout p{font-size:0.95rem;color:#D7DCE5;line-height:1.7;margin-bottom:16px;max-width:700px}
-.evidence-callout a.ec-link{color:var(--gold);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(217,164,65,0.4)}
-.evidence-callout a.ec-link:hover{color:#fff}
-
-/* ── WHAT WE HANDLE (TIMELINE) ───────────────────────── */
-.handle-timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
-.handle-step{background:var(--sand);border:1px solid var(--line);border-radius:8px;padding:24px;position:relative}
-.handle-step-day{font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;margin-bottom:10px}
-.handle-step h3{font-size:1rem;color:var(--ink);margin-bottom:6px}
-.handle-step p{font-size:0.85rem;color:#374151;line-height:1.55;margin:0}
-.handle-note{margin-top:24px;font-size:0.9rem;color:#374151;line-height:1.7;background:var(--sand-deep);border:1px solid var(--line);border-radius:8px;padding:18px 22px}
-.handle-note strong{color:var(--ink)}
-
-/* ── SIZE NAV ────────────────────────────────────────── */
-.size-nav{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
-.size-nav-card{display:block;background:var(--sand);border:1px solid var(--line);border-radius:8px;padding:24px;text-decoration:none;transition:border-color .15s,transform .15s}
-.size-nav-card:hover{border-color:var(--gold);transform:translateY(-2px)}
-.size-nav-card.is-current{background:var(--sand-deep);border-color:var(--gold);cursor:default}
-.size-nav-kw{font-family:'Space Grotesk',sans-serif;font-size:1.5rem;font-weight:700;color:var(--ink);margin-bottom:4px}
-.size-nav-price{font-family:'Space Mono',monospace;font-size:0.8rem;color:var(--gold-deep);margin-bottom:8px}
-.size-nav-desc{font-size:0.85rem;color:var(--steel);line-height:1.5}
-.size-nav-current-tag{font-family:'Space Mono',monospace;font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold-deep)}
-
-@media(max-width:992px){
-.fit-grid,.install-grid,.split-grid{grid-template-columns:1fr}
-.gen-grid,.size-nav,.handle-timeline{grid-template-columns:1fr}
-.money-grid,.spec-strip-grid{grid-template-columns:1fr 1fr}
-.money-cell:nth-child(2){border-right:none}
-.money-cell:nth-child(1),.money-cell:nth-child(2){border-bottom:1px solid var(--line)}
-.spec-cell:nth-child(2){border-right:none}
-.spec-cell:nth-child(1),.spec-cell:nth-child(2){border-bottom:1px solid var(--line)}
-.size-hero h1{font-size:2rem}
-}
-@media(max-width:768px){.size-hero h1{font-size:1.7rem}}
-</style>
+<link rel="stylesheet" href="/css/solar-system-base.min.css?v=ab2b21d41405">
+<link rel="stylesheet" href="/css/10kw-solar-system.min.css?v=de034dd66bd8">
 
 <script src="/site.js" defer></script>
 </head>
@@ -438,7 +299,7 @@
 <strong>How to choose between them.</strong> Both are premium and can qualify for the applicable residential CFA when scheme requirements are met, so this isn't premium-versus-budget — it's <em>which kind of assurance you want</em>. Tata puts a single national brand behind every part, installed to Tata's own standard with Tata's own five-year service. Our custom system uses newer, higher-wattage Premier TOPCon panels at ₹30,000 less, with a longer 10-year inverter warranty and fewer modules for a similar DC array; its structure, wiring and BOS are executed using the Tata SOP practices followed by our team and it is serviced directly by us. Across a 17-panel array the per-panel edge matters most, which is exactly why we meter panels before recommending. On a free site visit we'll tell you plainly which suits your property and budget.
 </div>
 
-<p style="margin-top:24px;font-size:0.88rem;color:var(--steel)">Panel counts and wattages are finalised at the site visit. The custom Premier system is our own configuration and is not a Tata product or Tata-certified package; we apply the Tata SOP installation practices followed by our team to its structure, wiring and BOS. Residential CFA and any Rajasthan state support depend on current eligibility. Read the <a href="/pm-surya-ghar">PM Surya Ghar subsidy page</a>.</p>
+<p class="content-reference-note">Panel counts and wattages are finalised at the site visit. The custom Premier system is our own configuration and is not a Tata product or Tata-certified package; we apply the Tata SOP installation practices followed by our team to its structure, wiring and BOS. Residential CFA and any Rajasthan state support depend on current eligibility. Read the <a href="/pm-surya-ghar">PM Surya Ghar subsidy page</a>.</p>
 
 </div>
 </section>
@@ -466,7 +327,7 @@
 </div>
 </div>
 
-<p style="margin-top:24px;font-size:0.9rem;color:#374151;line-height:1.7">The maximum central CFA for an eligible residential system is ₹78,000. Rajasthan's additional ₹17,000 is conditional on state-scheme eligibility rather than automatic for every household. We handle the PM Surya Ghar and JVVNL paperwork. Full current eligibility is on the <a href="/pm-surya-ghar">PM Surya Ghar subsidy page</a>.</p>
+<p class="content-body-note-spaced">The maximum central CFA for an eligible residential system is ₹78,000. Rajasthan's additional ₹17,000 is conditional on state-scheme eligibility rather than automatic for every household. We handle the PM Surya Ghar and JVVNL paperwork. Full current eligibility is on the <a href="/pm-surya-ghar">PM Surya Ghar subsidy page</a>.</p>
 
 </div>
 </section>
@@ -546,7 +407,7 @@
 </div>
 </div>
 
-<p style="margin-top:24px;font-size:0.9rem;color:#374151;line-height:1.7">Using only the ₹78,000 central CFA, residential net system cost is about ₹4,42,000 custom and ₹4,72,000 Tata; eligible Rajasthan state-scheme beneficiaries may receive a further ₹17,000. Commercial consumers should be modelled separately without residential CFA; any depreciation benefit depends on the business's tax position. After payback the system keeps generating for its 25-year-plus life, so the remaining two decades are effectively free electricity. Exact payback depends on your tariff, connection type and how much generation you use directly versus export.</p>
+<p class="content-body-note-spaced">Using only the ₹78,000 central CFA, residential net system cost is about ₹4,42,000 custom and ₹4,72,000 Tata; eligible Rajasthan state-scheme beneficiaries may receive a further ₹17,000. Commercial consumers should be modelled separately without residential CFA; any depreciation benefit depends on the business's tax position. After payback the system keeps generating for its 25-year-plus life, so the remaining two decades are effectively free electricity. Exact payback depends on your tariff, connection type and how much generation you use directly versus export.</p>
 
 </div>
 </section>
@@ -593,7 +454,7 @@
 </table>
 </div>
 
-<p style="margin-top:20px;font-size:0.9rem;color:#374151;line-height:1.7">As a rule of thumb, allow roughly 80 sq ft of clear, shadow-free roof per kilowatt once you account for walkways and panel spacing. A 10 kW array needs around 800 sq ft — comfortable on most farmhouse roofs, large independent houses and commercial rooftops. Where roof space is tight, the higher-wattage Premier TOPCon panels fit the same 10 kW into fewer panels. The free site visit measures your usable area before we quote.</p>
+<p class="content-body-note">As a rule of thumb, allow roughly 80 sq ft of clear, shadow-free roof per kilowatt once you account for walkways and panel spacing. A 10 kW array needs around 800 sq ft — comfortable on most farmhouse roofs, large independent houses and commercial rooftops. Where roof space is tight, the higher-wattage Premier TOPCon panels fit the same 10 kW into fewer panels. The free site visit measures your usable area before we quote.</p>
 
 </div>
 </section>
@@ -657,7 +518,7 @@
 </table>
 </div>
 
-<p style="margin-top:20px;font-size:0.9rem;color:#374151;line-height:1.7">Full technology detail, efficiency certificates and the DCR explainer live on our <a href="/solar-panels-behror-neemrana">solar panels page</a>, and the measured generation difference is in our <a href="/topcon-vs-mono-perc-field-test">field test</a>.</p>
+<p class="content-body-note">Full technology detail, efficiency certificates and the DCR explainer live on our <a href="/solar-panels-behror-neemrana">solar panels page</a>, and the measured generation difference is in our <a href="/topcon-vs-mono-perc-field-test">field test</a>.</p>
 
 </div>
 </section>

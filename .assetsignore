@@ -5,3 +5,4 @@ AGENTS.md
 .wrangler
 .dev.vars*
 .env*
+/tools/

@@ -42,225 +42,17 @@
 <link rel="manifest" href="/site.webmanifest">
 
 <link rel="preload" as="image" href="/images/behror-solar-logo.png">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.min.css?v=0da993c45e88">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-<style>
-/* ── PAGE-SPECIFIC ──────────────────────────────────── */
-.panels-hero{
-background:var(--ink);
-color:var(--sand);
-padding:100px 0 80px;
-position:relative;
-overflow:hidden;
-}
-.panels-hero .hero-grid-overlay{
-position:absolute;
-inset:0;
-background-image:linear-gradient(var(--line-light) 1px,transparent 1px),linear-gradient(90deg,var(--line-light) 1px,transparent 1px);
-background-size:64px 64px;
-opacity:0.35;
-mask-image:linear-gradient(to bottom,transparent,rgba(0,0,0,0.9) 40%,transparent);
-}
-.panels-hero-inner{position:relative;z-index:2;max-width:760px}
-.panels-eyebrow{
-display:inline-flex;align-items:center;gap:10px;
-padding:9px 16px;border:1px solid var(--line-light);
-border-radius:30px;margin-bottom:28px;color:var(--gold);
-font-family:'Space Mono',monospace;font-size:0.72rem;
-letter-spacing:0.1em;text-transform:uppercase;
-}
-.panels-hero h1{font-size:2.6rem;line-height:1.15;margin-bottom:20px}
-.panels-hero p{font-size:1.05rem;color:#D7DCE5;max-width:620px;margin-bottom:32px}
-.panels-meta{
-display:flex;gap:24px;flex-wrap:wrap;
-font-family:'Space Mono',monospace;font-size:0.72rem;
-letter-spacing:0.05em;color:#9AA4B5;
-padding-top:24px;border-top:1px solid var(--line-light);
-}
-
-/* ── DCR EXPLAINER ──────────────────────────────────── */
-.dcr-explainer{padding:80px 0;background:var(--sand)}
-.dcr-explainer-grid{
-display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px;
-}
-.dcr-card{padding:32px;border-radius:8px;border:1px solid var(--line)}
-.dcr-card.dcr-yes{background:#F0FDF4;border-color:#86EFAC}
-.dcr-card.dcr-no{background:var(--sand-deep);border-color:var(--line)}
-.dcr-card-label{
-font-family:'Space Mono',monospace;font-size:0.72rem;
-letter-spacing:0.08em;text-transform:uppercase;
-font-weight:700;margin-bottom:14px;display:block;
-}
-.dcr-yes .dcr-card-label{color:#166534}
-.dcr-no .dcr-card-label{color:var(--steel)}
-.dcr-card h3{font-size:1.15rem;margin-bottom:12px;color:var(--ink)}
-.dcr-card p{font-size:0.93rem;color:#374151;line-height:1.7;margin-bottom:10px}
-.dcr-card ul{list-style:none;display:flex;flex-direction:column;gap:6px;margin-top:4px}
-.dcr-card li{font-size:0.9rem;color:#374151;padding-left:18px;position:relative}
-.dcr-card li::before{content:'✓';position:absolute;left:0;color:#166534;font-weight:700}
-.dcr-no li::before{content:'✗';color:#DC2626}
-
-/* ── TECH COMPARISON ────────────────────────────────── */
-.tech-table-wrap{overflow-x:auto;border-radius:8px;border:1px solid var(--line);-webkit-overflow-scrolling:touch}
-.tech-table-wrap:focus-visible{outline:3px solid var(--gold-deep);outline-offset:3px}
-.tech-table{width:100%;border-collapse:collapse;font-size:0.9rem;min-width:560px}
-.tech-table thead{background:var(--ink)}
-.tech-table thead th{padding:16px 20px;text-align:left;color:var(--sand);font-family:'Space Grotesk',sans-serif;font-size:0.85rem;font-weight:600;border-right:1px solid rgba(255,255,255,0.08)}
-.tech-table thead th:last-child{border-right:none}
-.tech-table tbody tr{border-bottom:1px solid var(--line)}
-.tech-table tbody tr:last-child{border-bottom:none}
-.tech-table tbody tr:nth-child(even){background:var(--sand-deep)}
-.tech-table tbody td{padding:14px 20px;color:#374151;border-right:1px solid var(--line);vertical-align:middle}
-.tech-table tbody td:last-child{border-right:none}
-.tech-badge{display:inline-block;font-family:'Space Mono',monospace;font-size:0.7rem;padding:3px 8px;border-radius:20px;font-weight:700}
-.badge-best{background:#F0FDF4;color:#166534;border:1px solid #86EFAC}
-.badge-good{background:rgba(217,164,65,0.12);color:#92400E;border:1px solid rgba(217,164,65,0.3)}
-.badge-std{background:var(--sand-deep);color:var(--steel);border:1px solid var(--line)}
-
-/* ── EFFICIENCY TABLE ───────────────────────────────── */
-.eff-row-highlight{background:#FFF7ED !important}
-.eff-badge-top{
-display:inline-block;background:#166534;color:#fff;
-font-family:'Space Mono',monospace;font-size:0.68rem;
-padding:3px 8px;border-radius:20px;font-weight:700;
-margin-left:6px;vertical-align:middle;
-}
-
-/* Model-specific evidence, using the existing page tokens. */
-.panel-model{max-width:900px;padding-bottom:56px}
-.panel-model .section-title{margin-bottom:24px}
-.panel-model-specs{margin:0 0 24px;border-top:1px solid var(--line)}
-.panel-model-specs>div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
-.panel-model-specs dt{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--ink)}
-.panel-model-specs dd{margin:0;font-size:0.93rem;color:var(--steel);line-height:1.7}
-.panel-model-copy{margin-top:20px;font-size:0.93rem;color:var(--steel);line-height:1.7}
-.panel-model .nondcr-note{margin-bottom:0}
-.panel-model .hero-buttons{align-items:center;margin:24px 0 0}
-.install-subsidy p+p{margin-top:8px}
-@media(max-width:640px){.panel-model-specs>div{grid-template-columns:1fr;gap:4px}}
-
-/* ── CERT IMAGES ────────────────────────────────────── */
-.cert-section{padding:100px 0;background:var(--sand-deep)}
-.cert-grid{display:grid;grid-template-columns:1fr;gap:32px;max-width:900px}
-.cert-card{background:var(--sand);border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.cert-card img{width:100%;height:auto;display:block}
-.cert-image-link{display:block}
-.cert-image-link:focus-visible{outline:3px solid var(--gold-deep);outline-offset:-3px}
-.cert-open-link{display:block;width:fit-content;margin-top:8px;font-family:'Public Sans',sans-serif;font-size:0.875rem;font-weight:600;letter-spacing:normal;text-transform:none;color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px}
-.cert-card-label{
-padding:14px 20px;
-font-family:'Space Mono',monospace;font-size:0.72rem;
-letter-spacing:0.06em;text-transform:uppercase;color:var(--steel);
-border-top:1px solid var(--line);
-}
-
-/* ── INSTALLATION CARDS ─────────────────────────────── */
-.install-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
-.install-card{
-background:var(--sand);border:1px solid var(--line);
-border-radius:10px;padding:36px;position:relative;overflow:hidden;
-}
-.install-card::before{
-content:'';position:absolute;top:0;left:0;right:0;
-height:4px;background:var(--gold);
-}
-.install-size{
-font-family:'Space Mono',monospace;font-size:0.72rem;
-letter-spacing:0.1em;text-transform:uppercase;
-color:var(--gold-deep);margin-bottom:12px;display:block;
-}
-.install-card h3{font-size:1.5rem;margin-bottom:6px}
-.install-actual{
-font-family:'Space Mono',monospace;font-size:0.78rem;
-color:#166534;margin-bottom:20px;display:block;
-}
-.install-price{
-font-family:'Space Grotesk',sans-serif;font-size:2rem;
-font-weight:700;color:var(--ink);margin-bottom:6px;
-}
-.install-price-note{font-size:0.82rem;color:var(--steel);margin-bottom:24px}
-.install-includes{list-style:none;display:flex;flex-direction:column;gap:8px}
-.install-includes li{font-size:0.9rem;color:#374151;padding-left:20px;position:relative}
-.install-includes li::before{content:'✓';position:absolute;left:0;color:#166534;font-weight:700}
-.install-subsidy{
-margin-top:20px;padding:12px 16px;
-background:#F0FDF4;border-radius:6px;
-font-size:0.85rem;color:#166534;
-font-family:'Space Mono',monospace;font-size:0.72rem;letter-spacing:0.04em;
-}
-
-.install-warranty{
-margin-top:20px;padding:16px;
-background:var(--sand-deep);border-radius:6px;
-border:1px solid var(--line);
-}
-
-.install-warranty-label{
-font-family:'Space Mono',monospace;font-size:0.68rem;
-letter-spacing:0.08em;text-transform:uppercase;
-color:var(--gold-deep);margin-bottom:10px;font-weight:700;
-}
-
-.install-warranty ul{list-style:none;display:flex;flex-direction:column;gap:6px}
-.install-warranty li{
-font-size:0.82rem;color:#374151;
-padding-left:18px;position:relative;line-height:1.5;
-}
-.install-warranty li::before{
-content:'●';position:absolute;left:0;
-color:var(--gold-deep);font-size:0.6rem;top:4px;
-}
-
-/* ── PANEL SUPPLY CARDS ─────────────────────────────── */
-.supply-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:40px}
-.supply-card{
-background:var(--sand);border:1px solid var(--line);
-border-radius:8px;padding:28px;
-}
-.supply-brand{
-font-family:'Space Mono',monospace;font-size:0.72rem;
-letter-spacing:0.08em;text-transform:uppercase;
-color:var(--gold-deep);margin-bottom:10px;display:block;
-}
-.supply-card h3{font-size:1.1rem;margin-bottom:8px;color:var(--ink)}
-.supply-specs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
-.supply-spec{
-font-family:'Space Mono',monospace;font-size:0.72rem;
-padding:4px 10px;border:1px solid var(--line);
-border-radius:4px;color:var(--steel);
-}
-.supply-price{
-font-family:'Space Grotesk',sans-serif;font-size:1.4rem;
-font-weight:700;color:var(--ink);margin-bottom:4px;
-}
-.supply-price-note{font-size:0.82rem;color:var(--steel)}
-
-/* ── NON-DCR CARDS ──────────────────────────────────── */
-.nondcr-note{
-background:var(--sand-deep);border:1px solid var(--line);
-border-radius:8px;padding:20px 24px;margin-bottom:40px;
-font-size:0.92rem;color:#374151;
-}
-.nondcr-note strong{color:var(--ink)}
-
-/* ── RESPONSIVE ─────────────────────────────────────── */
-@media(max-width:992px){
-.dcr-explainer-grid{grid-template-columns:1fr}
-.install-grid{grid-template-columns:1fr}
-.panels-hero h1{font-size:2rem}
-}
-@media(max-width:768px){
-.panels-hero h1{font-size:1.7rem}
-}
-</style>
+<link rel="stylesheet" href="/css/solar-panels-behror-neemrana.min.css?v=4350b6feb592">
 
 <script src="/site.js" defer></script>
 </head>
 
-<body>
+<body class="panels-page">
 
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -449,7 +241,7 @@ SOLAR PANELS · DCR &amp; NON-DCR · BEHROR &amp; NEEMRANA
 </table>
 </div>
 
-<p style="margin-top:20px;font-size:0.88rem;color:var(--steel)">TOPCon modules can offer favourable temperature and low-light characteristics, but the result depends on the exact module and system design. For Behror and Neemrana, compare the actual datasheet, warranty, roof layout and measured system evidence rather than choosing on the technology label alone.</p>
+<p class="content-reference-note-compact">TOPCon modules can offer favourable temperature and low-light characteristics, but the result depends on the exact module and system design. For Behror and Neemrana, compare the actual datasheet, warranty, roof layout and measured system evidence rather than choosing on the technology label alone.</p>
 <p class="panel-model-copy">Technology labels alone do not tell the full story. See our <a href="/topcon-vs-mono-perc-field-test">TOPCon vs Mono PERC field test</a> for measured output from real systems and the limits of that comparison.</p>
 
 </div>
@@ -674,9 +466,9 @@ loading="lazy" decoding="async" width="900" height="469">
 <p>After eligible central CFA: <strong>₹1,22,000</strong></p>
 <p>If the additional Rajasthan ₹17,000 support also applies: <strong>₹1,05,000</strong></p>
 </div>
-<p class="install-price-note" style="margin-top:14px;margin-bottom:0">Government subsidy is credited separately under the applicable process; it is not automatically deducted from the initial payment.</p>
-<p class="install-price-note" style="margin-top:8px;margin-bottom:0"><strong>Payment:</strong> 30% at booking · 60% before installation · 10% after commissioning.</p>
-<p class="install-price-note" style="margin-top:14px;margin-bottom:0"><a href="/3kw-solar-system">See full 3 kW price, generation &amp; roof area →</a></p>
+<p class="install-price-note install-price-note-followup">Government subsidy is credited separately under the applicable process; it is not automatically deducted from the initial payment.</p>
+<p class="install-price-note install-price-note-payment"><strong>Payment:</strong> 30% at booking · 60% before installation · 10% after commissioning.</p>
+<p class="install-price-note install-price-note-followup"><a href="/3kw-solar-system">See full 3 kW price, generation &amp; roof area →</a></p>
 </div>
 
 <div class="install-card">
@@ -706,17 +498,17 @@ loading="lazy" decoding="async" width="900" height="469">
 <p>After eligible central CFA: <strong>₹2,22,000</strong></p>
 <p>If the additional Rajasthan ₹17,000 support also applies: <strong>₹2,05,000</strong></p>
 </div>
-<p class="install-price-note" style="margin-top:14px;margin-bottom:0">Government subsidy is credited separately under the applicable process; it is not automatically deducted from the initial payment.</p>
-<p class="install-price-note" style="margin-top:8px;margin-bottom:0"><strong>Payment:</strong> 30% at booking · 60% before installation · 10% after commissioning.</p>
+<p class="install-price-note install-price-note-followup">Government subsidy is credited separately under the applicable process; it is not automatically deducted from the initial payment.</p>
+<p class="install-price-note install-price-note-payment"><strong>Payment:</strong> 30% at booking · 60% before installation · 10% after commissioning.</p>
 <div class="install-price-note" style="margin-top:10px;border-top:1px solid var(--line);padding-top:10px">Need a three-phase connection? Three-phase is an additional cost, confirmed in your quote.</div>
-<p class="install-price-note" style="margin-top:14px;margin-bottom:0"><a href="/5kw-solar-system">See full 5 kW price, generation &amp; roof area →</a></p>
+<p class="install-price-note install-price-note-followup"><a href="/5kw-solar-system">See full 5 kW price, generation &amp; roof area →</a></p>
 </div>
 
 </div>
 
-<p style="margin-top:20px;font-size:0.9rem;color:#374151;line-height:1.7">Comparing sizes? Each system size has a full breakdown of price, real generation and roof area: <a href="/3kw-solar-system">3 kW</a>, <a href="/5kw-solar-system">5 kW</a> and <a href="/10kw-solar-system">10 kW</a> for large homes and small businesses.</p>
+<p class="content-body-note">Comparing sizes? Each system size has a full breakdown of price, real generation and roof area: <a href="/3kw-solar-system">3 kW</a>, <a href="/5kw-solar-system">5 kW</a> and <a href="/10kw-solar-system">10 kW</a> for large homes and small businesses.</p>
 
-<p style="margin-top:20px;font-size:0.88rem;color:var(--steel)">* Current Tata configurations use 590&ndash;595 W DCR modules. Exact module model and wattage are stated in the project quotation, so actual installed DC capacity varies with the selected module.</p>
+<p class="content-reference-note-compact">* Current Tata configurations use 590&ndash;595 W DCR modules. Exact module model and wattage are stated in the project quotation, so actual installed DC capacity varies with the selected module.</p>
 <p style="margin-top:10px;font-size:0.88rem;color:var(--steel)">Premier/custom DCR TOPCon systems are also available; exact module model, panel count and inverter are confirmed in the quotation.</p>
 
 </div>

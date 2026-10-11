@@ -25,6 +25,10 @@
 --steel:#4F5A6B;
 --line:rgba(11,19,32,0.10);
 --line-light:rgba(255,255,255,0.14);
+--section-space:48px;
+--heading-space:28px;
+--section-heading-width:800px;
+--section-heading-leading:1.25;
 }
 
 *{
@@ -73,6 +77,10 @@ width:90%;
 max-width:1200px;
 margin:auto;
 }
+
+main h1{line-height:1.2;}
+main h2{line-height:var(--section-heading-leading);}
+main h3{line-height:1.35;}
 
 /* =====================
 EYEBROWS / LABELS
@@ -146,13 +154,6 @@ width:auto;
 display:block;
 }
 
-.header-divider{
-width:1px;
-height:32px;
-background:var(--line);
-flex-shrink:0;
-}
-
 #main-nav{
 flex:1;
 }
@@ -210,7 +211,6 @@ padding:8px;display:none;flex-direction:column;gap:2px;z-index:1000;
 #main-nav .submenu a{display:block;padding:9px 14px;border-radius:6px;font-size:0.9rem;white-space:nowrap;color:var(--ink);}
 #main-nav .submenu a::after{display:none;}
 #main-nav .submenu a:hover{background:var(--sand-deep);color:var(--gold-deep);}
-
 
 /* Focus visibility - accessibility without breaking design */
 a:focus-visible,
@@ -302,7 +302,7 @@ HERO
 position:relative;
 background:var(--ink);
 color:var(--sand);
-padding:110px 0 90px;
+padding:var(--section-space) 0;
 overflow:hidden;
 }
 
@@ -614,23 +614,26 @@ SECTIONS — generic
 .components-section,
 .gallery-section,
 .coverage-section{
-padding:100px 0;
+padding:var(--section-space) 0;
 }
 
 .section-title{
-margin-bottom:56px;
-max-width:560px;
+margin-bottom:var(--heading-space);
+max-width:var(--section-heading-width);
+text-align:left;
 }
 
 .section-title h2{
 font-size:2.2rem;
 font-weight:700;
 color:var(--ink);
+line-height:var(--section-heading-leading);
 }
 
 .section-title p{
 color:var(--steel);
 margin-top:10px;
+max-width:72ch;
 }
 
 .section-title.light h2{
@@ -641,19 +644,8 @@ color:var(--sand);
 color:#A9B2C2;
 }
 
-/* Keep the homepage's section rhythm and reading widths consistent. */
-.home-page{
---section-space:clamp(48px,6vw,80px);
---heading-space:clamp(24px,3vw,40px);
-}
-.home-page main > section:not(.hero):not(.partner-strip):not(.stats){
-padding-block:var(--section-space);
-}
-.home-page .section-title,
-.home-page .why-track-head{
-max-width:760px;
-margin-bottom:var(--heading-space);
-}
+/* Keep homepage supporting text within readable widths. */
+
 .home-page .section-title p,
 .home-page .why-track-lead,
 .home-page .savings-intro-body{
@@ -821,7 +813,7 @@ PROCESS
 .process-section{
 background:var(--ink);
 color:var(--sand);
-padding:100px 0;
+padding:var(--section-space) 0;
 }
 
 .process-grid{
@@ -1005,13 +997,14 @@ WHY US — TRACK RECORD (homepage)
 ===================== */
 
 .why-track-head{
-max-width:760px;
-margin-bottom:52px;
+max-width:var(--section-heading-width);
+margin-bottom:var(--heading-space);
+text-align:left;
 }
 
 .why-track-title{
 font-size:2.6rem;
-line-height:1.12;
+line-height:var(--section-heading-leading);
 font-weight:700;
 color:var(--ink);
 margin-top:6px;
@@ -1335,8 +1328,8 @@ margin-top:14px;
 }
 
 /* Neemrana's approved coverage groups: three highlights and six compact areas. */
-.neemrana-coverage .section-title{max-width:900px;}
-.neemrana-coverage h2{font-size:clamp(1.7rem,3vw,2.2rem);line-height:1.3;}
+
+.neemrana-coverage h2{font-size:clamp(1.7rem,3vw,2.2rem);line-height:var(--section-heading-leading);}
 .neemrana-coverage .coverage-grid{list-style:none;}
 .neemrana-coverage .coverage-secondary-grid{grid-template-columns:repeat(6,minmax(0,1fr));}
 .neemrana-coverage .coverage-secondary-grid .coverage-card{padding:14px;font-size:0.88rem;}
@@ -1368,21 +1361,22 @@ CONTACT
 ===================== */
 
 .contact-section{
-padding:110px 0;
+padding:var(--section-space) 0;
 background:var(--ink);
 }
 
 .contact-section .section-title{
 margin-left:auto;
 margin-right:auto;
-text-align:center;
+text-align:left;
+max-width:980px;
 }
 
 .contact-wrapper{
 display:grid;
 grid-template-columns:0.85fr 1.15fr;
 gap:28px;
-align-items:stretch;
+align-items:start;
 max-width:980px;
 margin:0 auto;
 }
@@ -1457,9 +1451,9 @@ color:var(--sand);
 }
 
 /* Legal pages: preserve the contact-card design with readable document spacing. */
-.privacy-page .contact-section,.terms-page .contact-section{padding:80px 0;}
+
 .privacy-page .section-title,.terms-page .section-title{max-width:800px;}
-.privacy-page .section-title h1,.terms-page .section-title h1{font-size:2.5rem;color:var(--sand);margin-bottom:16px;}
+.privacy-page .section-title h1,.terms-page .section-title h1{font-size:clamp(1.8rem,4.5vw,2.5rem);color:var(--sand);margin-bottom:16px;}
 .privacy-page .contact-wrapper,.terms-page .contact-wrapper{grid-template-columns:1fr;max-width:800px;}
 .privacy-content,.terms-content{display:block;}
 .privacy-content h2,.terms-content h2{font-size:1.35rem;line-height:1.35;margin:32px 0 12px;}
@@ -1473,7 +1467,7 @@ color:var(--sand);
 
 /* Legal-page spacing on narrow screens. */
 @media(max-width:992px){
-.privacy-page .contact-section,.terms-page .contact-section{padding:56px 0;}
+
 .privacy-content,.terms-content{padding:28px 36px 28px 24px;}
 }
 
@@ -1662,54 +1656,6 @@ transition:color .2s ease;
 color:var(--gold);
 }
 
-.footer-legal{
-display:flex;
-flex-wrap:wrap;
-gap:8px 16px;
-margin-top:14px;
-}
-
-.footer-legal a{
-font-size:0.78rem;
-color:var(--steel);
-text-decoration:none;
-font-family:'Space Mono',monospace;
-letter-spacing:0.03em;
-}
-
-.footer-legal a:hover{
-color:var(--gold);
-}
-
-.footer-pages{
-margin-top:20px;
-padding-top:16px;
-border-top:1px solid var(--line-light);
-display:flex;
-flex-direction:column;
-gap:8px;
-}
-
-.footer-pages-label{
-font-family:'Space Mono',monospace;
-font-size:0.68rem;
-letter-spacing:0.08em;
-text-transform:uppercase;
-color:var(--steel);
-margin-bottom:4px;
-}
-
-.footer-pages a{
-font-size:0.82rem;
-color:#9AA4B5;
-text-decoration:none;
-transition:color .2s;
-}
-
-.footer-pages a:hover{
-color:var(--gold);
-}
-
 .footer-gge-logo{
 height:60px;
 width:auto;
@@ -1726,24 +1672,6 @@ margin-bottom:18px;
 /* =====================
 WHATSAPP FLOAT
 ===================== */
-
-.floating-whatsapp{
-position:fixed;
-right:25px;
-bottom:25px;
-width:58px;
-height:58px;
-background:#22c55e;
-color:#fff;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:1.4rem;
-border-radius:50%;
-text-decoration:none;
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
-z-index:999;
-}
 
 /* =====================
 HEADER — COMBINED LOGO
@@ -1841,7 +1769,7 @@ RESULTS
 
 .results-section{
 background:var(--ink);
-padding:100px 0;
+padding:var(--section-space) 0;
 }
 
 .results-grid{
@@ -1887,12 +1815,8 @@ PM SURYA GHAR SAVINGS
 ===================== */
 
 .savings-section{
-padding:100px 0;
+padding:var(--section-space) 0;
 background:var(--sand-deep);
-}
-
-.savings-section .section-title{
-max-width:100%;
 }
 
 .savings-intro{
@@ -2036,7 +1960,7 @@ FAQ
 ===================== */
 
 .faq-section{
-padding:100px 0;
+padding:var(--section-space) 0;
 background:var(--sand-deep);
 }
 
@@ -2208,16 +2132,6 @@ gap:18px;
 height:36px;
 }
 
-.header-combined-logo{
-display:block;
-height:30px;
-opacity:1;
-}
-
-.header-divider{
-display:block;
-}
-
 /* backdrop-filter on .header re-anchors the fixed nav panel to the header
    instead of the viewport (CSS containing-block rule) — disable on mobile */
 .header{
@@ -2325,10 +2239,6 @@ background:var(--sand);
 }
 
 @media(max-width:768px){
-
-.hero{
-padding:80px 0 60px;
-}
 
 .partner-strip-logo{
 flex-direction:column;
@@ -2528,16 +2438,12 @@ padding:26px 24px;
 }
 
 /* footer secondary link group */
-.footer-guides{
-margin-top:16px;
-}
-
 /* =====================
 AUTHOR BIO
 ===================== */
 
 .author-section{
-padding:0 0 80px;
+padding:var(--section-space) 0;
 background:var(--sand);
 }
 
@@ -2602,7 +2508,7 @@ PM SURYA GHAR PAGE
 .psg-hero{
 background:var(--ink);
 color:var(--sand);
-padding:100px 0 80px;
+padding:var(--section-space) 0;
 position:relative;
 overflow:hidden;
 }
@@ -2858,7 +2764,6 @@ font-size:0.66rem;
 }
 }
 
-
 /* =====================================================
    PM SURYA GHAR PAGE — COMPLETENESS / SEO UX FIXES
    Added 2026-08-07
@@ -3030,12 +2935,11 @@ gap:10px 20px;
 }
 
 .system-section{
-padding:90px 0;
+padding:var(--section-space) 0;
 background:var(--sand);
 scroll-margin-top:90px;
 }
 .system-section.alt{background:var(--sand-deep);}
-.system-section .section-title{max-width:760px;}
 
 /* System pages: static installation price comparisons. */
 .system-price-table-wrap{margin-bottom:16px;background:var(--sand);}
@@ -3224,11 +3128,11 @@ line-height:1.45;
 }
 
 @media(max-width:768px){
-.system-section{padding:68px 0;}
+
 .dcr-explainer-grid,.install-grid{grid-template-columns:1fr;}
 .psg-toc{align-items:flex-start;}
 .psg-toc-label{width:100%;}
-.psg-hero{padding-top:72px;}
+
 .panels-meta{gap:8px 14px;}
 }
 
@@ -3344,7 +3248,7 @@ margin:auto;
 .about-subhead{font-size:1.2rem;margin:24px 0 12px;color:var(--ink);}
 
 /* ===================== HYBRID INVESTMENT BAND ===================== */
-.hybrid-invest{padding:90px 0;background:var(--sand-deep);}
+.hybrid-invest{padding:var(--section-space) 0;background:var(--sand-deep);}
 .invest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
 .invest-card{background:var(--sand);border:1px solid var(--line);border-radius:10px;padding:26px;border-top:3px solid var(--gold);}
 .invest-k{display:block;font-family:'Space Mono',monospace;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--steel);margin-bottom:8px;}
@@ -3392,7 +3296,7 @@ margin:auto;
 
 /* Intro / BESS explainer */
 .battery-intro-section{
-padding:82px 0 58px;
+padding:var(--section-space) 0;
 background:var(--sand);
 border-bottom:1px solid var(--line);
 }
@@ -3490,10 +3394,10 @@ text-decoration:none;
 
 /* Three entry paths */
 .battery-path-section{
-padding:78px 0;
+padding:var(--section-space) 0;
 background:var(--sand-deep);
 }
-.battery-path-section .section-title{max-width:760px;}
+
 .battery-path-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
@@ -3685,8 +3589,7 @@ margin-bottom:8px;
 }
 
 @media(max-width:768px){
-.battery-intro-section{padding:58px 0 44px;}
-.battery-path-section{padding:58px 0;}
+
 .battery-toc{align-items:flex-start;}
 .battery-toc-label{width:100%;}
 .power-energy-grid{grid-template-columns:1fr;}
@@ -3884,7 +3787,6 @@ transition-delay:0s!important;
 .mysine-copy .q-answer,.mysine-points li{overflow-wrap:break-word;}
 .mysine-badge img{max-width:100%;}
 
-
 /* ===================== CONTENT LINK COLOR (theme) ===================== */
 main p a:not(.btn), main li a:not(.btn), .faq-answer a:not(.btn){
   color:var(--gold-deep);
@@ -3896,7 +3798,6 @@ main p a:not(.btn):hover, main li a:not(.btn):hover, .faq-answer a:not(.btn):hov
   color:var(--ink);
   text-decoration:underline;
 }
-
 
 /* Bilingual FAQ (English + Hinglish) */
 .faq-q-hi{
@@ -3938,7 +3839,7 @@ vertical-align:middle;
 .section-title.light p a:not(.btn):hover{color:var(--sand);}
 
 /* Homepage: layout, approved partner figures and installation price comparison. */
-.home-page .hero{padding-top:56px;}
+
 .home-page .hero-content{align-items:start;}
 .home-page .philosophy-copy{margin-inline:auto;}
 .home-page .philosophy-copy p:last-child{margin-bottom:0;}
@@ -4030,7 +3931,7 @@ color:var(--ink);
 [data-price-comparison] .price-explanation .btn{margin-top:4px;}
 
 @media(max-width:768px){
-.home-page .hero{padding-top:36px;}
+
 .home-page .partner-strip-logo{flex-direction:column;align-items:center;gap:16px;text-align:center;}
 .home-page .partner-strip-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px;}
 [data-price-comparison] .price-explanations{grid-template-columns:1fr;}
@@ -4043,7 +3944,7 @@ color:var(--ink);
 }
 
 /* PM Surya Ghar: scoped guide layout and readable subsidy comparisons. */
-.psg-page .psg-hero{padding:48px 0;}
+
 .psg-page .psg-hero-inner{max-width:none;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;align-items:start;}
 .psg-page .psg-hero-copy{min-width:0;}
 .psg-page .psg-hero h1{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.2;}
@@ -4063,9 +3964,8 @@ color:var(--ink);
 .psg-page .psg-overview{padding:24px 0;}
 .psg-page .psg-toc{margin-top:0;}
 .psg-page .psg-edit-date{margin-bottom:6px;}
-.psg-page .system-section{padding:64px 0;}
-.psg-page .section-title{text-align:left;margin-bottom:32px;}
-.psg-page .section-title p{max-width:80ch;margin-left:0;}
+
+.psg-page .section-title p{margin-left:0;}
 .psg-page .psg-slab-wrap{max-width:760px;}
 .psg-page .psg-slab-table{min-width:0;table-layout:fixed;}
 .psg-slab-table caption{padding:14px 16px;text-align:left;font-weight:600;background:var(--sand-deep);color:var(--ink);}
@@ -4090,8 +3990,7 @@ color:var(--ink);
 .psg-support-summary{max-width:760px;}
 }
 @media(max-width:768px){
-.psg-page .psg-hero{padding:32px 0;}
-.psg-page .system-section{padding:48px 0;}
+
 .psg-support-summary{padding:20px;}
 .psg-support-amounts .psg-support-total{grid-template-columns:1fr;}
 .psg-page .psg-doc-grid{grid-template-columns:1fr;}
@@ -4102,7 +4001,7 @@ color:var(--ink);
 }
 
 /* Neemrana: preserve the site design while fixing spacing and photo proportions. */
-.neemrana-page .hero{padding-top:48px;}
+
 .neemrana-page .hero-content{align-items:start;}
 .neemrana-page .hero-tag{max-width:100%;line-height:1.6;}
 .neemrana-page .hero-tag .dot{flex-shrink:0;}
@@ -4119,4 +4018,18 @@ color:var(--ink);
 .neemrana-page .gallery-img-wrap:focus-visible{outline:3px solid var(--gold-deep);outline-offset:-3px;}
 .neemrana-page .result-translation-label{cursor:pointer;line-height:1.6;padding:10px 0;}
 .neemrana-page .result-translation-label:focus-visible{outline:3px solid var(--gold);outline-offset:3px;}
-@media(max-width:768px){.neemrana-page .hero{padding-top:32px;}}
+
+/* The heading already provides the gap before its following content. */
+main .section-title + *{margin-top:0;}
+
+@media(max-width:768px){
+:root{--section-space:28px;--heading-space:24px;}
+}
+
+/* Repeated content-note formatting, preserving the supplied copy. */
+p.content-reference-note{margin-top:24px;font-size:.88rem;color:var(--steel);}
+p.content-reference-note-compact{margin-top:20px;font-size:.88rem;color:var(--steel);}
+p.content-body-note,p.content-body-note-spaced{margin-top:20px;font-size:.9rem;color:#374151;line-height:1.7;}
+p.content-body-note-spaced{margin-top:24px;}
+.install-price-note.install-price-note-followup{margin-top:14px;margin-bottom:0;}
+.install-price-note.install-price-note-payment{margin-top:8px;margin-bottom:0;}
