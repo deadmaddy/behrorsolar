@@ -1,0 +1,14 @@
+/* Warranty-specific additions to the existing guide visual system. */
+.warranty-list{padding-left:24px;margin:16px 0 22px;line-height:1.72;color:var(--ink);list-style:disc}
+ol.warranty-list{list-style:decimal}
+.warranty-list li+li{margin-top:8px}
+.warranty-subheading{font-size:1.2rem;line-height:1.4;margin:26px 0 12px}
+.warranty-process{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:decimal inside;margin:24px 0;padding:0}
+.warranty-process li{min-width:0;padding:16px;background:var(--sand-deep);border:1px solid var(--line);border-radius:10px;font-size:.92rem;line-height:1.6}
+.warranty-process li::marker{color:var(--gold-deep);font-weight:700}
+.guide-figure a:focus-visible{outline:3px solid var(--gold-deep);outline-offset:4px;border-radius:14px}
+.guide-figure figcaption a,.guide-body p a{color:var(--gold-deep);text-decoration:underline}
+.guide-callout p+p{margin-top:8px}
+.guide-table-wrap{margin:20px 0}
+#contact .contact-card{max-width:560px}
+@media(max-width:480px){.warranty-process{grid-template-columns:1fr}}
