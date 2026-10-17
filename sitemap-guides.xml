@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://behrorsolar.in/solar-guides</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-17</lastmod>
   </url>
   <url>
     <loc>https://behrorsolar.in/on-grid-hybrid-off-grid-solar-behror-neemrana</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-17</lastmod>
   </url>
   <url>
     <loc>https://behrorsolar.in/topcon-vs-mono-perc-field-test</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <image:image>
       <image:loc>https://behrorsolar.in/images/mono-perc-vs-topcon-rooftop-test-og.jpg</image:loc>
     </image:image>
@@ -25,6 +25,19 @@
     </image:image>
     <image:image>
       <image:loc>https://behrorsolar.in/images/field-test-monoperc-27aug.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://behrorsolar.in/tata-power-solaroof-warranty</loc>
+    <lastmod>2026-10-17</lastmod>
+    <image:image>
+      <image:loc>https://behrorsolar.in/images/tata-solaroof-warranty-certificate-redacted.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://behrorsolar.in/images/tata-solaroof-warranty-periods.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://behrorsolar.in/images/tata-solaroof-warranty-verification.webp</image:loc>
     </image:image>
   </url>
 </urlset>
