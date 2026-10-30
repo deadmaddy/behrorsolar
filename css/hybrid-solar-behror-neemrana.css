@@ -123,3 +123,52 @@
 .hybrid-page .offer-row{align-items:flex-start}
 .hybrid-page .offer-v{max-width:45%}
 }
+
+/* Approved hybrid options and their comparison; styles stay on this page. */
+.hybrid-product-intro{margin-bottom:28px}
+.hybrid-product-intro h3{font-size:1.35rem;line-height:1.4}
+.hybrid-product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch}
+.hybrid-product-card{display:flex;flex-direction:column;border-top:4px solid var(--line);padding:24px;min-width:0}
+.hybrid-product-card-featured{border-color:var(--gold);box-shadow:0 6px 20px rgba(11,19,32,.07)}
+.hybrid-product-badge{display:block;font-family:'Space Mono',monospace;font-size:.65rem;font-weight:700;letter-spacing:.05em;line-height:1.6;color:var(--gold-deep);margin-bottom:16px}
+.hybrid-product-card-featured .hybrid-product-badge{background:var(--gold);color:var(--ink);border-radius:4px;padding:8px 10px}
+.hybrid-product-logo{display:block;width:190px;max-width:100%;height:auto;margin-bottom:16px}
+.hybrid-product-card h3{font-size:1.35rem;line-height:1.35;margin:0 0 12px}
+.hybrid-product-card h4{font-family:'Space Grotesk',sans-serif;font-size:1rem;line-height:1.4;margin:20px 0 12px}
+.hybrid-product-card .hybrid-product-price{font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:700;line-height:1.2;color:var(--ink);margin:0 0 20px}
+.hybrid-product-card-featured .hybrid-product-price{color:var(--gold-deep)}
+.hybrid-product-description,.hybrid-product-card p{font-size:.93rem;line-height:1.7}
+.hybrid-product-specs{padding-left:20px;margin:0;color:var(--steel);font-size:.9rem;line-height:1.7}
+.hybrid-product-specs li + li{margin-top:10px}
+.hybrid-product-card .hybrid-product-note{font-size:.82rem;margin-top:16px;margin-bottom:0}
+.hybrid-product-card .hybrid-product-independent{margin-top:16px}
+.hybrid-product-card .hybrid-product-action{margin-top:auto;padding-top:24px}
+.hybrid-product-action .btn{display:block;width:100%;white-space:normal;text-align:center;line-height:1.5}
+.hybrid-product-comparison{margin-top:32px}
+.hybrid-product-scroll-note{display:none;font-size:.85rem;color:var(--steel);margin:0 0 12px}
+.hybrid-product-table{min-width:920px;table-layout:fixed}
+.hybrid-product-table col{width:26%}
+.hybrid-product-table col:first-child{width:22%}
+.hybrid-product-table caption{font-family:'Space Grotesk',sans-serif;font-size:1.25rem;line-height:1.4}
+.hybrid-product-table tbody th{width:auto}
+.hybrid-product-table .hybrid-product-tata{background:var(--sand-deep)}
+.hybrid-product-table .hybrid-product-price-cell{white-space:nowrap;font-variant-numeric:tabular-nums}
+.hybrid-product-guide{margin-top:28px}
+.hybrid-product-terms{margin-top:24px;font-size:.9rem;padding:20px;border-left:3px solid var(--gold);background:var(--sand-deep);color:var(--steel);max-width:96ch}
+@media(max-width:1100px){
+.hybrid-product-grid{grid-template-columns:1fr}
+.hybrid-product-card{padding:24px}
+}
+@media(max-width:1000px){
+.hybrid-product-scroll-note{display:block}
+}
+@media(max-width:560px){
+.hybrid-product-card{padding:18px}
+.hybrid-product-card .hybrid-product-price{font-size:1.8rem}
+.hybrid-product-table th,.hybrid-product-table td{padding:13px 16px;font-size:.9rem;overflow-wrap:normal}
+.hybrid-product-table tbody th{width:auto}
+}
+
+.hybrid-product-size{white-space:nowrap}
+
+.hybrid-product-table th,.hybrid-product-table td{text-align:left;white-space:normal}
