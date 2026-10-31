@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://behrorsolar.in/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <image:image>
       <image:loc>https://behrorsolar.in/images/our-philosophy.jpg</image:loc>
     </image:image>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://behrorsolar.in/about</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <image:image>
       <image:loc>https://behrorsolar.in/images/pm-surya-ghar-gge-2026-10-05.webp</image:loc>
     </image:image>
@@ -118,7 +118,7 @@
   </url>
   <url>
     <loc>https://behrorsolar.in/10kw-solar-system</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <image:image>
       <image:loc>https://behrorsolar.in/images/10kw-rooftop-solar-alwar-structure.webp</image:loc>
     </image:image>
@@ -127,6 +127,13 @@
     </image:image>
     <image:image>
       <image:loc>https://behrorsolar.in/images/savitri-devi-kotputli-5kw.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://behrorsolar.in/commercial-solar</loc>
+    <lastmod>2026-10-30</lastmod>
+    <image:image>
+      <image:loc>https://behrorsolar.in/images/sapna-ngo-dahikar-fort-alwar-tata-hybrid-installation.webp</image:loc>
     </image:image>
   </url>
 </urlset>
