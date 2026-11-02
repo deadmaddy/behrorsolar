@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://behrorsolar.in/solar-guides</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://behrorsolar.in/on-grid-hybrid-off-grid-solar-behror-neemrana</loc>
@@ -38,6 +38,13 @@
     </image:image>
     <image:image>
       <image:loc>https://behrorsolar.in/images/tata-solaroof-warranty-verification.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://behrorsolar.in/trydan-tech-battery</loc>
+    <lastmod>2026-11-03</lastmod>
+    <image:image>
+      <image:loc>https://behrorsolar.in/images/trydan-tech-100ah-battery.jpg</image:loc>
     </image:image>
   </url>
 </urlset>
