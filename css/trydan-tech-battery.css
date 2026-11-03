@@ -16,6 +16,16 @@
 .battery-review .quality-details{margin-top:12px}
 .battery-review .quality-details-content p:last-child{margin-bottom:0}
 .battery-back{padding-top:24px;border-top:1px solid var(--line)}
+.battery-latest{padding:22px;border-left:4px solid var(--gold);border-radius:10px;background:var(--sand-deep);margin-bottom:28px}
+.battery-latest a{display:inline-block;padding:8px 0;font-weight:700}
+.battery-review .battery-history{font-size:.9rem;color:var(--steel)}
+.battery-update{border-top:3px solid var(--gold);padding-top:28px}
+.battery-update h4{font-size:1.05rem;line-height:1.5;margin:22px 0 12px}
+.battery-spec-heading{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:20px;background:var(--ink);color:var(--sand)}
+.battery-review .battery-spec-heading strong{color:var(--sand);font-family:'Space Grotesk',sans-serif;font-size:1.2rem}
+.battery-spec-heading span{padding:6px 10px;border-radius:6px;background:var(--gold);color:var(--ink);font-size:.85rem;font-weight:700}
+.battery-review .battery-spec-note{padding:16px;font-size:.85rem;margin:0;background:var(--sand)}
+#manufacturer-specifications,#backup-readings{scroll-margin-top:130px}
 @media(max-width:480px){
 .battery-toc{padding:16px 18px}
 .battery-table th,.battery-table td{padding:10px 7px}
