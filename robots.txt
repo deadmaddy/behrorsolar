@@ -48,9 +48,11 @@ Disallow: /
 User-agent: __usage_ai-training
 Disallow: /
 
-# Permit ordinary search crawling unless specifically blocked above
+# Default crawler access and AI content-use preferences
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
+
 
 # Canonical sitemap
 Sitemap: https://behrorsolar.in/sitemap-index.xml
