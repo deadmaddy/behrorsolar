@@ -48,9 +48,7 @@
       "description": "Commercial rooftop solar assessment for institutions, hotels, SMEs and commercial properties in Behror & Neemrana. Tata on-grid and hybrid systems by GGE.",
       "inLanguage": "en-IN",
       "isPartOf": {
-        "@type": "WebSite",
-        "name": "Behror Solar",
-        "url": "https://behrorsolar.in/"
+        "@id": "https://behrorsolar.in/#website"
       },
       "breadcrumb": {
         "@id": "https://behrorsolar.in/commercial-solar#breadcrumb"
@@ -83,11 +81,14 @@
       "name": "Commercial rooftop solar assessment and installation",
       "serviceType": "Tata Power Solaroof on-grid and hybrid commercial rooftop solar",
       "url": "https://behrorsolar.in/commercial-solar",
-      "provider": {
-        "@type": "Organization",
-        "@id": "https://behrorsolar.in/#global-green-energy",
-        "name": "Global Green Energy"
-      },
+      "provider": [
+        {
+          "@id": "https://behrorsolar.in/#organization"
+        },
+        {
+          "@id": "https://ggenergy.in/#business"
+        }
+      ],
       "areaServed": [
         {
           "@type": "Place",
@@ -97,7 +98,37 @@
           "@type": "Place",
           "name": "Neemrana"
         }
-      ]
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://behrorsolar.in/commercial-solar"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://behrorsolar.in/#website",
+      "name": "Behror Solar",
+      "url": "https://behrorsolar.in/"
+    },
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://behrorsolar.in/#organization",
+      "name": "Behror Solar",
+      "url": "https://behrorsolar.in/"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://behrorsolar.in/#mahendra-yadav",
+      "name": "Mahendra Yadav",
+      "url": "https://behrorsolar.in/about"
+    },
+    {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://ggenergy.in/#business",
+      "name": "Global Green Energy",
+      "url": "https://ggenergy.in/"
     }
   ]
 }

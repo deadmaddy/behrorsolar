@@ -777,82 +777,30 @@ Verify Tata Partner ↗
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": [
-        "Organization",
-        "LocalBusiness"
-      ],
-      "@id": "https://behrorsolar.in/#organization",
-      "name": "Behror Solar",
-      "url": "https://behrorsolar.in/",
-      "telephone": "+919414453454",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://behrorsolar.in/images/behror-solar-logo.png"
+      "@type": "WebPage",
+      "@id": "https://behrorsolar.in/pm-surya-ghar",
+      "url": "https://behrorsolar.in/pm-surya-ghar",
+      "name": "PM Surya Ghar Subsidy in Behror & Neemrana | JVVNL",
+      "isPartOf": {
+        "@id": "https://behrorsolar.in/#website"
       },
-      "areaServed": [
-        {
-          "@type": "Place",
-          "name": "Behror, Rajasthan"
-        },
-        {
-          "@type": "Place",
-          "name": "Neemrana, Rajasthan"
-        },
-        {
-          "@type": "Place",
-          "name": "Bhiwadi, Rajasthan"
-        },
-        {
-          "@type": "Place",
-          "name": "Kotputli, Rajasthan"
-        },
-        {
-          "@type": "Place",
-          "name": "Alwar Region, Rajasthan"
-        }
-      ],
-      "sameAs": [
-        "https://www.facebook.com/behrorsolar",
-        "https://www.instagram.com/behrorsolar",
-        "https://www.linkedin.com/company/behror-solar/",
-        "https://x.com/BehrorSolar"
-      ],
-      "founder": {
-        "@type": "Person",
-        "name": "Mahendra Yadav",
-        "jobTitle": "Founder, Behror Solar · Partner, Global Green Energy",
-        "url": "https://www.linkedin.com/in/mahendra-yadav-44983718/",
-        "sameAs": [
-          "https://www.linkedin.com/in/mahendra-yadav-44983718/"
-        ]
+      "mainEntity": {
+        "@id": "https://behrorsolar.in/pm-surya-ghar#article"
       },
-      "parentOrganization": {
-        "@id": "https://behrorsolar.in/#global-green-energy"
+      "breadcrumb": {
+        "@id": "https://behrorsolar.in/pm-surya-ghar#breadcrumb"
       }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://behrorsolar.in/pm-surya-ghar#author",
-      "name": "Mahendra Yadav",
-      "jobTitle": "Founder, Behror Solar · Partner, Global Green Energy",
-      "telephone": "+919414453454",
-      "worksFor": {
-        "@id": "https://behrorsolar.in/#organization"
-      },
-      "url": "https://www.linkedin.com/in/mahendra-yadav-44983718/",
-      "sameAs": [
-        "https://www.linkedin.com/in/mahendra-yadav-44983718/"
-      ],
-      "description": "Mahendra founded Behror Solar and leads its work across Behror, Neemrana and surrounding areas. He is also a partner and investor in Global Green Energy. Before solar, he spent 12+ years in digital marketing, which shaped Behror Solar’s educate-first approach."
     },
     {
       "@type": "Article",
       "@id": "https://behrorsolar.in/pm-surya-ghar#article",
-      "mainEntityOfPage": "https://behrorsolar.in/pm-surya-ghar",
+      "mainEntityOfPage": {
+        "@id": "https://behrorsolar.in/pm-surya-ghar"
+      },
       "headline": "PM Surya Ghar in Behror & Neemrana — Subsidy, Documents & JVVNL Process",
       "description": "Check PM Surya Ghar CFA up to ₹78,000, conditional Rajasthan ₹17,000 support, documents and JVVNL steps for Behror and Neemrana homes.",
       "author": {
-        "@id": "https://behrorsolar.in/pm-surya-ghar#author"
+        "@id": "https://behrorsolar.in/#mahendra-yadav"
       },
       "publisher": {
         "@id": "https://behrorsolar.in/#organization"
@@ -890,7 +838,10 @@ Verify Tata Partner ↗
         "https://rerc.rajasthan.gov.in/rerc-user-files/regulations",
         "https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2026/08/20260804911824842.pdf",
         "https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2026/08/20260821661139778.pdf"
-      ]
+      ],
+      "isPartOf": {
+        "@id": "https://behrorsolar.in/#website"
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -978,18 +929,37 @@ Verify Tata Partner ↗
             "text": "No. It may apply to eligible beneficiaries under Rajasthan’s solar-linked 150-units-per-month Nishulk Bijli scheme. Existing free-electricity enrollment alone does not confirm payment. Check the connection’s state-scheme registration and DISCOM eligibility before counting it. Up to ₹95,000 means maximum central CFA of ₹78,000 plus the conditional ₹17,000 state benefit."
           }
         }
-      ]
+      ],
+      "isPartOf": {
+        "@id": "https://behrorsolar.in/pm-surya-ghar"
+      }
     },
     {
-      "@type": "Organization",
-      "@id": "https://behrorsolar.in/#global-green-energy",
+      "@type": "WebSite",
+      "@id": "https://behrorsolar.in/#website",
+      "name": "Behror Solar",
+      "url": "https://behrorsolar.in/"
+    },
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://behrorsolar.in/#organization",
+      "name": "Behror Solar",
+      "url": "https://behrorsolar.in/"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://behrorsolar.in/#mahendra-yadav",
+      "name": "Mahendra Yadav",
+      "url": "https://behrorsolar.in/about"
+    },
+    {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://ggenergy.in/#business",
       "name": "Global Green Energy",
-      "description": "Solar installation business serving Behror, Neemrana and surrounding areas through its local platform, BehrorSolar.in.",
-      "founder": {
-        "@type": "Person",
-        "name": "Tek Chand",
-        "jobTitle": "Founder, Global Green Energy"
-      }
+      "url": "https://ggenergy.in/"
     }
   ]
 }

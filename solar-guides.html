@@ -303,121 +303,136 @@ Verify Tata Partner ↗
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "@id": "https://behrorsolar.in/solar-guides",
-  "name": "Solar Guides — Behror Solar",
-  "description": "Practical, no-jargon solar guides from a working installer in Behror–Neemrana: real-world panel tests, the PM Surya Ghar subsidy, DCR vs non-DCR, and choosing the right system.",
-  "url": "https://behrorsolar.in/solar-guides",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Behror Solar",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://behrorsolar.in/images/logo.png"
-    },
-    "@id": "https://behrorsolar.in/#organization",
-    "founder": {
-      "@type": "Person",
-      "name": "Mahendra Yadav",
-      "jobTitle": "Founder, Behror Solar · Partner, Global Green Energy",
-      "url": "https://www.linkedin.com/in/mahendra-yadav-44983718/",
-      "sameAs": [
-        "https://www.linkedin.com/in/mahendra-yadav-44983718/"
-      ]
-    },
-    "parentOrganization": {
-      "@id": "https://behrorsolar.in/#global-green-energy"
-    }
-  },
-  "mainEntity": {
-    "@type": "ItemList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "TOPCon vs Mono PERC: why solar quality matters",
-        "url": "https://behrorsolar.in/topcon-vs-mono-perc-field-test"
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://behrorsolar.in/solar-guides",
+      "name": "Solar Guides — Behror Solar",
+      "description": "Practical, no-jargon solar guides from a working installer in Behror–Neemrana: real-world panel tests, the PM Surya Ghar subsidy, DCR vs non-DCR, and choosing the right system.",
+      "url": "https://behrorsolar.in/solar-guides",
+      "publisher": {
+        "@id": "https://behrorsolar.in/#organization"
       },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Tata Power Solaroof Warranty Guide",
-        "url": "https://behrorsolar.in/tata-power-solaroof-warranty"
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "TOPCon vs Mono PERC: why solar quality matters",
+            "url": "https://behrorsolar.in/topcon-vs-mono-perc-field-test"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tata Power Solaroof Warranty Guide",
+            "url": "https://behrorsolar.in/tata-power-solaroof-warranty"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "TRYDAN TECH 100Ah LiFePO₄ battery review",
+            "url": "https://behrorsolar.in/trydan-tech-battery"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "PM Surya Ghar Subsidy",
+            "url": "https://behrorsolar.in/pm-surya-ghar"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Solar Panels — DCR vs Non-DCR",
+            "url": "https://behrorsolar.in/solar-panels-behror-neemrana"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "On-Grid vs Hybrid vs Off-Grid Solar",
+            "url": "https://behrorsolar.in/on-grid-hybrid-off-grid-solar-behror-neemrana"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "3 kW Solar System",
+            "url": "https://behrorsolar.in/3kw-solar-system"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "5 kW Solar System",
+            "url": "https://behrorsolar.in/5kw-solar-system"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "10 kW Solar System",
+            "url": "https://behrorsolar.in/10kw-solar-system"
+          }
+        ]
       },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "TRYDAN TECH 100Ah LiFePO₄ battery review",
-        "url": "https://behrorsolar.in/trydan-tech-battery"
+      "isPartOf": {
+        "@id": "https://behrorsolar.in/#website"
       },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "name": "PM Surya Ghar Subsidy",
-        "url": "https://behrorsolar.in/pm-surya-ghar"
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "name": "Solar Panels — DCR vs Non-DCR",
-        "url": "https://behrorsolar.in/solar-panels-behror-neemrana"
-      },
-      {
-        "@type": "ListItem",
-        "position": 6,
-        "name": "On-Grid vs Hybrid vs Off-Grid Solar",
-        "url": "https://behrorsolar.in/on-grid-hybrid-off-grid-solar-behror-neemrana"
-      },
-      {
-        "@type": "ListItem",
-        "position": 7,
-        "name": "3 kW Solar System",
-        "url": "https://behrorsolar.in/3kw-solar-system"
-      },
-      {
-        "@type": "ListItem",
-        "position": 8,
-        "name": "5 kW Solar System",
-        "url": "https://behrorsolar.in/5kw-solar-system"
-      },
-      {
-        "@type": "ListItem",
-        "position": 9,
-        "name": "10 kW Solar System",
-        "url": "https://behrorsolar.in/10kw-solar-system"
+      "breadcrumb": {
+        "@id": "https://behrorsolar.in/solar-guides#breadcrumb"
       }
-    ]
-  }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://behrorsolar.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Solar Guides",
+          "item": "https://behrorsolar.in/solar-guides"
+        }
+      ],
+      "@id": "https://behrorsolar.in/solar-guides#breadcrumb"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://behrorsolar.in/#website",
+      "name": "Behror Solar",
+      "url": "https://behrorsolar.in/"
+    },
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://behrorsolar.in/#organization",
+      "name": "Behror Solar",
+      "url": "https://behrorsolar.in/"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://behrorsolar.in/#mahendra-yadav",
+      "name": "Mahendra Yadav",
+      "url": "https://behrorsolar.in/about"
+    },
+    {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://ggenergy.in/#business",
+      "name": "Global Green Energy",
+      "url": "https://ggenergy.in/"
+    }
+  ]
 }
 </script>
 
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"BreadcrumbList",
-"itemListElement":[
-{"@type":"ListItem","position":1,"name":"Home","item":"https://behrorsolar.in/"},
-{"@type":"ListItem","position":2,"name":"Solar Guides","item":"https://behrorsolar.in/solar-guides"}
-]
-}
-</script>
 
 
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://behrorsolar.in/#global-green-energy",
-  "name": "Global Green Energy",
-  "description": "Authorised Tata Power Solaroof Channel Partner and registered PM Surya Ghar vendor.",
-  "founder": {
-    "@type": "Person",
-    "name": "Tek Chand",
-    "jobTitle": "Founder, Global Green Energy"
-  }
-}
-</script>
+
+
 
 </body>
 </html>
