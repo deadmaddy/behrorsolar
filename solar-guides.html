@@ -4,6 +4,7 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('nav-pending');</script>
 
 <title>Solar Guides — Behror &amp; Neemrana | PM Surya Ghar, Panels &amp; System Sizes</title>
 
@@ -43,7 +44,7 @@
 <link rel="manifest" href="/site.webmanifest">
 
 <link rel="preload" as="image" href="/images/behror-solar-logo.png">
-<link rel="stylesheet" href="/style.min.css?v=0da993c45e88">
+<link rel="stylesheet" href="/style.min.css?v=ce81e13ec328">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -51,7 +52,7 @@
 
 <link rel="stylesheet" href="/css/solar-guides.min.css?v=ac5504fa6b28">
 
-<script src="/site.js" defer></script>
+<script src="/site.js?v=d134f29482d2" defer onerror="document.documentElement.classList.remove('nav-pending')"></script>
 </head>
 
 <body>
@@ -146,13 +147,23 @@
 <p>Who registers your Tata warranty, what certificate you should receive, how to verify it and what to do if you need to make a claim.</p>
 <span class="gc-more">Read the warranty guide →</span>
 </a>
+
+</div>
+
+<p class="guides-section-label">TRYDAN battery testing</p>
+<section class="guides-list" id="trydan-battery-review" aria-label="TRYDAN battery testing">
 <a class="guide-card" href="/trydan-tech-battery">
 <span class="gc-tag">Field Note · Battery Testing</span>
 <h2>TRYDAN TECH 100Ah LiFePO₄ battery review</h2>
 <p>Our ₹17,700 battery purchase including GST, charging observations, nine-hour grid-OFF testing and a 43-hour isolated voltage log with a 2017 Luminous Zelio 1100. Manufacturer specifications, measured readings and remaining test limitations.</p>
 <span class="gc-more">Read the battery review →</span>
 </a>
+<div class="explore-grid">
+<a class="explore-card" href="/trydan-tech-battery#november-6-update"><h3>Nine-hour test and 43-hour voltage log</h3><p>Follow the dated grid-OFF observations, changing loads and isolated battery readings.</p></a>
+<a class="explore-card" href="/trydan-tech-battery#backup-update"><h3>Earlier three-hour backup test</h3><p>Read the preceding backup observations with our 2017 Luminous Zelio 1100 inverter.</p></a>
+<a class="explore-card" href="/trydan-tech-battery#warranty-document-update"><h3>Warranty and transport documents</h3><p>See the documents received for our purchase and the details still awaiting completion.</p></a>
 </div>
+</section>
 
 <p class="guides-section-label">More to explore</p>
 <div class="explore-grid">
@@ -270,6 +281,7 @@ Verify Tata Partner ↗
 <p class="footer-group-label"><a href="/solar-panels-behror-neemrana">Products</a></p>
 <a href="/solar-panels-behror-neemrana">Solar Panels &mdash; DCR &amp; Non-DCR</a>
 <a href="/solar-battery">Solar Battery &amp; Backup</a>
+<a href="/commercial-solar">Commercial Solar</a>
 </div>
 <div class="footer-group">
 <p class="footer-group-label">Residential</p>
@@ -417,12 +429,6 @@ Verify Tata Partner ↗
       "@id": "https://behrorsolar.in/#mahendra-yadav",
       "name": "Mahendra Yadav",
       "url": "https://behrorsolar.in/about"
-    },
-    {
-      "@type": "HomeAndConstructionBusiness",
-      "@id": "https://ggenergy.in/#business",
-      "name": "Global Green Energy",
-      "url": "https://ggenergy.in/"
     }
   ]
 }

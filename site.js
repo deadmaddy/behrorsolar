@@ -117,6 +117,8 @@
     document.documentElement.classList.add('nav-enhanced');
     setMenu(false);
   }
+  // The early layout hint is no longer needed once navigation is initialized.
+  document.documentElement.classList.remove('nav-pending');
 
   const contact = document.querySelector('.contact-actions');
   if (contact && 'IntersectionObserver' in window) {

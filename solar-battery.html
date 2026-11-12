@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('nav-pending');</script>
 <title>Solar Battery &amp; Backup (BESS) in Behror &amp; Neemrana — LiFePO₄ | Behror Solar</title>
 <meta name="description" content="LiFePO₄ solar battery backup (BESS) for homes in Behror &amp; Neemrana. Custom kWh and kW sizing, hybrid inverter integration, retrofit assessment and local support. Get a free quote.">
 <meta name="robots" content="index, follow">
@@ -30,12 +31,12 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="stylesheet" href="/style.min.css?v=0da993c45e88">
+<link rel="stylesheet" href="/style.min.css?v=ce81e13ec328">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:0;top:0;z-index:9999;background:var(--gold);color:var(--ink);padding:8px 16px}</style>
-<script src="/site.js" defer></script>
+<script src="/site.js?v=d134f29482d2" defer onerror="document.documentElement.classList.remove('nav-pending')"></script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -774,6 +775,7 @@ Verify Tata Partner ↗
 <p class="footer-group-label"><a href="/solar-panels-behror-neemrana">Products</a></p>
 <a href="/solar-panels-behror-neemrana">Solar Panels &mdash; DCR &amp; Non-DCR</a>
 <a href="/solar-battery">Solar Battery &amp; Backup</a>
+<a href="/commercial-solar">Commercial Solar</a>
 </div>
 <div class="footer-group">
 <p class="footer-group-label">Residential</p>
@@ -830,14 +832,9 @@ Verify Tata Partner ↗
       "@id": "https://behrorsolar.in/solar-battery#service",
       "name": "Solar Battery & Backup (BESS) Installation",
       "description": "LiFePO4 solar battery backup (BESS) for homes in Behror and Neemrana, Rajasthan. Custom kWh and kW sizing, hybrid inverter integration, retrofit assessment, project-specific battery selection and local service support.",
-      "provider": [
-        {
-          "@id": "https://behrorsolar.in/#organization"
-        },
-        {
-          "@id": "https://ggenergy.in/#business"
-        }
-      ],
+      "provider": {
+        "@id": "https://behrorsolar.in/#organization"
+      },
       "areaServed": [
         {
           "@type": "City",
@@ -881,39 +878,39 @@ Verify Tata Partner ↗
           "name": "Does the PM Surya Ghar subsidy cover the battery?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. The PM Surya Ghar subsidy applies only to the solar panel capacity, up to Rs 78,000 for a 3 kW system. The battery and hybrid inverter are a separate investment and are not covered by the central scheme."
+            "text": "No. The PM Surya Ghar subsidy applies only to the solar panel capacity — up to ₹78,000 for a 3 kW system. The battery and hybrid inverter are a separate investment in backup and are not covered by the central scheme. See our PM Surya Ghar subsidy guide for what is covered."
           }
         },
         {
           "@type": "Question",
-          "name": "How long does a solar battery last?",
+          "name": "Can the battery be expanded later?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A quality LiFePO4 battery is rated for 6,000 to 8,000-plus charge cycles with a design life of up to 15 years, several times the life of a lead-acid battery."
+            "text": "Yes. Voltra's home batteries are modular — you can start with the capacity you need now and add modules in parallel later (up to 16), so the system grows with your household without replacing what you already have."
           }
         },
         {
           "@type": "Question",
-          "name": "Is a solar battery suitable for Rajasthan summer heat?",
+          "name": "Does a solar battery need maintenance?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "LiFePO4 is commonly selected for stationary storage because of its thermal stability. Suitability depends on the selected model's operating-temperature and enclosure ratings, plus correct placement, shade, ventilation, protection and manufacturer installation requirements."
+            "text": "LiFePO₄ batteries need no water top-up or lead-acid-style routine battery maintenance. We still recommend periodic inspection of electrical connections, protection devices, inverter/BMS logs and the installation environment."
           }
         },
         {
           "@type": "Question",
-          "name": "Can I add a battery to my existing solar system?",
+          "name": "Will a battery run my air conditioner during a power cut?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Often yes — but it usually needs a hybrid inverter to manage the battery, panels and grid together. If your current system is a standard on-grid setup, we assess whether to add a hybrid inverter alongside the battery during the survey."
+            "text": "It can, but AC is a heavy load that drains a battery quickly — a 1.5-ton AC can pull ~1,800 W. A larger battery is needed to run AC for meaningful hours. We size the system around whether AC backup is a priority for you."
           }
         },
         {
           "@type": "Question",
-          "name": "How many hours of backup will a battery give my home?",
+          "name": "Do I need a battery if I already have on-grid solar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "It depends on usable battery capacity and load. Around 5 kWh of usable storage can power a steady 300 W essentials load for roughly 12 to 14 hours; refrigerators, air conditioners and other heavy loads reduce backup time."
+            "text": "Only if you want power during outages. Standard on-grid solar shuts off during a power cut by law. A battery with a hybrid inverter is what keeps your home running when the grid is down — that is its whole purpose."
           }
         },
         {
@@ -921,15 +918,15 @@ Verify Tata Partner ↗
           "name": "What is the difference between kW and kWh in a battery system?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "kWh measures stored energy and mainly affects backup duration. kW measures power and determines how much load the battery and inverter can supply at one time."
+            "text": "kWh is the amount of usable energy stored and mainly affects backup duration. kW is power — how much load the battery and inverter can supply at one time. Both must be sized correctly."
           }
         },
         {
           "@type": "Question",
-          "name": "How long does a LiFePO4 battery take to recharge?",
+          "name": "How long does a LiFePO₄ battery take to recharge?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Recharge time depends on battery capacity, available solar power, inverter charging limits, household consumption while charging and whether grid charging is enabled."
+            "text": "There is no single recharge time. It depends on battery capacity, available solar power, inverter charging limits, household consumption while charging and whether grid charging is enabled. We estimate it from the selected system design."
           }
         }
       ],
@@ -958,12 +955,6 @@ Verify Tata Partner ↗
       "@id": "https://behrorsolar.in/#mahendra-yadav",
       "name": "Mahendra Yadav",
       "url": "https://behrorsolar.in/about"
-    },
-    {
-      "@type": "HomeAndConstructionBusiness",
-      "@id": "https://ggenergy.in/#business",
-      "name": "Global Green Energy",
-      "url": "https://ggenergy.in/"
     }
   ]
 }
