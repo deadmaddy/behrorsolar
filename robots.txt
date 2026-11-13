@@ -124,12 +124,15 @@ Disallow: /
 # 5. GOOGLE-EXTENDED
 # =========================================================
 
-# Restricts covered Gemini training and grounding uses.
-# Does not prevent ordinary Google Search indexing.
-# Retained from the existing BehrorSolar.in policy.
+# Explicitly allow Google-Extended for Gemini grounding eligibility.
+# Google-Extended covers both Gemini grounding and training.
+# The Content-Signal line expresses a preference; it is not a documented
+# Google control for allowing grounding while excluding training.
+# Google plans shared training-token support in early 2027; its announced
+# behavior gives an explicit Google-Extended rule precedence.
 User-agent: Google-Extended
-Content-Signal: ai-train=no
-Disallow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
 
 
 # =========================================================
