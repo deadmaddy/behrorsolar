@@ -172,3 +172,11 @@
 .hybrid-product-size{white-space:nowrap}
 
 .hybrid-product-table th,.hybrid-product-table td{text-align:left;white-space:normal}
+
+/* Compact system overview; retain native table semantics and keyboard scrolling. */
+.solar-system-overview-table{min-width:680px;table-layout:fixed}
+.solar-system-overview-table th:first-child{width:14%}
+.solar-system-overview-table tbody th{position:sticky;left:0;background:var(--sand);z-index:1}
+.solar-system-overview-table thead th:first-child{position:sticky;left:0;z-index:2}
+.hybrid-system-scroll-note{display:none;color:var(--steel);font-size:.85rem;margin:0 0 16px}
+@media(max-width:760px){.hybrid-system-scroll-note{display:block}}
