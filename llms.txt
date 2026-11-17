@@ -18,6 +18,8 @@ The linked pages provide detailed specifications, evidence and qualifications. I
 
 ## Installation services and systems
 
+- [Solar installation in Kotputli](https://behrorsolar.in/solar-installation-kotputli): Rooftop solar services in Kotputli and nearby rural properties, with existing 5 kW project photographs from Kotputli and Hasanpura.
+
 - [Solar installation in Neemrana](https://behrorsolar.in/solar-installation-neemrana): Residential, commercial and industrial installation in Neemrana, Shahjahanpur and nearby areas, with local project photographs.
 - [Commercial solar](https://behrorsolar.in/commercial-solar): Rooftop solar assessment and installation for commercial properties, institutions and industrial customers; residential subsidy assumptions do not apply to commercial connections.
 - [3 kW solar system](https://behrorsolar.in/3kw-solar-system): Official Tata installation at ₹2,00,000 or custom Premier TOPCon at ₹1,85,000; compare generation records, roof area and residential subsidy-adjusted costs.
@@ -45,3 +47,9 @@ The linked pages provide detailed specifications, evidence and qualifications. I
 
 - [Terms and conditions](https://behrorsolar.in/terms_and_conditions): Project terms and commercial conditions.
 - [Privacy policy](https://behrorsolar.in/privacy_policy): Information handling and enquiry privacy.
+
+## Hindi pages
+
+- [हिंदी मुख्य पेज](https://behrorsolar.in/hi/): स्थानीय सोलर विकल्प और संपर्क।
+- [3 kW सोलर](https://behrorsolar.in/hi/3kw-solar-system): पैकेज, कीमत और मापे हुए रिकॉर्ड।
+- [PM Surya Ghar](https://behrorsolar.in/hi/pm-surya-ghar): पात्रता, आवेदन और भुगतान की स्थिति।

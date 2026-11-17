@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://behrorsolar.in/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <image:image>
       <image:loc>https://behrorsolar.in/images/our-philosophy.jpg</image:loc>
     </image:image>
@@ -86,7 +86,7 @@
   </url>
   <url>
     <loc>https://behrorsolar.in/3kw-solar-system</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <image:image>
       <image:loc>https://behrorsolar.in/images/generation-3kw-behror-september-2026-month.webp</image:loc>
     </image:image>
@@ -136,4 +136,6 @@
       <image:loc>https://behrorsolar.in/images/sapna-ngo-dahikar-fort-alwar-tata-hybrid-installation.webp</image:loc>
     </image:image>
   </url>
+  <url><loc>https://behrorsolar.in/hi/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://behrorsolar.in/hi/3kw-solar-system</loc><lastmod>2026-11-16</lastmod></url>
 </urlset>

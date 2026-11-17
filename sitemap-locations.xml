@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://behrorsolar.in/solar-installation-neemrana</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <image:image>
       <image:loc>https://behrorsolar.in/images/neemrana-uttam-install.webp</image:loc>
     </image:image>
@@ -24,5 +24,11 @@
     <image:image>
       <image:loc>https://behrorsolar.in/images/sunil-shiv-colony-5kw.webp</image:loc>
     </image:image>
+  </url>
+  <url>
+    <loc>https://behrorsolar.in/solar-installation-kotputli</loc>
+    <lastmod>2026-11-17</lastmod>
+    <image:image><image:loc>https://behrorsolar.in/images/hasanpura-kotputli-5kw.jpg</image:loc></image:image>
+    <image:image><image:loc>https://behrorsolar.in/images/savitri-devi-kotputli-5kw.jpg</image:loc></image:image>
   </url>
 </urlset>
