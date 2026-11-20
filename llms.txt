@@ -1,8 +1,8 @@
 # Behror Solar
 
-> Behror Solar provides residential, commercial and industrial rooftop solar services in Behror, Neemrana and surrounding areas. Founded and led by Mahendra Yadav, Behror Solar works with Global Green Energy (GGE) for installation services. Mahendra is a partner and investor in GGE.
+> Behror Solar provides residential, commercial and industrial rooftop solar services in Behror, Neemrana and surrounding areas. Behror Solar was founded and is led by Mahendra Yadav.
 
-GGE is an Authorised Tata Power Solaroof Channel Partner and registered PM Surya Ghar vendor. Quotations, contracts, invoices and PM Surya Ghar vendor documentation are issued through GGE. Official Tata Power Solaroof installations and custom Premier Energies systems are separate offerings; custom Premier systems contain no Tata products.
+Official Tata Power Solaroof installations and custom Premier Energies systems are separate offerings; custom Premier systems contain no Tata products.
 
 Based near Hanuman Mandir, Mohalla Nainsukh, Behror, Rajasthan 301701. Phone: +91 94144 53454. Email: myadav@behrorsolar.in. Service areas include Neemrana, Shahjahanpur, Jat Behror, Mundawar, Khairthal, Harsora, Tatarpur, Harsoli, Bibirani, Ghiloth and Mandhan. Neemrana is approximately 20 km / 20 minutes from the Behror base.
 
@@ -13,8 +13,6 @@ The linked pages provide detailed specifications, evidence and qualifications. I
 - [Behror Solar homepage](https://behrorsolar.in/): Local rooftop solar services, official Tata and custom Premier installation options, pricing and customer project examples.
 - [About Behror Solar](https://behrorsolar.in/about): Mahendra Yadav's role, team, company relationships and local support.
 - [Contact and free site survey](https://behrorsolar.in/#contact): Phone, WhatsApp and enquiry form for site assessment and quotations.
-- [Global Green Energy — Alwar](https://ggenergy.in/): GGE's corporate website; shared business entity ID is https://ggenergy.in/#business.
-- [Global Green Energy — Bhiwadi](https://www.globalgreenenergy.co.in/): English and Hindi information about GGE's Bhiwadi-area installation services.
 
 ## Installation services and systems
 
@@ -36,6 +34,8 @@ The linked pages provide detailed specifications, evidence and qualifications. I
 - [Tata Power Solaroof warranty guide](https://behrorsolar.in/tata-power-solaroof-warranty): Registration, certificate verification, component-specific coverage and claims. The reviewed on-grid certificate lists 12-year module product, 30-year module output, 8-year inverter and 5-year other-BOS coverage. Custom-system warranties and service arrangements follow their own quotation and applicable terms.
 
 ## Generation evidence and independent reviews
+
+- [5 kW winter generation — Alwar–Behror](https://behrorsolar.in/5kw-solar-winter-generation-rajasthan): One 5 kWp Tata array recorded 616.50 kWh over 13 October–12 November 2026 (31 days), averaging 19.89 kWh/day. Inverter production only; household consumption, grid imports/exports and bill savings are not established.
 
 - [TOPCon vs Mono PERC field records](https://behrorsolar.in/topcon-vs-mono-perc-field-test): Same-roof September 2026 records show 529.13 kWh from 3.66 kWp TOPCon and 385.4 kWh from 3.18 kWp budget Mono PERC: an observed 19.3% difference per rated DC kWp. Separate inverters and other conditions limit attribution; this is not an annual generation or lifetime savings guarantee.
 - [Tata generation — Alwar City](https://behrorsolar.in/3kw-solar-system#tata-generation-alwar): Six 590 W panels, 3.54 kWp DC, recorded 521.1 kWh over 9 September–8 October 2026.

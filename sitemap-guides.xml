@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://behrorsolar.in/solar-guides</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-20</lastmod>
   </url>
   <url>
     <loc>https://behrorsolar.in/on-grid-hybrid-off-grid-solar-behror-neemrana</loc>
@@ -48,4 +48,5 @@
     </image:image>
   </url>
   <url><loc>https://behrorsolar.in/hi/pm-surya-ghar</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://behrorsolar.in/5kw-solar-winter-generation-rajasthan</loc><lastmod>2026-11-20</lastmod><image:image><image:loc>https://behrorsolar.in/images/5kw-winter-generation-31-day-chart.webp</image:loc></image:image><image:image><image:loc>https://behrorsolar.in/images/5kw-winter-generation-total.webp</image:loc></image:image><image:image><image:loc>https://behrorsolar.in/images/5kw-winter-inverter-rating.webp</image:loc></image:image></url>
 </urlset>
