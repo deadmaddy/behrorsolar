@@ -28,3 +28,8 @@
 @media (max-width: 768px) {
   .kotputli-page .gallery-grid { grid-template-columns: 1fr; }
 }
+
+.kotputli-system-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.kotputli-system-grid a { display: inline-block; margin-top: 16px; font-weight: 700; }
+.kotputli-page .new-project-photo .gallery-img-wrap { aspect-ratio: 1600 / 1305; }
+@media (max-width: 768px) { .kotputli-system-grid { grid-template-columns: 1fr; } }
