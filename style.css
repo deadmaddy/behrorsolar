@@ -4035,3 +4035,8 @@ p.content-body-note,p.content-body-note-spaced{margin-top:20px;font-size:.9rem;c
 p.content-body-note-spaced{margin-top:24px;}
 .install-price-note.install-price-note-followup{margin-top:14px;margin-bottom:0;}
 .install-price-note.install-price-note-payment{margin-top:8px;margin-bottom:0;}
+
+/* Keep the complete new project photographs visible in every gallery. */
+.new-project-photo .gallery-img-wrap { display: block; height: auto; aspect-ratio: 1600 / 1305; }
+.new-project-photo img { display: block; width: 100%; height: auto; object-fit: contain; }
+.new-project-photo .gallery-img-wrap:focus-visible { outline: 3px solid var(--gold-deep); outline-offset: -3px; }
